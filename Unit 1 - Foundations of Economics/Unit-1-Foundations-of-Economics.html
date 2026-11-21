@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 1: Foundations of Economics | Unit Opener | Economics | Daniel Garza, M.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --ink:#1c2230; --ink-2:#4a5263; --ink-3:#6f7787;
+  --paper:#fbfaf6; --white:#ffffff;
+  --unit:#0d5566; --unit-dk:#083a46; --unit-lt:#e3f0f2; --unit-mid:#9cc7cf;
+  --amber:#d98a00; --amber-lt:#fdf3dc; --amber-dk:#9a5f00;
+  --coral:#c8553d; --coral-lt:#fbe9e4;
+  --sage:#4e7d4a; --sage-lt:#e8f1e5;
+  --violet:#5b4bb7; --violet-lt:#ecebfa;
+  --rule:#d9dde3; --grid:#e6e8ec;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --other:#9aa1ad;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Inter", "Segoe UI", Arial, sans-serif;
+  --cond:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e9e7e0;color:var(--ink);font-family:var(--serif);font-size:18.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:var(--unit)}
+.book{max-width:1180px;margin:0 auto;background:var(--paper);box-shadow:0 0 40px rgba(0,0,0,.08)}
+
+/* ---------- top navigation ---------- */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(8,58,70,.97);color:#fff;font-family:var(--sans);font-size:13px;display:flex;align-items:center;gap:6px;padding:0 18px;height:46px;overflow-x:auto;white-space:nowrap}
+.topnav .brand{font-family:var(--cond);font-weight:700;letter-spacing:.08em;font-size:16px;margin-right:14px;color:#ffd58a}
+.topnav a{color:#e8f4f6;text-decoration:none;padding:6px 10px;border-radius:6px}
+.topnav a:hover{background:rgba(255,255,255,.12)}
+.progress{position:sticky;top:46px;z-index:49;height:4px;background:#d6e6e9}
+.progress span{display:block;height:100%;width:0;background:var(--amber)}
+
+/* ---------- chapter opener ---------- */
+.opener{position:relative;background:linear-gradient(160deg,var(--unit-dk) 0%,var(--unit) 70%);color:#fff;overflow:hidden}
+.opener-art{width:100%}
+.opener-head{position:absolute;left:0;right:0;top:0;padding:46px 56px 0;display:flex;gap:28px;align-items:flex-start}
+.chapnum{font-family:var(--cond);font-weight:800;font-size:170px;line-height:.78;color:#ffd58a;text-shadow:0 4px 0 rgba(0,0,0,.18)}
+.chapword{font-family:var(--cond);letter-spacing:.32em;font-size:15px;font-weight:600;color:#ffd58a;margin-bottom:4px}
+.unitline{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#cfe6ea;margin-bottom:10px}
+.opener h1{font-family:var(--cond);font-weight:700;font-size:72px;line-height:.95;margin:0;letter-spacing:.01em;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.opener-caption{background:var(--unit-dk);color:#dbeef1;font-family:var(--sans);font-size:13.5px;line-height:1.5;padding:12px 56px}
+.opener-caption b{color:#ffd58a}
+.opener-grid{display:grid;grid-template-columns:300px 1fr;background:var(--paper);color:var(--ink)}
+.sectionlist{background:var(--unit-lt);padding:30px 28px;border-right:1px solid var(--unit-mid)}
+.sectionlist h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:0 0 14px}
+.sectionlist a{display:block;text-decoration:none;color:var(--ink);padding:12px 0;border-bottom:1px solid var(--unit-mid)}
+.sectionlist a:last-child{border-bottom:0}
+.sectionlist .sl-tag{display:block;font-family:var(--cond);font-weight:700;font-size:14px;letter-spacing:.15em;color:var(--unit)}
+.sectionlist .sl-title{display:block;font-family:var(--sans);font-weight:600;font-size:16px;line-height:1.25}
+.sectionlist .cs .sl-tag{color:var(--coral)}
+.opener-main{padding:30px 44px 34px}
+.kicker{font-family:var(--cond);font-weight:700;letter-spacing:.2em;font-size:15px;color:var(--unit);margin:0 0 6px;text-transform:uppercase}
+.keyconcept{background:var(--white);border-left:6px solid var(--amber);padding:16px 20px;margin:12px 0 22px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.keyconcept .kicker{color:var(--amber-dk)}
+.keyconcept p{margin:0;font-size:20px;line-height:1.45}
+.standards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.stdbox{border:1px solid var(--rule);background:#fff;border-radius:10px;padding:14px 16px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.stdbox h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.12em;color:var(--unit)}
+.stdbox ul{margin:0;padding-left:0;list-style:none}
+.stdbox li{margin:0 0 7px}
+.stdbox code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12px}
+
+/* ---------- section openers ---------- */
+.section{padding:0 0 10px;scroll-margin-top:56px}
+.sec-banner{display:grid;grid-template-columns:130px 1fr 210px;align-items:stretch;background:var(--unit);color:#fff;min-height:150px}
+.sec-banner .num{background:var(--unit-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--cond)}
+.sec-banner .num small{letter-spacing:.3em;font-size:14px;color:#ffd58a;font-weight:600}
+.sec-banner .num b{font-size:84px;line-height:.9;color:#ffd58a}
+.sec-banner h2{font-family:var(--cond);font-size:50px;line-height:1;margin:0;padding:30px 30px;align-self:center;font-weight:700}
+.sec-banner .icon{display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(255,255,255,.06)}
+.sec-preview{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:0;border-bottom:3px solid var(--unit);background:#fff;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.sec-preview > div{padding:18px 22px;border-right:1px solid var(--rule)}
+.sec-preview > div:last-child{border-right:0}
+.sec-preview h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit)}
+.sec-preview ul{margin:0;padding-left:18px}
+.sec-preview li{margin-bottom:4px}
+.terms{columns:2;column-gap:16px;list-style:none;padding-left:0!important}
+.terms li{break-inside:avoid}
+.terms a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--unit)}
+.organizer svg{margin-top:8px}
+
+/* ---------- body text grid ---------- */
+.content{padding:8px 56px 10px}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 250px;column-gap:38px;align-items:start}
+.pair > .side{padding-top:22px}
+.wide{margin:26px 0}
+h3.kc{font-family:var(--cond);font-size:15px;letter-spacing:.22em;color:var(--amber-dk);margin:34px 0 0;text-transform:uppercase}
+h3.head{font-family:var(--cond);font-size:36px;line-height:1.05;color:var(--unit-dk);margin:4px 0 10px;font-weight:700}
+h4.sub{font-family:var(--sans);font-size:19px;color:var(--unit);margin:22px 0 4px;font-weight:700}
+p{margin:0 0 14px}
+.lead::first-letter{font-family:var(--cond);float:left;font-size:78px;line-height:.82;padding:6px 10px 0 0;color:var(--unit);font-weight:700}
+dfn,.kt{font-style:normal;font-weight:700;color:var(--unit-dk);background:linear-gradient(transparent 62%,#ffe4a8 62%)}
+.es{font-style:italic;color:var(--ink-3);font-size:.92em}
+
+/* margin notes */
+.qr{background:#fff;border-top:4px solid var(--unit);padding:12px 14px 12px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.qr .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--unit);margin-bottom:4px}
+.qr .term{font-weight:700;color:var(--unit-dk)}
+.qr .sp{display:block;margin-top:6px;color:var(--ink-3);font-size:12.5px}
+.fact{background:var(--amber-lt);border-top:4px solid var(--amber);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.fact .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);margin-bottom:4px}
+.fact .big{font-family:var(--cond);font-weight:800;font-size:40px;line-height:1;color:var(--amber-dk);display:block;margin:2px 0 4px}
+.math{background:var(--violet-lt);border-top:4px solid var(--violet);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.math .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--violet);margin-bottom:4px}
+.connect{background:var(--sage-lt);border-top:4px solid var(--sage);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.connect .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--sage);margin-bottom:4px}
+
+/* feature boxes */
+.box{border-radius:12px;margin:28px 0;overflow:hidden;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.box-h{display:flex;align-items:center;gap:12px;padding:12px 20px;color:#fff;font-family:var(--cond);font-size:21px;font-weight:700;letter-spacing:.06em}
+.box-h small{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.2em;opacity:.85;display:block}
+.box-b{padding:18px 22px 16px;font-size:17px}
+.box-b p:last-child{margin-bottom:0}
+.example .box-h{background:var(--unit)}
+.example{border:2px solid var(--unit)}
+.choices .box-h{background:var(--coral)}
+.choices{border:2px solid var(--coral)}
+.choices .opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.choices .opt{background:var(--coral-lt);border-radius:10px;padding:14px;font-size:16px}
+.choices .opt h5{margin:8px 0 4px;font-family:var(--sans);font-size:16px;color:var(--coral)}
+.choices .ask{margin-top:14px;font-family:var(--sans);font-weight:600;font-size:15px}
+.global .box-h{background:var(--sage)}
+.global{border:2px solid var(--sage)}
+.app{border:2px dashed var(--amber);background:var(--amber-lt);box-shadow:none}
+.app .box-h{background:transparent;color:var(--amber-dk);padding-bottom:0}
+.app .box-b{font-family:var(--sans);font-size:15.5px}
+.skill .box-h{background:var(--violet)}
+.skill{border:2px solid var(--violet)}
+.skill ol{font-family:var(--sans);font-size:15.5px;padding-left:22px}
+.skill li{margin-bottom:6px}
+.thinking{border-left:6px solid var(--unit);background:var(--unit-lt);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0 22px;font-family:var(--sans);font-size:15px}
+.thinking b.t{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:14px;display:block}
+
+/* figures */
+figure{margin:28px 0;background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px 20px 14px}
+figure.bare{background:none;border:0;padding:0}
+.figlabel{font-family:var(--cond);font-weight:700;font-size:20px;letter-spacing:.05em;color:var(--unit-dk);margin:0 0 2px}
+.figlabel span{color:var(--amber-dk);margin-right:8px}
+.figsub{font-family:var(--sans);font-size:13.5px;color:var(--ink-2);margin:0 0 10px}
+figcaption,.source{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.45}
+.analyze{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px;font-family:var(--sans);font-size:14.5px}
+.analyze b{font-family:var(--cond);letter-spacing:.16em;color:var(--amber-dk);font-size:14px;margin-right:6px}
+.analyze ol{margin:4px 0 0;padding-left:20px}
+details.dt{margin-top:8px;font-family:var(--sans);font-size:13px}
+details.dt summary{cursor:pointer;color:var(--unit);font-weight:600}
+table.data{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;margin:8px 0}
+table.data th{background:var(--unit);color:#fff;text-align:left;padding:7px 10px;font-weight:600}
+table.data td{padding:7px 10px;border-bottom:1px solid var(--rule)}
+table.data tr:nth-child(even) td{background:#f6f8f9}
+table.data td.num,table.data th.num{text-align:right;font-variant-numeric:tabular-nums}
+table.data tr.hl td{background:var(--amber-lt)!important;font-weight:600}
+.essentials{border:3px solid var(--unit);background:#fff}
+.essentials .es-head{background:var(--unit);color:#fff;margin:-18px -20px 16px;padding:10px 20px;font-family:var(--cond);font-size:22px;font-weight:700;letter-spacing:.06em;border-radius:9px 9px 0 0}
+.essentials .es-head small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;color:#ffd58a}
+.fop{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fop > div{border-radius:10px;padding:12px;font-family:var(--sans);font-size:13.5px;line-height:1.4}
+.fop h5{font-family:var(--cond);font-size:22px;margin:6px 0 2px;letter-spacing:.04em}
+.fop .what{font-weight:600;margin-bottom:6px}
+.fop ul{margin:0;padding-left:16px}
+.questions3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.questions3 > div{background:var(--unit-lt);border-radius:10px;padding:14px;font-family:var(--sans);font-size:14px}
+.questions3 h5{margin:6px 0 4px;font-family:var(--cond);font-size:22px;color:var(--unit-dk)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.chart svg text{font-family:var(--sans)}
+svg .bar:hover,svg .pt:hover,svg .slice:hover{opacity:.82}
+
+/* pacesetter */
+.pacesetter{display:grid;grid-template-columns:240px 1fr;border:2px solid var(--unit-dk);border-radius:12px;overflow:hidden;margin:30px 0;background:#fff}
+.pacesetter .ps-side{background:var(--unit-dk);color:#e7f2f4;padding:18px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.pacesetter .ps-side h5{font-family:var(--cond);color:#ffd58a;letter-spacing:.2em;font-size:15px;margin:12px 0 8px}
+.pacesetter .ps-side dt{font-weight:700;color:#ffd58a;margin-top:8px}
+.pacesetter .ps-side dd{margin:0}
+.pacesetter .ps-main{padding:18px 24px}
+.pacesetter .ps-main .kicker{color:var(--amber-dk)}
+.pacesetter h4{font-family:var(--cond);font-size:34px;margin:0 0 10px;color:var(--unit-dk);line-height:1}
+.pacesetter h4 span{display:block;font-size:20px;color:var(--ink-2);font-weight:600}
+
+.ps-photo{margin:0 0 6px;padding:0;border:0;background:none;border-radius:0}
+.ps-photo img{width:100%;border-radius:8px;display:block}
+.ps-photo figcaption{color:#cfe6ea;font-size:12.5px;line-height:1.45;margin-top:8px}
+.ps-photo figcaption span{display:block;margin-top:4px;font-size:11px;color:#9cc7cf}
+.ps-photo figcaption a{color:#9cc7cf}
+.packet-note{display:flex;gap:16px;align-items:center;margin:32px 0 10px;padding:16px 20px;border:3px solid var(--unit);border-radius:14px;background:var(--unit-lt);font-family:var(--sans);font-size:15.5px;line-height:1.5}
+.packet-note svg{flex:none}
+.packet-note b{display:block;font-family:var(--cond);font-size:20px;letter-spacing:.1em;color:var(--unit-dk)}
+/* assessments */
+.assess{margin:34px 0 10px;border:3px solid var(--unit);border-radius:14px;overflow:hidden;background:#fff}
+.assess-h{background:var(--unit);color:#fff;padding:12px 22px;display:flex;align-items:baseline;gap:14px;font-family:var(--cond)}
+.assess-h b{font-size:28px;letter-spacing:.06em}
+.assess-h span{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:#ffd58a}
+.assess-grid{display:grid;grid-template-columns:1fr 1fr;font-family:var(--sans);font-size:15px;line-height:1.5}
+.assess-grid > div{padding:16px 22px}
+.assess-grid > div:first-child{border-right:1px solid var(--rule)}
+.assess h5{font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit);margin:4px 0 8px}
+.assess ol{padding-left:22px;margin:0 0 10px}
+.assess li{margin-bottom:8px}
+.inpractice{background:var(--amber-lt);border-top:1px solid var(--rule);padding:16px 22px;font-family:var(--sans);font-size:15px}
+.inpractice h5{color:var(--amber-dk)}
+.inpractice table.data{background:#fff}
+.inpractice td.blank{color:#b0b5bd}
+
+/* case study */
+.case{background:#f3efe6;padding:0 0 20px}
+.case-banner{background:var(--coral);color:#fff;padding:34px 56px 28px;position:relative;overflow:hidden}
+.case-banner .kicker{color:#ffe3c2;letter-spacing:.3em}
+.case-banner h2{font-family:var(--cond);font-size:58px;margin:4px 0 6px;line-height:1}
+.case-banner p{font-family:var(--sans);font-size:15px;max-width:720px;margin:0;color:#fff3ee}
+.doc{background:#fff;border:1px solid #e0d7c6;border-radius:10px;margin:22px 0;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.doc-h{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid #eee4d3}
+.doc-h .letter{width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-family:var(--cond);font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;flex:none}
+.doc-h b{font-family:var(--cond);font-size:22px;color:var(--ink)}
+.doc-h small{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+.doc-b{padding:14px 20px;font-size:16.5px}
+.doc .think{background:var(--coral-lt);padding:10px 20px;font-family:var(--sans);font-size:14.5px;border-radius:0 0 10px 10px}
+.doc .think b{color:var(--coral)}
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.voice{background:#faf7f1;border-radius:10px;padding:14px;font-size:15.5px}
+.voice h6{margin:0 0 6px;font-family:var(--sans);font-size:14px;color:var(--coral)}
+
+/* chapter assessment */
+.chap-assess .sec-banner{background:var(--ink)}
+.chap-assess .sec-banner .num{background:#0f131c}
+.wordbank{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.wordbank span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:3px 12px;font-family:var(--sans);font-size:14px}
+.cloze{font-size:17.5px;line-height:1.9}
+.cloze .bl{display:inline-block;min-width:34px;border-bottom:2px solid var(--ink);text-align:center;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--unit)}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.summary-grid > div{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 16px;font-family:var(--sans);font-size:14.5px}
+.summary-grid h5{margin:0 0 6px;font-family:var(--cond);font-size:19px;color:var(--unit-dk)}
+.sim{border:3px solid var(--violet);border-radius:14px;background:#fff;overflow:hidden;margin:28px 0}
+.sim .box-h{background:var(--violet)}
+.sim .box-b{font-family:var(--sans);font-size:15.5px}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps li{counter-increment:st;position:relative;padding:0 0 10px 44px}
+.steps li::before{content:counter(st);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--violet);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.credits{font-family:var(--sans);font-size:13px;color:var(--ink-2);padding:22px 56px;background:#f1f0eb;border-top:1px solid var(--rule)}
+.credits h4{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:16px;margin:0 0 8px}
+.credits li{margin-bottom:4px}
+
+/* running footer */
+.runfoot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;background:var(--unit-dk);color:#d5e9ec;font-family:var(--sans);font-size:11.5px;letter-spacing:.16em;font-weight:600;padding:10px 56px;margin-top:26px}
+.runfoot span:nth-child(2){color:#ffd58a}
+.runfoot span:last-child{text-align:right}
+
+
+/* photos */
+figure.photo{padding:0;overflow:hidden;background:#fff}
+figure.photo img{width:100%;display:block;background:#e9e7e0}
+figure.photo figcaption{margin:0;padding:10px 16px 12px;font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-2);border-top:4px solid var(--amber)}
+figure.photo .phlabel{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);text-transform:uppercase;margin-bottom:2px}
+figure.photo .credit{display:block;margin-top:5px;font-size:11.5px;color:var(--ink-3)}
+figure.photo .credit a{color:var(--ink-3)}
+.side figure.photo{margin:0 0 18px}
+.side figure.photo figcaption{font-size:12.5px;padding:8px 12px 10px}
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0}
+.photo-row figure.photo{margin:0}
+.opener-photo{position:relative;height:560px;overflow:hidden}
+.opener-photo img{width:100%;height:100%;object-fit:cover;object-position:center 70%;display:block}
+.opener-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,58,70,.78) 0%,rgba(8,58,70,.35) 45%,rgba(0,0,0,0) 70%)}
+.opener-head{z-index:2}
+.opener-caption .credit{display:block;font-size:11.5px;color:#9cc7cf;margin-top:4px}
+.opener-caption .credit a{color:#9cc7cf}
+@media (max-width:900px){.photo-row{grid-template-columns:1fr}.opener-photo{height:300px}}
+
+/* responsive */
+@media (max-width:900px){
+  body{font-size:17px}
+  .content{padding:8px 20px}
+  .pair{grid-template-columns:1fr}
+  .opener-head{position:static;padding:24px 20px 0;background:var(--unit-dk)}
+  .chapnum{font-size:110px}
+  .opener h1{font-size:48px}
+  .opener-grid,.sec-preview,.standards,.assess-grid,.two,.choices .opts,.pacesetter,.voices,.summary-grid{grid-template-columns:1fr}
+  .fop,.questions3{grid-template-columns:1fr 1fr}
+  .sec-banner{grid-template-columns:90px 1fr}
+  .sec-banner .icon{display:none}
+  .sec-banner h2{font-size:34px;padding:20px}
+  .case-banner{padding:26px 20px}
+  .runfoot{padding:10px 20px;grid-template-columns:1fr;text-align:center}
+  .runfoot span:last-child{text-align:center}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .topnav,.progress{display:none}
+  .book{box-shadow:none}
+  .section,.case,.chap-assess{break-before:page}
+  figure,.box,.assess,.doc,.pacesetter{break-inside:avoid}
+  details.dt{display:none}
+}
+
+/* ---------- unit opener additions ---------- */
+.upage{scroll-margin-top:56px}
+.hero{position:relative;overflow:hidden;background:var(--unit-dk)}
+.hero .hero-crop{position:relative;overflow:hidden;width:100%;aspect-ratio:1180/560;background:#e9e7e0}
+.hero .hero-crop img{position:absolute;max-width:none;height:auto}
+.hero .hero-crop::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,58,70,.82) 0%,rgba(8,58,70,.4) 45%,rgba(0,0,0,0) 72%)}
+.hero .opener-head{z-index:2}
+.hero .unitword{font-family:var(--cond);letter-spacing:.32em;font-size:18px;font-weight:700;color:#ffd58a;margin-bottom:4px}
+.hero .tagline{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.35;color:#eaf5f7;margin:14px 0 0;max-width:640px;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.hero .chapnum{font-size:230px}
+.ugrid{display:grid;grid-template-columns:minmax(0,1fr) 400px;background:var(--paper)}
+.ugrid .uleft{padding:32px 46px 34px 56px}
+.ugrid .uright{background:var(--unit-lt);border-left:1px solid var(--unit-mid);padding:30px 28px 34px}
+.uleft h2.ov{font-family:var(--cond);font-size:44px;line-height:1;color:var(--unit-dk);margin:0 0 14px}
+.uright h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:0 0 10px;text-transform:uppercase}
+.bigideas{list-style:none;padding:0;margin:0 0 24px;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.bigideas li{background:#fff;border-left:5px solid var(--amber);padding:9px 12px;margin-bottom:9px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.bigideas li b{color:var(--unit-dk)}
+.eq{list-style:none;counter-reset:eq;padding:0;margin:0 0 24px;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.eq li{counter-increment:eq;position:relative;padding:0 0 11px 38px}
+.eq li::before{content:counter(eq);position:absolute;left:0;top:0;width:27px;height:27px;border-radius:50%;background:var(--unit);color:#fff;font-weight:700;font-size:13.5px;display:flex;align-items:center;justify-content:center}
+.eq li small{display:block;color:var(--ink-3);font-size:12px;letter-spacing:.04em}
+.why{background:var(--amber-lt);border-top:4px solid var(--amber);padding:14px 16px;font-family:var(--sans);font-size:14.5px;line-height:1.55}
+.why p{margin:0 0 9px}.why p:last-child{margin:0}
+.flow3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:22px 0 4px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.flow3>div{background:var(--unit-lt);border-top:4px solid var(--unit);padding:10px 12px;border-radius:0 0 8px 8px}
+.flow3 b{display:block;font-family:var(--cond);font-size:20px;letter-spacing:.04em;color:var(--unit-dk)}
+.flow3 span.n{font-family:var(--cond);font-weight:700;letter-spacing:.16em;font-size:12.5px;color:var(--amber-dk)}
+.pagehead .sec-banner{min-height:120px}
+.pagehead .sec-banner h2{font-size:46px}
+.intro{padding:22px 56px 4px;font-size:18px}
+.chcard{border:2px solid var(--unit);border-radius:14px;overflow:hidden;background:#fff;margin:24px 56px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.chcard .chh{display:grid;grid-template-columns:96px 1fr auto;align-items:center;background:var(--unit);color:#fff}
+.chcard .chh .cn{background:var(--unit-dk);align-self:stretch;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--cond)}
+.chcard .chh .cn small{font-size:12px;letter-spacing:.3em;color:#ffd58a;font-weight:600}
+.chcard .chh .cn b{font-size:58px;line-height:.9;color:#ffd58a}
+.chcard .chh h3{font-family:var(--cond);font-size:34px;line-height:1.05;margin:0;padding:14px 20px;font-weight:700}
+.readbtn{display:inline-block;margin:0 20px;background:var(--amber);color:#1c2230;text-decoration:none;font-family:var(--sans);font-weight:700;font-size:14px;padding:10px 16px;border-radius:8px;white-space:nowrap}
+.readbtn:hover{background:#ffd58a}
+.chcard .chb{padding:16px 24px 18px;font-family:var(--sans);font-size:15px;line-height:1.55}
+.chcard .chb p{margin:0 0 12px}
+.cols3{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:20px}
+.cols3 h4{margin:0 0 6px;font-family:var(--cond);font-size:15px;letter-spacing:.16em;color:var(--unit)}
+.cols3 ol,.cols3 ul{margin:0;padding-left:19px}
+.cols3 li{margin-bottom:4px}
+.cols3 .case{background:var(--coral-lt);border-left:4px solid var(--coral);padding:8px 10px;border-radius:0 8px 8px 0;margin:0 0 10px;font-weight:600}
+.cols3 .case small{display:block;font-family:var(--cond);letter-spacing:.16em;color:var(--coral);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:2px 10px;font-size:13px}
+.u-wrap{padding:6px 56px 10px}
+table.std{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;margin:10px 0 16px}
+table.std th{background:var(--unit);color:#fff;text-align:left;padding:8px 10px}
+table.std td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top;background:#fff}
+table.std td:first-child{white-space:nowrap}
+table.std code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12.5px}
+table.std tr.over td{background:var(--unit-lt);font-weight:600}
+.termgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 10px}
+.tcard{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:10px 14px;font-family:var(--sans);font-size:14.5px;line-height:1.45}
+.tcard b{color:var(--unit-dk);font-size:16px}
+.tcard .tch{float:right;font-family:var(--cond);font-weight:700;letter-spacing:.1em;font-size:12.5px;color:var(--amber-dk)}
+.tcard .sp{display:block;color:var(--ink-3);font-size:12.5px;margin-top:3px}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.skills>div{background:var(--violet-lt);border-top:4px solid var(--violet);padding:10px 14px;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.skills b{display:block;font-family:var(--cond);font-size:20px;color:var(--violet);letter-spacing:.03em}
+.lookbox{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+.lookbox>div{border-radius:10px;padding:14px 18px;font-family:var(--sans);font-size:14.5px;line-height:1.55}
+.lookbox .back{background:var(--sage-lt);border-top:4px solid var(--sage)}
+.lookbox .ahead{background:var(--amber-lt);border-top:4px solid var(--amber)}
+.lookbox h4{margin:0 0 6px;font-family:var(--cond);font-size:20px;letter-spacing:.1em}
+.lookbox .back h4{color:var(--sage)}.lookbox .ahead h4{color:var(--amber-dk)}
+.lookbox p{margin:0 0 8px}
+table.ag{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14.5px;margin:12px 0}
+table.ag th{background:var(--unit-dk);color:#fff;padding:8px 10px;font-size:13px;letter-spacing:.06em;text-align:left}
+table.ag td{border:1px solid var(--rule);padding:9px 10px;vertical-align:top;background:#fff}
+table.ag td.n{font-family:var(--cond);font-weight:800;font-size:24px;color:var(--unit);width:38px;text-align:center}
+table.ag td.ad{width:96px;text-align:center;font-weight:700;letter-spacing:.2em;font-size:15px;color:var(--unit-dk)}
+table.ag td.ad i{display:inline-block;width:30px;height:30px;line-height:28px;border:2px solid var(--unit-mid);border-radius:50%;font-style:normal;margin:1px 2px}
+table.ag td.after{width:250px}
+table.ag td.after .ln{border-bottom:1.5px solid var(--ink-3);height:22px}
+.seatnote{background:var(--unit-lt);border-left:6px solid var(--unit);padding:12px 18px;border-radius:0 10px 10px 0;font-family:var(--sans);font-size:14.5px;line-height:1.55;margin:10px 0}
+.seatnote b{font-family:var(--cond);letter-spacing:.14em;color:var(--unit);display:block;font-size:14px}
+.photocredit{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin:14px 0 4px;line-height:1.5}
+@media (max-width:900px){.ugrid,.cols3,.flow3,.termgrid,.skills,.lookbox{grid-template-columns:1fr}.ugrid .uleft,.u-wrap,.intro{padding-left:20px;padding-right:20px}.chcard{margin:20px 14px}.chcard .chh{grid-template-columns:70px 1fr}.chcard .readbtn{grid-column:1/-1;margin:0 20px 14px;text-align:center}.hero .chapnum{font-size:110px}.hero .tagline{font-size:17px}table.ag td.after{width:auto}}
+@media print{.upage{break-before:page}.chcard,.tcard,table.ag tr{break-inside:avoid}.readbtn{border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="book">
+<nav class="topnav" aria-label="Unit sections">
+  <span class="brand">UNIT 1 · FOUNDATIONS OF ECONOMICS</span>
+  <a href="#p1">Page 1 · Unit Opener</a><a href="#overview">Overview</a><a href="#p2">Page 2 · Unit at a Glance</a><a href="#chapters">Chapters</a><a href="#standards">Standards</a><a href="#p3">Page 3 · Connect and Prepare</a><a href="#terms">Key Terms</a><a href="#skills">Skills</a><a href="#guide">Anticipation Guide</a>
+</nav>
+<div class="progress"><span id="bar"></span></div>
+
+<!-- ===================== PAGE 1: UNIT OPENER ===================== -->
+<div class="upage" id="p1">
+<header class="hero opener" id="opener">
+  <div class="hero-crop"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/BakersfieldSkyline.jpg?width=1800" alt="Downtown Bakersfield, California, at dusk, with the lights of office buildings and streets glowing under an orange and blue sky, seen from beside the city arena." style="width:125.5%;left:-25.3%;top:-20.15%"></div>
+  <div class="opener-head">
+    <div class="chapnum">1</div>
+    <div>
+      <div class="unitword">UNIT</div>
+      <h1>Foundations<br>of Economics</h1>
+      <p class="tagline">Every economy answers the same questions: what to make, how to make it, and for whom. The answers shape how we live.</p>
+    </div>
+  </div>
+  <div class="opener-caption"><b>Every city is an answer.</b> Downtown Bakersfield at dusk, photographed in December 2006 from beside the city arena. Behind every lit window, someone is deciding how to spend limited time, money, and resources. This unit gives you the tools to understand those decisions.<span class="credit">Photo: Robert Hale / <a href="https://commons.wikimedia.org/wiki/File:BakersfieldSkyline.jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></span></div>
+</header>
+<div class="ugrid">
+  <div class="uleft" id="overview">
+    <p class="kicker">Unit Overview</p>
+    <h2 class="ov">The Big Picture</h2>
+    <p>Every economy, from a family kitchen table in Shafter to the global economy, starts with the same problem. People want more than they can have. There is only so much water in the Kern River and the California Aqueduct, only so much land on the valley floor, only so many hours in a day, and only so many dollars in a paycheck. Economists call this fact <b>scarcity</b>, and it is the first big idea of this unit. Scarcity forces choices, and every choice has a cost. In Chapter 1, <i>The Economic Way of Thinking</i>, you learn to name that cost as an <b>opportunity cost</b>, to see how <b>incentives</b> push people toward one choice or another, and to use tools such as the production possibilities curve, tables, and graphs to study the trade-offs that a farm, a business, or a whole country faces.</p><p>Once you see that scarcity forces choices, a larger question appears. Who makes the choices? Chapter 2, <i>Economic Systems</i>, shows that societies have answered this question in very different ways. In a traditional economy, custom decides. In a command economy, a central authority decides what to produce, how to produce it, and for whom. In a market economy, millions of buyers and sellers decide through voluntary exchange. In a mixed economy, which is what nearly every country actually has, private choices and government decisions share the work. You will compare these systems using evidence, including a striking case study of the Korean Peninsula, where one people split into two economies that answer the three basic questions in opposite ways.</p><p>Chapter 3, <i>The American Free Enterprise System</i>, brings the lens home. Kern County is a good place to study it. The same county contains packing houses and almond orchards, oil fields and wind turbines, taquerías and trucking companies, and a growing downtown in Bakersfield. Each of those businesses exists because someone had the freedom to start it, the right to own its equipment and land, and the hope of earning a profit. Chapter 3 explains how competition, property rights, prices, and profits and losses guide scarce resources to the uses people value most. It also shows why the United States is best described as a modified free enterprise system, in which government protects rights, provides public goods such as roads and public schools, and helps people through a safety net.</p><p>The three chapters build on each other. Chapter 1 supplies the problem and the vocabulary of choice. Chapter 2 compares the ways societies can respond. Chapter 3 studies the response the United States has chosen, and asks how well it works and where Americans disagree about it. By the end of the unit you should be able to look at a real Kern County decision, such as a grower deciding whether to replace an orchard, a family deciding whether to open a business, or a city deciding whether to spend on a new park, and explain it with the economic way of thinking.</p>
+    <div class="keyconcept"><p class="kicker">Think Locally</p><p style="font-size:17px">As you read, look for the three questions in your own community. What does Kern County produce, and who decided? How is it produced, with which workers, land, water, and machines? And for whom: who buys the carrots, the crude oil, and the solar power? Every answer you find is the result of choices made under scarcity.</p></div>
+    <div class="flow3">
+      <div><span class="n">CHAPTER 1</span><b>The Problem</b>Scarcity forces choices, and choices have costs.</div>
+      <div><span class="n">CHAPTER 2</span><b>The Systems</b>Societies answer the problem in different ways.</div>
+      <div><span class="n">CHAPTER 3</span><b>Our System</b>How free enterprise works, and where government fits.</div>
+    </div>
+  </div>
+  <aside class="uright">
+    <h3>Big Ideas</h3>
+    <ul class="bigideas"><li><b>Scarcity forces choices.</b> Limited resources and unlimited wants mean no person or society can have everything.</li><li><b>Every choice has an opportunity cost.</b> The real price of a decision is the next-best option you give up.</li><li><b>Societies answer the three basic questions in different ways.</b> Custom, central planning, markets, or a mix: the system shapes freedom and living standards.</li><li><b>Property rights, prices, and profits steer resources.</b> They give people information and reasons to conserve, improve, and produce.</li></ul>
+    <h3>Essential Questions</h3>
+    <ol class="eq"><li>Why does scarcity force every person, business, and society to make choices, and how can we measure what a choice costs?<small>Chapter 1</small></li><li>How do traditional, command, market, and mixed economies answer the three basic economic questions differently?<small>Chapter 2</small></li><li>How do property rights and incentives encourage people to conserve and improve scarce resources?<small>Chapters 2 and 3</small></li><li>How do prices, profits, and losses direct resources in a free enterprise system?<small>Chapter 3</small></li><li>What role should government play in a market economy, and where do Americans disagree?<small>Chapters 2 and 3</small></li></ol>
+    <h3>Why This Unit Matters</h3>
+    <div class="why"><p><b>Imagine this.</b> Your cousin Marisol has saved $9,000 and wants to open a taco truck near a Shafter packing house at shift change. She cannot afford a truck, a permit, ingredients, and a part-time helper all at once, so she must choose (scarcity). Every dollar spent on a bigger grill is a dollar not spent on advertising (opportunity cost). She has to check whether the city will let her park there, who owns the lot, and what the health department requires (property rights and government). She will set her prices by watching what nearby trucks charge and what workers will pay (prices as signals), and if the tacos sell, a rival truck will probably appear (competition).</p><p>In one weekend, Marisol meets nearly every idea in this unit. This unit gives you the vocabulary to describe what she is deciding, and the reasoning to decide what you would do in her place. <i>(This scenario is hypothetical and was written for the textbook.)</i></p></div>
+  </aside>
+</div>
+<div class="runfoot"><span>UNIT 1 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</div>
+
+<!-- ===================== PAGE 2: UNIT AT A GLANCE ===================== -->
+<section class="upage" id="p2">
+<div class="pagehead"><div class="sec-banner"><div class="num"><small>PAGE</small><b>2</b></div><h2>Unit at a Glance</h2><div class="icon"><svg viewBox="0 0 160 120" width="150" aria-hidden="true"><rect x="30" y="18" width="46" height="84" rx="5" fill="none" stroke="#ffd58a" stroke-width="5"/><rect x="84" y="18" width="46" height="84" rx="5" fill="none" stroke="#cfe6ea" stroke-width="5"/><path d="M40 40h26M40 56h26M94 40h26M94 56h26" stroke="#cfe6ea" stroke-width="4" stroke-linecap="round"/></svg></div></div></div>
+<div class="intro"><p class="kicker" id="chapters">Three Chapters, One Story</p><p>Each chapter card below shows what the chapter covers, its sections, its Case Study, and a sample of its key terms. Use the button on each card to open the chapter. Read the chapters in order, because each one builds on the last.</p></div>
+<article class="chcard" id="ch1">
+  <div class="chh"><div class="cn"><small>CHAPTER</small><b>1</b></div><h3>The Economic Way of Thinking</h3><a class="readbtn" href="Chapter%201%20-%20The%20Economic%20Way%20of%20Thinking/Chapter-1-The-Economic-Way-of-Thinking.html">Read Chapter 1 &rarr;</a></div>
+  <div class="chb">
+    <p>Chapter 1 builds the toolkit for the whole course. It starts with scarcity, the fact that wants are unlimited while resources are limited, and shows why every person, business, and society must choose. You then learn to measure the cost of a choice with opportunity cost, to weigh incentives and marginal benefits and costs, and to use models such as the production possibilities curve, along with statistics, tables, and graphs, to study the economy.</p>
+    <div class="cols3">
+      <div><h4>SECTIONS</h4><ol><li>Scarcity: The Basic Economic Problem</li><li>Economic Choices: Incentives and Opportunity Cost</li><li>Analyzing Production Possibilities</li><li>The Economist&#x27;s Toolbox</li></ol></div>
+      <div><div class="case"><small>CASE STUDY</small>The Real Cost of Water in Kern County</div><h4>YOU WILL BE ABLE TO</h4><ul><li>Explain why scarcity forces every person and society to choose.</li><li>Calculate and describe the opportunity cost of a decision.</li><li>Read a production possibilities curve and explain what it shows.</li></ul></div>
+      <div><h4>KEY TERMS SAMPLE</h4><div class="chips"><span>scarcity</span><span>factors of production</span><span>incentive</span><span>opportunity cost</span><span>marginal benefit</span><span>production possibilities curve</span><span>economic growth</span><span>positive economics</span></div></div>
+    </div>
+  </div>
+</article>
+<article class="chcard" id="ch2">
+  <div class="chh"><div class="cn"><small>CHAPTER</small><b>2</b></div><h3>Economic Systems</h3><a class="readbtn" href="Chapter%202%20-%20Economic%20Systems/Chapter-2-Economic-Systems.html">Read Chapter 2 &rarr;</a></div>
+  <div class="chb">
+    <p>Chapter 2 asks how whole societies answer the three basic economic questions. You compare traditional, command, market, and mixed economies, study how central planning works and where it struggles, and learn the features of a market economy, including private property rights, voluntary exchange, profit, and competition. The chapter ends with the global economy and with a case study of two Koreas that took opposite paths.</p>
+    <div class="cols3">
+      <div><h4>SECTIONS</h4><ol><li>Types of Economic Systems</li><li>Command Economies</li><li>Market Economies</li><li>Mixed Economies in a Global Age</li></ol></div>
+      <div><div class="case"><small>CASE STUDY</small>One Peninsula, Two Economies: North Korea and South Korea</div><h4>YOU WILL BE ABLE TO</h4><ul><li>Compare how four kinds of economic systems answer the three questions.</li><li>Describe how property rights give people a reason to conserve and improve resources.</li><li>Use evidence to judge how well different systems serve liberty and living standards.</li></ul></div>
+      <div><h4>KEY TERMS SAMPLE</h4><div class="chips"><span>economic system</span><span>command economy</span><span>market economy</span><span>private property rights</span><span>voluntary exchange</span><span>mixed economy</span><span>globalization</span><span>standard of living</span></div></div>
+    </div>
+  </div>
+</article>
+<article class="chcard" id="ch3">
+  <div class="chh"><div class="cn"><small>CHAPTER</small><b>3</b></div><h3>The American Free Enterprise System</h3><a class="readbtn" href="Chapter%203%20-%20The%20American%20Free%20Enterprise%20System/Chapter-3-The-American-Free-Enterprise-System.html">Read Chapter 3 &rarr;</a></div>
+  <div class="chb">
+    <p>Chapter 3 zooms in on the economy you live in. You study the four economic freedoms and the role of competition and entrepreneurs, then see how property rights create incentives and how shared resources can be overused. You follow prices, profits, and losses as signals that steer resources, and you finish by examining the government&#x27;s role in what the United States calls a modified free enterprise system.</p>
+    <div class="cols3">
+      <div><h4>SECTIONS</h4><ol><li>Advantages of the Free Enterprise System</li><li>Property Rights and Incentives</li><li>How Free Enterprise Allocates Resources</li><li>Government and Free Enterprise</li></ol></div>
+      <div><div class="case"><small>CASE STUDY</small>The United States: Land of Entrepreneurs</div><h4>YOU WILL BE ABLE TO</h4><ul><li>Name the four economic freedoms and explain how competition protects consumers.</li><li>Explain how prices, profits, and losses direct resources to their best uses.</li><li>Describe what government does in a modified free enterprise system and where Americans disagree.</li></ul></div>
+      <div><h4>KEY TERMS SAMPLE</h4><div class="chips"><span>free enterprise system</span><span>entrepreneur</span><span>profit motive</span><span>tragedy of the commons</span><span>price signal</span><span>public good</span><span>externality</span><span>safety net</span></div></div>
+    </div>
+  </div>
+</article>
+<div class="u-wrap">
+  <h3 class="kc">Making Connections</h3>
+  <h3 class="head">How the Chapters Fit Together</h3>
+  <p><b>From Chapter 1 to Chapter 2.</b> Chapter 1 introduces the three basic economic questions: what to produce, how to produce it, and for whom. Chapter 2 asks who answers them. The production possibilities curve you learn in Chapter 1 is also a useful picture of the choice every economic system faces, because each system decides where on the curve to operate and whether to grow.</p>
+  <p><b>From Chapter 2 to Chapter 3.</b> Chapter 2 introduces the features of a market economy, including private property rights, voluntary exchange, profit, and competition, and ends by showing that every real economy is mixed. Chapter 3 takes those features one at a time in the American setting, and adds the pieces that Chapter 2 only previews: prices as signals, profits and losses as incentives to enter or leave a market, and the government’s part in a modified free enterprise system.</p>
+  <p><b>Across all three chapters.</b> Three ideas return again and again. Incentives explain why people act as they do. Trade-offs mean that every benefit has a cost. And evidence, in the form of data, documents, and photographs, is how economists test their claims. Each Case Study asks you to bring those ideas together: water in Kern County, the two Koreas, and American entrepreneurs.</p>
+</div>
+<div class="u-wrap" id="standards">
+  <h3 class="kc">California Content Standards</h3>
+  <h3 class="head">Where the Standards Are Taught</h3>
+  <p>This unit addresses the following California History–Social Science Content Standards for Principles of Economics, Grade 12. The wording below was checked against the California Department of Education’s standards database. The shaded rows are the overarching standards under which the numbered standards fall.</p>
+  <table class="std"><thead><tr><th>Code</th><th>Standard</th><th>Where it is taught</th></tr></thead><tbody><tr class="over"><td><code>HSS-PoE.12.1</code></td><td>Students understand common economic terms and concepts and economic reasoning.</td><td>Ch. 1 (all sections); Ch. 2 Section 1; Ch. 3 Sections 1 to 4</td></tr><tr><td><code>12.1.1</code></td><td>Examine the causal relationship between scarcity and the need for choices.</td><td>Ch. 1 Sections 1 and 3; Ch. 2 Section 1; Ch. 3 Section 3</td></tr><tr><td><code>12.1.2</code></td><td>Explain opportunity cost and marginal benefit and marginal cost.</td><td>Ch. 1 Sections 2 and 3</td></tr><tr><td><code>12.1.3</code></td><td>Identify the difference between monetary and nonmonetary incentives and how changes in incentives cause changes in behavior.</td><td>Ch. 1 Section 2</td></tr><tr><td><code>12.1.4</code></td><td>Evaluate the role of private property as an incentive in conserving and improving scarce resources, including renewable and nonrenewable natural resources.</td><td>Ch. 1 Case Study (introduced); Ch. 2 Sections 3 and 4 and Case Study; Ch. 3 Sections 2 and 4 and Case Study</td></tr><tr><td><code>12.1.5</code></td><td>Analyze the role of a market economy in establishing and preserving political and personal liberty (e.g., through the works of Adam Smith).</td><td>Ch. 2 Sections 2, 3, 4 and Case Study; Ch. 3 Sections 1 and 4 and Case Study</td></tr><tr class="over"><td><code>HSS-PoE.12.2</code></td><td>Students analyze the elements of America’s market economy in a global setting.</td><td>Ch. 3 (opening standard for the American market economy)</td></tr><tr><td><code>12.2.1</code></td><td>Understand the relationship of the concept of incentives to the law of supply and the relationship of the concept of incentives and substitutes to the law of demand.</td><td>Ch. 3 Sections 2 and 3 (previewed; developed in Chapters 4 and 5)</td></tr><tr><td><code>12.2.3</code></td><td>Explain the roles of property rights, competition, and profit in a market economy.</td><td>Ch. 2 Section 3 (previewed); Ch. 3 Sections 1, 2, and 3</td></tr></tbody></table>
+  <div class="standards" style="margin-top:6px">
+    <div class="stdbox" style="grid-column:1/-1"><h4>ALSO SUPPORTS</h4><ul><li><code>RH.11-12.7</code> Integrate and evaluate multiple sources of information presented in diverse formats (visual, quantitative, and written) to address a question or solve a problem. <i>(Ch. 1 Section 4 and Case Study; Ch. 2 Sections 2 and 4 and Case Study; Ch. 3 Sections 1, 3, 4 and Case Study)</i></li></ul></div>
+  </div>
+</div>
+<div class="runfoot"><span>UNIT 1 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+
+<!-- ===================== PAGE 3: CONNECT AND PREPARE ===================== -->
+<section class="upage" id="p3">
+<div class="pagehead"><div class="sec-banner"><div class="num"><small>PAGE</small><b>3</b></div><h2>Connect and Prepare</h2><div class="icon"><svg viewBox="0 0 160 120" width="150" aria-hidden="true"><rect x="40" y="14" width="80" height="96" rx="8" fill="none" stroke="#ffd58a" stroke-width="5"/><path d="M56 40 l8 8 l14 -16 M56 70 l8 8 l14 -16" stroke="#cfe6ea" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M88 44 h20 M88 74 h20" stroke="#cfe6ea" stroke-width="5" stroke-linecap="round"/></svg></div></div></div>
+<div class="u-wrap">
+  <h3 class="kc" id="terms">Key Terms Preview</h3>
+  <h3 class="head">Sixteen Words to Know</h3>
+  <p>These terms appear throughout the unit. Each is defined in plain English as the chapters define it, with the Spanish equivalent. You will meet each one again, highlighted, in its chapter.</p>
+  <div class="termgrid"><div class="tcard"><span class="tch">CH. 1</span><b>scarcity</b><br>The condition that exists because wants are unlimited and resources are limited.<span class="sp">Spanish: escasez</span></div><div class="tcard"><span class="tch">CH. 1</span><b>factors of production</b><br>The resources needed to produce goods and services: land, labor, capital, and entrepreneurship.<span class="sp">Spanish: factores de producción</span></div><div class="tcard"><span class="tch">CH. 1</span><b>incentive</b><br>A benefit offered to encourage people to act in a certain way, or a cost imposed to discourage them.<span class="sp">Spanish: incentivo</span></div><div class="tcard"><span class="tch">CH. 1</span><b>opportunity cost</b><br>The value of the next-best alternative given up when a choice is made.<span class="sp">Spanish: costo de oportunidad</span></div><div class="tcard"><span class="tch">CH. 1</span><b>production possibilities curve</b><br>A graph that shows all the combinations of two goods that can be produced with a fixed amount of resources and technology.<span class="sp">Spanish: curva de posibilidades de producción</span></div><div class="tcard"><span class="tch">CH. 2</span><b>economic system</b><br>The organized way a society uses its scarce resources to answer the three basic economic questions.<span class="sp">Spanish: sistema económico</span></div><div class="tcard"><span class="tch">CH. 2</span><b>command economy</b><br>A system in which a central authority, usually the government, answers the three basic questions.<span class="sp">Spanish: economía dirigida</span></div><div class="tcard"><span class="tch">CH. 2</span><b>market economy</b><br>A system in which individual buyers and sellers, trading voluntarily, answer the three basic questions.<span class="sp">Spanish: economía de mercado</span></div><div class="tcard"><span class="tch">CH. 2</span><b>mixed economy</b><br>An economic system that combines private decisions by individuals and businesses with decisions made by government.<span class="sp">Spanish: economía mixta</span></div><div class="tcard"><span class="tch">CH. 2</span><b>private property rights</b><br>The rights of people and businesses to own, use, and sell resources and what they produce.<span class="sp">Spanish: derechos de propiedad privada</span></div><div class="tcard"><span class="tch">CH. 2</span><b>voluntary exchange</b><br>A trade in which both parties freely agree, each expecting to gain.<span class="sp">Spanish: intercambio voluntario</span></div><div class="tcard"><span class="tch">CH. 3</span><b>entrepreneur</b><br>A person who organizes resources to produce goods or services and takes the risk of profit or loss.<span class="sp">Spanish: empresario</span></div><div class="tcard"><span class="tch">CH. 3</span><b>tragedy of the commons</b><br>The overuse of a shared resource that nobody owns, because each user gains the full benefit while the costs are spread among all users.<span class="sp">Spanish: tragedia de los comunes</span></div><div class="tcard"><span class="tch">CH. 3</span><b>price signal</b><br>The information that a price gives buyers and sellers about how scarce a good is.<span class="sp">Spanish: señal de precio</span></div><div class="tcard"><span class="tch">CH. 3</span><b>externality</b><br>A cost or benefit of a transaction that falls on someone who is not a party to it.<span class="sp">Spanish: externalidad</span></div><div class="tcard"><span class="tch">CH. 3</span><b>public good</b><br>A good that is non-excludable and non-rival: no one can be kept from using it, and one person’s use does not reduce what is available to others.<span class="sp">Spanish: bien público</span></div></div>
+
+  <h3 class="kc" id="skills">Skills You Will Practice</h3>
+  <h3 class="head">Tools for Thinking Like an Economist</h3>
+  <div class="skills"><div><b>Reading graphs and models</b>Interpret a production possibilities curve, a marginal benefit and marginal cost graph, and a circular flow model, and explain what a point or a shift shows (Chapters 1 to 3).</div><div><b>Reading data tables and charts</b>Use bar charts, line charts, and the “View data table” option on real data, such as California farm commodities, new business applications, and world exports as a share of world output, and always check the source line (Chapters 1 to 3).</div><div><b>Calculating opportunity cost</b>Compare alternatives in a decision-making grid and find the value of the next-best option given up (Chapter 1).</div><div><b>Thinking at the margin</b>Compare the extra benefit and extra cost of one more unit to decide whether to do a little more or a little less (Chapter 1).</div><div><b>Separating positive and normative statements</b>Tell testable statements of fact from value judgments about what should be done, which matters in the debate over government’s role (Chapters 1 to 3).</div><div><b>Comparing systems with evidence</b>Use a range of economic systems, freedom scores, and living-standard data to compare economies, including North Korea and South Korea (Chapter 2).</div><div><b>Integrating multiple sources</b>Combine documents, data, and photographs in each Case Study to answer a question, and explain how the sources support or counter each other (Case Studies; RH.11-12.7).</div><div><b>Evaluating Counter-Arguments</b>Build a claim, state the strongest Counter-Argument, and explain which one the evidence supports (Case Studies and Chapter 3 Section 4).</div></div>
+
+  <h3 class="kc">Connecting Across the Course</h3>
+  <h3 class="head">Look Back and Look Ahead</h3>
+  <div class="lookbox">
+    <div class="back"><h4>LOOK BACK</h4>
+      <p>You already use the ideas in this unit. Every time you chose between working a shift and studying, or between saving and spending, you faced scarcity and paid an opportunity cost. If you have studied United States history, you have also seen economic systems in action: how people in the United States organized farming, factories, and trade, and how the Cold War divided the world between market economies and planned economies. Chapter 2 reconnects with that story through the division of Korea in 1945.</p>
+      <p>Think back to a time you set a price, bought something because it was on sale, or started a small business such as selling snacks or mowing lawns. You were already taking part in the system you are about to study.</p></div>
+    <div class="ahead"><h4>LOOK AHEAD</h4>
+      <p><b>Unit 2, Microeconomics</b>, opens with Chapter 4, Demand, and Chapter 5, Supply. Chapter 3 introduced prices as signals and substitutes; Unit 2 shows exactly how buyers and sellers respond to price, then turns to Demand, Supply, and Prices (Chapter 6), Market Structures (Chapter 7), Types of Business Organizations (Chapter 8), and The Role of Labor (Chapter 9).</p>
+      <p>Later units return to the questions raised here. Unit 4 measures the whole economy, including GDP in Chapter 16, and Unit 5 examines how government raises and spends money, the debate you meet at the end of Chapter 3.</p></div>
+  </div>
+
+  <h3 class="kc">Study Strategies</h3>
+  <h3 class="head">Getting the Most From This Unit</h3>
+  <p>Read each section before you begin its assessment in the Assignment packet. Start with the Objectives and Key Terms at the top of the section, then read the margin notes beside the text, because they define terms and give Spanish equivalents. When you reach a figure, read the title and the source line first, then answer the Analyze questions. Finally, bring a question to class from each Case Study, since each one asks you to weigh evidence and consider a Counter-Argument before you decide.</p>
+  <h3 class="kc" id="guide">Before You Read</h3>
+  <h3 class="head">Anticipation Guide</h3>
+  <div class="seatnote"><b>DO THIS FROM YOUR SEAT</b>1. Read each statement and circle <b style="display:inline;letter-spacing:0;font-family:inherit;color:inherit">A</b> (agree) or <b style="display:inline;letter-spacing:0;font-family:inherit;color:inherit">D</b> (disagree) in the <i>Before You Read</i> column. Go with your first thought; there are no wrong answers yet. 2. Turn to your seat partner and compare. Pick one statement where you disagreed and give each other one reason. 3. When you finish the unit, circle A or D again in the <i>After You Read</i> column and write the chapter and section that changed or confirmed your thinking.</div>
+  <table class="ag"><thead><tr><th>#</th><th>Statement</th><th>BEFORE YOU READ<br>(circle A or D)</th><th>AFTER YOU READ<br>(circle A or D)</th><th>Evidence: chapter and section</th></tr></thead><tbody><tr><td class="n">1</td><td>Scarcity affects only people and countries that are poor.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">2</td><td>The opportunity cost of a choice is the value of the next-best alternative you give up.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">3</td><td>A production possibilities curve shows that producing more of one good means producing less of another when resources are fixed.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">4</td><td>In a command economy, buyers and sellers trading freely decide what is produced.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">5</td><td>Every real economy today is a mixed economy, with both private choices and government decisions.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">6</td><td>If nobody owns a resource, people have a stronger reason to take care of it.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">7</td><td>In a free enterprise system, prices and profits tell producers what consumers want.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">8</td><td>The United States has a free enterprise system, so government plays no role in the economy.</td><td class="ad"><i>A</i><i>D</i></td><td class="ad"><i>A</i><i>D</i></td><td class="after"><div class="ln"></div><div class="ln"></div></td></tr></tbody></table>
+  <p class="photocredit"><b>Photo credits:</b> Unit opener photograph: Robert Hale / Wikimedia Commons, CC BY-SA 2.0, shown cropped in the page layout. Standards wording: California Department of Education, History–Social Science Content Standards, Principles of Economics, Grade 12 (Reading for Literacy in History/Social Studies standard RH.11-12.7 is from the California Common Core State Standards for English Language Arts and Literacy in History/Social Studies).</p>
+</div>
+<div class="runfoot"><span>UNIT 1 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+</div>
+<script>
+(function(){var b=document.getElementById('bar');function u(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}window.addEventListener('scroll',u,{passive:true});u();})();
+</script>
+</body>
+</html>

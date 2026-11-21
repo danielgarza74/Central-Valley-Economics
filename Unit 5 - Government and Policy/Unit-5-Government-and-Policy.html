@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 5: Government and Policy | Unit Opener | Economics | Daniel Garza, M.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --ink:#1c2230; --ink-2:#4a5263; --ink-3:#6f7787;
+  --paper:#fbfaf6; --white:#ffffff;
+  --unit:#8a4b1f; --unit-dk:#3b2a1a; --unit-lt:#f6ece2; --unit-mid:#dcb796;
+  --amber:#2f6db5; --amber-lt:#e5eef9; --amber-dk:#1f4f87;
+  --coral:#c8553d; --coral-lt:#fbe9e4;
+  --sage:#4e7d4a; --sage-lt:#e8f1e5;
+  --violet:#5b4bb7; --violet-lt:#ecebfa;
+  --rule:#d9dde3; --grid:#e6e8ec;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --other:#9aa1ad;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Inter", "Segoe UI", Arial, sans-serif;
+  --cond:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e9e7e0;color:var(--ink);font-family:var(--serif);font-size:18.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:var(--unit)}
+.book{max-width:1180px;margin:0 auto;background:var(--paper);box-shadow:0 0 40px rgba(0,0,0,.08)}
+
+/* ---------- top navigation ---------- */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(59,42,26,.97);color:#fff;font-family:var(--sans);font-size:13px;display:flex;align-items:center;gap:6px;padding:0 18px;height:46px;overflow-x:auto;white-space:nowrap}
+.topnav .brand{font-family:var(--cond);font-weight:700;letter-spacing:.08em;font-size:16px;margin-right:14px;color:#bcd5f2}
+.topnav a{color:#f6ece2;text-decoration:none;padding:6px 10px;border-radius:6px}
+.topnav a:hover{background:rgba(255,255,255,.12)}
+.progress{position:sticky;top:46px;z-index:49;height:4px;background:#e8d9c8}
+.progress span{display:block;height:100%;width:0;background:var(--amber)}
+
+/* ---------- chapter opener ---------- */
+.opener{position:relative;background:linear-gradient(160deg,var(--unit-dk) 0%,var(--unit) 70%);color:#fff;overflow:hidden}
+.opener-art{width:100%}
+.opener-head{position:absolute;left:0;right:0;top:0;padding:46px 56px 0;display:flex;gap:28px;align-items:flex-start}
+.chapnum{font-family:var(--cond);font-weight:800;font-size:170px;line-height:.78;color:#bcd5f2;text-shadow:0 4px 0 rgba(0,0,0,.18)}
+.chapword{font-family:var(--cond);letter-spacing:.32em;font-size:15px;font-weight:600;color:#bcd5f2;margin-bottom:4px}
+.unitline{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#f0dfd0;margin-bottom:10px}
+.opener h1{font-family:var(--cond);font-weight:700;font-size:72px;line-height:.95;margin:0;letter-spacing:.01em;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.opener-caption{background:var(--unit-dk);color:#f4e6d8;font-family:var(--sans);font-size:13.5px;line-height:1.5;padding:12px 56px}
+.opener-caption b{color:#bcd5f2}
+.opener-grid{display:grid;grid-template-columns:300px 1fr;background:var(--paper);color:var(--ink)}
+.sectionlist{background:var(--unit-lt);padding:30px 28px;border-right:1px solid var(--unit-mid)}
+.sectionlist h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:0 0 14px}
+.sectionlist a{display:block;text-decoration:none;color:var(--ink);padding:12px 0;border-bottom:1px solid var(--unit-mid)}
+.sectionlist a:last-child{border-bottom:0}
+.sectionlist .sl-tag{display:block;font-family:var(--cond);font-weight:700;font-size:14px;letter-spacing:.15em;color:var(--unit)}
+.sectionlist .sl-title{display:block;font-family:var(--sans);font-weight:600;font-size:16px;line-height:1.25}
+.sectionlist .cs .sl-tag{color:var(--coral)}
+.opener-main{padding:30px 44px 34px}
+.kicker{font-family:var(--cond);font-weight:700;letter-spacing:.2em;font-size:15px;color:var(--unit);margin:0 0 6px;text-transform:uppercase}
+.keyconcept{background:var(--white);border-left:6px solid var(--amber);padding:16px 20px;margin:12px 0 22px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.keyconcept .kicker{color:var(--amber-dk)}
+.keyconcept p{margin:0;font-size:20px;line-height:1.45}
+.standards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.stdbox{border:1px solid var(--rule);background:#fff;border-radius:10px;padding:14px 16px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.stdbox h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.12em;color:var(--unit)}
+.stdbox ul{margin:0;padding-left:0;list-style:none}
+.stdbox li{margin:0 0 7px}
+.stdbox code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12px}
+
+/* ---------- section openers ---------- */
+.section{padding:0 0 10px;scroll-margin-top:56px}
+.sec-banner{display:grid;grid-template-columns:130px 1fr 210px;align-items:stretch;background:var(--unit);color:#fff;min-height:150px}
+.sec-banner .num{background:var(--unit-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--cond)}
+.sec-banner .num small{letter-spacing:.3em;font-size:14px;color:#bcd5f2;font-weight:600}
+.sec-banner .num b{font-size:84px;line-height:.9;color:#bcd5f2}
+.sec-banner h2{font-family:var(--cond);font-size:50px;line-height:1;margin:0;padding:30px 30px;align-self:center;font-weight:700}
+.sec-banner .icon{display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(255,255,255,.06)}
+.sec-preview{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:0;border-bottom:3px solid var(--unit);background:#fff;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.sec-preview > div{padding:18px 22px;border-right:1px solid var(--rule)}
+.sec-preview > div:last-child{border-right:0}
+.sec-preview h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit)}
+.sec-preview ul{margin:0;padding-left:18px}
+.sec-preview li{margin-bottom:4px}
+.terms{columns:2;column-gap:16px;list-style:none;padding-left:0!important}
+.terms li{break-inside:avoid}
+.terms a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--unit)}
+.organizer svg{margin-top:8px}
+
+/* ---------- body text grid ---------- */
+.content{padding:8px 56px 10px}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 250px;column-gap:38px;align-items:start}
+.pair > .side{padding-top:22px}
+.wide{margin:26px 0}
+h3.kc{font-family:var(--cond);font-size:15px;letter-spacing:.22em;color:var(--amber-dk);margin:34px 0 0;text-transform:uppercase}
+h3.head{font-family:var(--cond);font-size:36px;line-height:1.05;color:var(--unit-dk);margin:4px 0 10px;font-weight:700}
+h4.sub{font-family:var(--sans);font-size:19px;color:var(--unit);margin:22px 0 4px;font-weight:700}
+p{margin:0 0 14px}
+.lead::first-letter{font-family:var(--cond);float:left;font-size:78px;line-height:.82;padding:6px 10px 0 0;color:var(--unit);font-weight:700}
+dfn,.kt{font-style:normal;font-weight:700;color:var(--unit-dk);background:linear-gradient(transparent 62%,#cfe0f5 62%)}
+.es{font-style:italic;color:var(--ink-3);font-size:.92em}
+
+/* margin notes */
+.qr{background:#fff;border-top:4px solid var(--unit);padding:12px 14px 12px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.qr .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--unit);margin-bottom:4px}
+.qr .term{font-weight:700;color:var(--unit-dk)}
+.qr .sp{display:block;margin-top:6px;color:var(--ink-3);font-size:12.5px}
+.fact{background:var(--amber-lt);border-top:4px solid var(--amber);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.fact .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);margin-bottom:4px}
+.fact .big{font-family:var(--cond);font-weight:800;font-size:40px;line-height:1;color:var(--amber-dk);display:block;margin:2px 0 4px}
+.math{background:var(--violet-lt);border-top:4px solid var(--violet);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.math .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--violet);margin-bottom:4px}
+.connect{background:var(--sage-lt);border-top:4px solid var(--sage);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.connect .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--sage);margin-bottom:4px}
+
+/* feature boxes */
+.box{border-radius:12px;margin:28px 0;overflow:hidden;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.box-h{display:flex;align-items:center;gap:12px;padding:12px 20px;color:#fff;font-family:var(--cond);font-size:21px;font-weight:700;letter-spacing:.06em}
+.box-h small{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.2em;opacity:.85;display:block}
+.box-b{padding:18px 22px 16px;font-size:17px}
+.box-b p:last-child{margin-bottom:0}
+.example .box-h{background:var(--unit)}
+.example{border:2px solid var(--unit)}
+.choices .box-h{background:var(--coral)}
+.choices{border:2px solid var(--coral)}
+.choices .opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.choices .opt{background:var(--coral-lt);border-radius:10px;padding:14px;font-size:16px}
+.choices .opt h5{margin:8px 0 4px;font-family:var(--sans);font-size:16px;color:var(--coral)}
+.choices .ask{margin-top:14px;font-family:var(--sans);font-weight:600;font-size:15px}
+.counter .box-h{background:var(--amber-dk)}
+.counter{border:2px solid var(--amber-dk)}
+.counter .opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.counter .opt{background:var(--amber-lt);border-radius:10px;padding:14px;font-size:16px}
+.counter .opt h5{margin:2px 0 6px;font-family:var(--sans);font-size:16px;color:var(--amber-dk)}
+.counter .ask{margin-top:14px;font-family:var(--sans);font-weight:600;font-size:15px}
+.global .box-h{background:var(--sage)}
+.global{border:2px solid var(--sage)}
+.app{border:2px dashed var(--amber);background:var(--amber-lt);box-shadow:none}
+.app .box-h{background:transparent;color:var(--amber-dk);padding-bottom:0}
+.app .box-b{font-family:var(--sans);font-size:15.5px}
+.skill .box-h{background:var(--violet)}
+.skill{border:2px solid var(--violet)}
+.skill ol{font-family:var(--sans);font-size:15.5px;padding-left:22px}
+.skill li{margin-bottom:6px}
+.thinking{border-left:6px solid var(--unit);background:var(--unit-lt);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0 22px;font-family:var(--sans);font-size:15px}
+.thinking b.t{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:14px;display:block}
+
+/* figures */
+figure{margin:28px 0;background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px 20px 14px}
+figure.bare{background:none;border:0;padding:0}
+.figlabel{font-family:var(--cond);font-weight:700;font-size:20px;letter-spacing:.05em;color:var(--unit-dk);margin:0 0 2px}
+.figlabel span{color:var(--amber-dk);margin-right:8px}
+.figsub{font-family:var(--sans);font-size:13.5px;color:var(--ink-2);margin:0 0 10px}
+figcaption,.source{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.45}
+.analyze{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px;font-family:var(--sans);font-size:14.5px}
+.analyze b{font-family:var(--cond);letter-spacing:.16em;color:var(--amber-dk);font-size:14px;margin-right:6px}
+.analyze ol{margin:4px 0 0;padding-left:20px}
+details.dt{margin-top:8px;font-family:var(--sans);font-size:13px}
+details.dt summary{cursor:pointer;color:var(--unit);font-weight:600}
+table.data{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;margin:8px 0}
+table.data th{background:var(--unit);color:#fff;text-align:left;padding:7px 10px;font-weight:600}
+table.data td{padding:7px 10px;border-bottom:1px solid var(--rule)}
+table.data tr:nth-child(even) td{background:#faf6f1}
+table.data td.num,table.data th.num{text-align:right;font-variant-numeric:tabular-nums}
+table.data tr.hl td{background:var(--amber-lt)!important;font-weight:600}
+.essentials{border:3px solid var(--unit);background:#fff}
+.essentials .es-head{background:var(--unit);color:#fff;margin:-18px -20px 16px;padding:10px 20px;font-family:var(--cond);font-size:22px;font-weight:700;letter-spacing:.06em;border-radius:9px 9px 0 0}
+.essentials .es-head small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;color:#bcd5f2}
+.fop{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fop > div{border-radius:10px;padding:12px;font-family:var(--sans);font-size:13.5px;line-height:1.4}
+.fop h5{font-family:var(--cond);font-size:22px;margin:6px 0 2px;letter-spacing:.04em}
+.fop .what{font-weight:600;margin-bottom:6px}
+.fop ul{margin:0;padding-left:16px}
+.questions3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.questions3 > div{background:var(--unit-lt);border-radius:10px;padding:14px;font-family:var(--sans);font-size:14px}
+.questions3 h5{margin:6px 0 4px;font-family:var(--cond);font-size:22px;color:var(--unit-dk)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.chart svg text{font-family:var(--sans)}
+svg .bar:hover,svg .pt:hover,svg .slice:hover{opacity:.82}
+
+/* pacesetter */
+.pacesetter{display:grid;grid-template-columns:240px 1fr;border:2px solid var(--unit-dk);border-radius:12px;overflow:hidden;margin:30px 0;background:#fff}
+.pacesetter .ps-side{background:var(--unit-dk);color:#f3e8dc;padding:18px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.pacesetter .ps-side h5{font-family:var(--cond);color:#bcd5f2;letter-spacing:.2em;font-size:15px;margin:12px 0 8px}
+.pacesetter .ps-side dt{font-weight:700;color:#bcd5f2;margin-top:8px}
+.pacesetter .ps-side dd{margin:0}
+.pacesetter .ps-main{padding:18px 24px}
+.pacesetter .ps-main .kicker{color:var(--amber-dk)}
+.pacesetter h4{font-family:var(--cond);font-size:34px;margin:0 0 10px;color:var(--unit-dk);line-height:1}
+.pacesetter h4 span{display:block;font-size:20px;color:var(--ink-2);font-weight:600}
+
+.ps-photo{margin:0 0 6px;padding:0;border:0;background:none;border-radius:0}
+.ps-photo img{width:100%;border-radius:8px;display:block}
+.ps-photo figcaption{color:#f0dfd0;font-size:12.5px;line-height:1.45;margin-top:8px}
+.ps-photo figcaption span{display:block;margin-top:4px;font-size:11px;color:#dcb796}
+.ps-photo figcaption a{color:#dcb796}
+.packet-note{display:flex;gap:16px;align-items:center;margin:32px 0 10px;padding:16px 20px;border:3px solid var(--unit);border-radius:14px;background:var(--unit-lt);font-family:var(--sans);font-size:15.5px;line-height:1.5}
+.packet-note svg{flex:none}
+.packet-note b{display:block;font-family:var(--cond);font-size:20px;letter-spacing:.1em;color:var(--unit-dk)}
+/* assessments */
+.assess{margin:34px 0 10px;border:3px solid var(--unit);border-radius:14px;overflow:hidden;background:#fff}
+.assess-h{background:var(--unit);color:#fff;padding:12px 22px;display:flex;align-items:baseline;gap:14px;font-family:var(--cond)}
+.assess-h b{font-size:28px;letter-spacing:.06em}
+.assess-h span{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:#bcd5f2}
+.assess-grid{display:grid;grid-template-columns:1fr 1fr;font-family:var(--sans);font-size:15px;line-height:1.5}
+.assess-grid > div{padding:16px 22px}
+.assess-grid > div:first-child{border-right:1px solid var(--rule)}
+.assess h5{font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit);margin:4px 0 8px}
+.assess ol{padding-left:22px;margin:0 0 10px}
+.assess li{margin-bottom:8px}
+.inpractice{background:var(--amber-lt);border-top:1px solid var(--rule);padding:16px 22px;font-family:var(--sans);font-size:15px}
+.inpractice h5{color:var(--amber-dk)}
+.inpractice table.data{background:#fff}
+.inpractice td.blank{color:#b0b5bd}
+
+/* case study */
+.case{background:#f3efe6;padding:0 0 20px}
+.case-banner{background:var(--coral);color:#fff;padding:34px 56px 28px;position:relative;overflow:hidden}
+.case-banner .kicker{color:#ffe3c2;letter-spacing:.3em}
+.case-banner h2{font-family:var(--cond);font-size:58px;margin:4px 0 6px;line-height:1}
+.case-banner p{font-family:var(--sans);font-size:15px;max-width:720px;margin:0;color:#fff3ee}
+.doc{background:#fff;border:1px solid #e0d7c6;border-radius:10px;margin:22px 0;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.doc-h{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid #eee4d3}
+.doc-h .letter{width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-family:var(--cond);font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;flex:none}
+.doc-h b{font-family:var(--cond);font-size:22px;color:var(--ink)}
+.doc-h small{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+.doc-b{padding:14px 20px;font-size:16.5px}
+.doc .think{background:var(--coral-lt);padding:10px 20px;font-family:var(--sans);font-size:14.5px;border-radius:0 0 10px 10px}
+.doc .think b{color:var(--coral)}
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.voice{background:#faf7f1;border-radius:10px;padding:14px;font-size:15.5px}
+.voice h6{margin:0 0 6px;font-family:var(--sans);font-size:14px;color:var(--coral)}
+
+/* chapter assessment */
+.chap-assess .sec-banner{background:var(--ink)}
+.chap-assess .sec-banner .num{background:#0f131c}
+.wordbank{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.wordbank span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:3px 12px;font-family:var(--sans);font-size:14px}
+.cloze{font-size:17.5px;line-height:1.9}
+.cloze .bl{display:inline-block;min-width:34px;border-bottom:2px solid var(--ink);text-align:center;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--unit)}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.summary-grid > div{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 16px;font-family:var(--sans);font-size:14.5px}
+.summary-grid h5{margin:0 0 6px;font-family:var(--cond);font-size:19px;color:var(--unit-dk)}
+.sim{border:3px solid var(--violet);border-radius:14px;background:#fff;overflow:hidden;margin:28px 0}
+.sim .box-h{background:var(--violet)}
+.sim .box-b{font-family:var(--sans);font-size:15.5px}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps li{counter-increment:st;position:relative;padding:0 0 10px 44px}
+.steps li::before{content:counter(st);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--violet);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.credits{font-family:var(--sans);font-size:13px;color:var(--ink-2);padding:22px 56px;background:#f1f0eb;border-top:1px solid var(--rule)}
+.credits h4{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:16px;margin:0 0 8px}
+.credits li{margin-bottom:4px}
+
+/* running footer */
+.runfoot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;background:var(--unit-dk);color:#efe3d6;font-family:var(--sans);font-size:11.5px;letter-spacing:.16em;font-weight:600;padding:10px 56px;margin-top:26px}
+.runfoot span:nth-child(2){color:#bcd5f2}
+.runfoot span:last-child{text-align:right}
+
+
+/* photos */
+figure.photo{padding:0;overflow:hidden;background:#fff}
+figure.photo img{width:100%;display:block;background:#e9e7e0}
+figure.photo .crop{position:relative;overflow:hidden;width:100%;background:#e9e7e0}
+.kl{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.2em;color:#fff;background:rgba(0,0,0,.6);padding:3px 12px;border-radius:3px;white-space:nowrap}.kn{top:12px}.ks{bottom:12px}
+figure.photo.sidefig{float:right;width:270px;margin:4px 0 14px 28px}
+.pair > .body{display:flow-root}
+figure.photo figcaption{margin:0;padding:10px 16px 12px;font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-2);border-top:4px solid var(--amber)}
+figure.photo .phlabel{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);text-transform:uppercase;margin-bottom:2px}
+figure.photo .credit{display:block;margin-top:5px;font-size:11.5px;color:var(--ink-3)}
+figure.photo .credit a{color:var(--ink-3)}
+.side figure.photo{margin:0 0 18px}
+.side figure.photo figcaption{font-size:12.5px;padding:8px 12px 10px}
+figure.photo.sidefig figcaption{font-size:12.5px;padding:8px 12px 10px}
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0}
+.photo-row figure.photo{margin:0}
+.opener-photo{position:relative;height:560px;overflow:hidden}
+.opener-photo img{width:100%;height:100%;object-fit:cover;object-position:center 70%;display:block}
+.opener-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(59,42,26,.78) 0%,rgba(59,42,26,.35) 45%,rgba(0,0,0,0) 70%)}
+.opener-head{z-index:2}
+.opener-caption .credit{display:block;font-size:11.5px;color:#dcb796;margin-top:4px}
+.opener-caption .credit a{color:#dcb796}
+@media (max-width:900px){.photo-row{grid-template-columns:1fr}.opener-photo{height:300px}}
+
+/* responsive */
+@media (max-width:900px){
+  body{font-size:17px}
+  .content{padding:8px 20px}
+  .pair{grid-template-columns:1fr}
+  figure.photo.sidefig{float:none;width:100%;max-width:380px;margin:12px auto}
+  .opener-head{position:static;padding:24px 20px 0;background:var(--unit-dk)}
+  .chapnum{font-size:110px}
+  .opener h1{font-size:48px}
+  .opener-grid,.sec-preview,.standards,.assess-grid,.two,.choices .opts,.counter .opts,.pacesetter,.voices,.summary-grid{grid-template-columns:1fr}
+  .fop,.questions3{grid-template-columns:1fr 1fr}
+  .sec-banner{grid-template-columns:90px 1fr}
+  .sec-banner .icon{display:none}
+  .sec-banner h2{font-size:34px;padding:20px}
+  .case-banner{padding:26px 20px}
+  .runfoot{padding:10px 20px;grid-template-columns:1fr;text-align:center}
+  .runfoot span:last-child{text-align:center}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .topnav,.progress{display:none}
+  .book{box-shadow:none}
+  .section,.case,.chap-assess{break-before:page}
+  figure,.box,.assess,.doc,.pacesetter{break-inside:avoid}
+  details.dt{display:none}
+}
+
+/* ---------- unit opener extras ---------- */
+.upage{scroll-margin-top:56px}
+.upage + .upage{border-top:10px solid var(--unit-dk)}
+.opener .chapword{font-size:17px}
+.opener-photo.hero{height:auto;aspect-ratio:1180/560}
+.opener-photo.hero img.heroimg{position:absolute;max-width:none;height:auto;object-fit:fill}
+.unit-tag{font-family:var(--sans);font-size:15.5px;line-height:1.45;color:#f6ece2;margin:12px 0 0;max-width:560px;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.u-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);background:var(--paper);color:var(--ink)}
+.u-main{padding:30px 44px 34px 56px}
+.u-side{background:var(--unit-lt);border-left:1px solid var(--unit-mid);padding:28px 28px 34px;font-family:var(--sans);font-size:15px;line-height:1.55}
+.u-side h3{font-family:var(--cond);font-size:22px;letter-spacing:.12em;color:var(--unit-dk);margin:0 0 10px}
+.u-main h2.ov{font-family:var(--cond);font-size:44px;line-height:1;color:var(--unit-dk);margin:0 0 14px}
+.bigideas{list-style:none;padding:0;margin:0 0 26px}
+.bigideas li{background:#fff;border-left:6px solid var(--amber);padding:10px 14px;margin:0 0 10px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.bigideas b{display:block;font-family:var(--cond);letter-spacing:.1em;font-size:17px;color:var(--amber-dk)}
+.eq{counter-reset:eq;list-style:none;padding:0;margin:0 0 26px}
+.eq li{counter-increment:eq;position:relative;padding:0 0 12px 40px}
+.eq li::before{content:counter(eq);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--unit);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.eq i{display:block;font-size:12.5px;color:var(--ink-3);font-style:normal;margin-top:2px}
+.why{background:#fff;border:2px solid var(--coral);border-radius:12px;overflow:hidden}
+.why .wh{background:var(--coral);color:#fff;font-family:var(--cond);font-size:20px;letter-spacing:.08em;padding:8px 16px}
+.why .wb{padding:12px 16px;font-size:14.5px}
+.why .wb p{margin:0 0 9px}
+.pgtitle{background:var(--unit);color:#fff;padding:26px 56px 22px;display:flex;align-items:baseline;gap:22px;flex-wrap:wrap}
+.pgtitle small{font-family:var(--cond);letter-spacing:.3em;font-size:15px;color:#bcd5f2;font-weight:600}
+.pgtitle h2{font-family:var(--cond);font-size:50px;line-height:1;margin:0}
+.pgbody{padding:26px 56px 8px}
+.chcards{display:grid;grid-template-columns:1fr;gap:18px}
+.chcard{display:grid;grid-template-columns:150px 1fr;border:2px solid var(--unit);border-radius:14px;overflow:hidden;background:#fff;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.chcard .cn{background:var(--unit-dk);color:#bcd5f2;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--cond);padding:10px}
+.chcard .cn small{letter-spacing:.3em;font-size:13px}
+.chcard .cn b{font-size:84px;line-height:.9}
+.chcard .cb{padding:16px 22px}
+.chcard h3{font-family:var(--cond);font-size:32px;line-height:1.05;margin:0 0 6px;color:var(--unit-dk)}
+.chcard h4{font-family:var(--cond);letter-spacing:.16em;font-size:14px;color:var(--unit);margin:10px 0 4px}
+.chcard ul{margin:0;padding-left:18px}
+.chcard .two3{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+.chcard .cs{color:var(--coral);font-weight:700}
+.tchips{display:flex;flex-wrap:wrap;gap:6px}
+.tchips span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:2px 11px;font-size:13px}
+.readbtn{display:inline-block;margin-top:12px;background:var(--amber);color:#fff!important;text-decoration:none;font-family:var(--cond);font-weight:700;letter-spacing:.12em;font-size:17px;padding:8px 20px;border-radius:8px}
+.readbtn:hover{background:var(--amber-dk)}
+table.std{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:13.5px;margin:10px 0 22px;line-height:1.45}
+table.std th{background:var(--unit);color:#fff;text-align:left;padding:8px 10px}
+table.std td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+table.std tr:nth-child(even) td{background:#faf6f1}
+table.std td.code{font-weight:700;color:var(--unit-dk);white-space:nowrap}
+.kt-table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:13.5px;line-height:1.45;margin:8px 0 20px}
+.kt-table th{background:var(--unit);color:#fff;text-align:left;padding:7px 10px}
+.kt-table td{padding:6px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+.kt-table tr:nth-child(even) td{background:#faf6f1}
+.kt-table td:first-child{font-weight:700;color:var(--unit-dk)}
+.kt-table .sp{color:var(--ink-3);font-style:italic}
+.kt-table .chn{white-space:nowrap;color:var(--amber-dk);font-weight:600}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0 24px;font-family:var(--sans);font-size:14px;line-height:1.5}
+.skills > div{background:#fff;border:1px solid var(--rule);border-top:4px solid var(--violet);border-radius:8px;padding:10px 14px}
+.skills b{font-family:var(--cond);font-size:18px;color:var(--unit-dk);display:block;margin-bottom:2px}
+.skills .where{color:var(--ink-3);font-size:12.5px;display:block;margin-top:3px}
+.lookgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:10px 0 26px;font-family:var(--sans);font-size:14.5px;line-height:1.55}
+.lookgrid > div{border-radius:12px;padding:14px 18px}
+.lookgrid .back{background:var(--sage-lt);border-top:5px solid var(--sage)}
+.lookgrid .ahead{background:var(--amber-lt);border-top:5px solid var(--amber)}
+.lookgrid h4{font-family:var(--cond);letter-spacing:.16em;font-size:17px;margin:0 0 6px}
+.lookgrid .back h4{color:var(--sage)} .lookgrid .ahead h4{color:var(--amber-dk)}
+.lookgrid ul{margin:0;padding-left:18px}.lookgrid li{margin-bottom:5px}
+table.guide{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14.5px;line-height:1.5;margin:10px 0 18px}
+table.guide th{background:var(--unit-dk);color:#fff;padding:8px 10px;text-align:left;font-size:13px;letter-spacing:.08em}
+table.guide td{border:1px solid var(--rule);padding:9px 10px;vertical-align:top;background:#fff}
+table.guide td.n{font-family:var(--cond);font-size:26px;font-weight:700;color:var(--unit);text-align:center;width:44px}
+table.guide td.ad{width:110px;text-align:center;font-weight:700;color:var(--unit-dk)}
+table.guide td.ad span{display:inline-block;width:30px;height:30px;line-height:27px;border:2px solid var(--unit);border-radius:50%;margin:2px 3px}
+table.guide td.after{width:32%}
+table.guide td.after .ln{border-bottom:1.5px solid #b9bfc9;height:22px;margin-bottom:4px}
+.seatnote{background:var(--violet-lt);border-left:6px solid var(--violet);border-radius:0 10px 10px 0;padding:12px 18px;font-family:var(--sans);font-size:14.5px;margin:12px 0 14px}
+.seatnote b{font-family:var(--cond);letter-spacing:.14em;color:var(--violet)}
+.photocred{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);padding:4px 56px 18px}
+@media (max-width:900px){.u-grid{grid-template-columns:1fr}.u-main{padding:24px 20px}.u-side{border-left:0}.pgtitle,.pgbody{padding-left:20px;padding-right:20px}.chcard{grid-template-columns:1fr}.chcard .cn{flex-direction:row;gap:12px}.chcard .cn b{font-size:54px}.chcard .two3,.skills,.lookgrid{grid-template-columns:1fr}.photocred{padding:4px 20px 16px}}
+@media print{.upage{break-before:page}.upage:first-of-type{break-before:auto}.chcard,.skills > div,.lookgrid > div{break-inside:avoid}}
+.k{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 18px;margin:12px 0;font-family:var(--sans);font-size:15px;line-height:1.55}
+.k .q{margin:0 0 6px;font-weight:700;color:var(--unit-dk)}
+.k .q .loc{display:inline-block;font-family:var(--cond);letter-spacing:.14em;font-size:14px;color:var(--amber-dk);text-transform:uppercase;margin-right:10px}
+.k .a{margin:0 0 4px}
+.k .ans{display:inline-block;font-family:var(--cond);letter-spacing:.12em;font-weight:700;font-size:16px;color:#fff;background:var(--sage);padding:1px 12px;border-radius:12px;margin-right:8px}
+.k .ans.dis{background:var(--coral)}
+</style>
+</head>
+<body>
+<div class="book">
+<nav class="topnav" aria-label="Unit sections">
+  <span class="brand">UNIT 5 · GOVERNMENT AND POLICY</span>
+  <a href="#p1">Page 1 · Unit Opener</a><a href="#overview">Overview</a><a href="#p2">Page 2 · At a Glance</a><a href="#standards">Standards</a><a href="#p3">Page 3 · Connect and Prepare</a><a href="#terms">Key Terms</a><a href="#guide">Anticipation Guide</a>
+</nav>
+<div class="progress"><span id="bar"></span></div>
+
+<section class="upage" id="p1">
+<header class="opener" id="opener">
+  <div class="opener-photo hero"><img class="heroimg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Friant-Kern%20Canal%20%28East%20Visalia%29.jpg?width=2400" alt="The Friant-Kern Canal running straight toward the horizon between orchards and a dirt service road, with low hills and a blue sky beyond." style="width:100.0%;left:0.0%;top:-47.98%"></div>
+  <div class="opener-head">
+    <div class="chapnum">5</div>
+    <div>
+      <div class="unitline">Economics · Chapters 18–20</div>
+      <div class="chapword">UNIT 5</div>
+      <h1>Government and<br>Policy</h1>
+      <p class="unit-tag">Governments collect, spend, and borrow, and a central bank steers the price of credit. Who decides, and at what cost to whom?</p>
+    </div>
+  </div>
+  <div class="opener-caption"><b>A canal that taxpayers built.</b> The Friant-Kern Canal, photographed east of Visalia in June 2010, is part of the federal Central Valley Project. Finished in 1951, it runs 152 miles from Friant Dam to the Kern River in Bakersfield and delivers water to about one million acres of Central Valley farmland. Public works like this are paid for with tax dollars and, at times, with borrowed money, and they raise a question this unit takes seriously: when is a government action worth its cost?<span class="credit">Photo: VISALIA2010 / <a href="https://commons.wikimedia.org/wiki/File:Friant-Kern_Canal_(East_Visalia).jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span></div>
+</header>
+<div class="u-grid" id="overview">
+<div class="u-main">
+  <p class="kicker">Unit Overview</p>
+  <h2 class="ov">The Big Picture</h2>
+  <p class="lead">Every family has to answer two questions: how will we pay for what we need, and what will we do if the money runs short? A government answers the same two questions on a vastly larger scale. Unit 5 follows that story across three chapters. Chapter 18 asks where government money comes from and where it goes. Chapter 19 asks whether taxing, spending, and borrowing can be used on purpose to steady the economy, and what the bill looks like afterward. Chapter 20 turns to a different institution altogether, the Federal Reserve, which does not tax or write a budget but still has great influence over the price of borrowing money. Together, the three chapters explain how government shapes the economy you will work in, pay taxes in, and borrow money in.</p>
+  <p>Start with the money. In Chapter 18 a part-time worker at a Shafter taquería opens a first paycheck and finds that Social Security and Medicare taxes have already been subtracted. You will learn how the federal government raised about $5.4 trillion in fiscal year 2026, with income taxes supplying about 53 percent and payroll taxes about 34 percent, and how it spent about $7.4 trillion, leaving a gap of nearly $2 trillion. You will compare tax types (progressive, regressive, and proportional) and learn why the person who writes the check to the government is not always the person who bears the burden. The same chapter brings the topic home: in spring and summer 2026 the sales tax rate was 7.25 percent in Shafter, 8.25 percent in Bakersfield, and 9.25 percent in McFarland, because cities and voters add their own taxes to the statewide base.</p>
+  <p>Chapter 19 puts the pieces to work. Economies swing through booms and recessions, and in a recession families in Kern County feel it directly: in August 2026 the county's unemployment rate was 8.4 percent, compared with 5.4 percent for California. Fiscal policy is the deliberate use of taxes and government spending to push the economy back toward steady growth. Economists disagree about how to do it. One tradition focuses on total demand and the spending multiplier, in which each dollar the government spends becomes income for someone who spends part of it again. Another focuses on supply and on incentives to work, save, and invest. Both approaches can require borrowing, and borrowing adds up. By November 2026 total public debt had passed $40 trillion, and the interest alone cost the federal government about $1.14 trillion in fiscal year 2026, more than it spent on the military.</p>
+  <p>Chapter 20 introduces the Fed, the nation's central bank. Congress gave it a dual mandate, to promote maximum employment and stable prices, and its main tool is a target for the federal funds rate, the rate banks charge one another for overnight loans. After its September 17, 2026, meeting, the Fed's committee set that target range at 3.75 to 4.00 percent and held it there on October 28. Those decisions ripple out to home loans, car loans, and the financing a farmer near Wasco needs for new equipment. Fiscal policy moves slowly because it must pass through Congress; monetary policy can change in a single meeting. Chapter 20 ends by asking what happens when the two work together, and when they pull in opposite directions.</p>
+  <div class="box counter">
+    <div class="box-h"><div><small>COUNTER-ARGUMENT</small>Should the government spend to fight a recession?</div></div>
+    <div class="box-b">
+      <div class="opts">
+        <div class="opt"><h5>The case for acting</h5>When families and businesses all cut back at once, total spending falls and jobs disappear. Supporters argue that government is the one buyer that can step in, that unemployment benefits and public projects put money into the hands of people who will spend it, and that waiting for the economy to heal itself can cost millions of people years of lost work.</div>
+        <div class="opt"><h5>The Counter-Argument</h5>Critics answer that government spending must be paid for by taxes or borrowing, which can discourage private spending and investment. They point out that laws take time to pass, so help can arrive after the recession is over, and that lower taxes and fewer rules may do more to encourage hiring than new programs.</div>
+      </div>
+      <p class="ask">As you read Chapter 19, decide which kind of evidence would best settle this disagreement.</p>
+    </div>
+  </div>
+  <div class="box counter">
+    <div class="box-h"><div><small>COUNTER-ARGUMENT</small>How worried should we be about the national debt?</div></div>
+    <div class="box-b">
+      <div class="opts">
+        <div class="opt"><h5>The case for concern</h5>Interest payments now take roughly one of every five federal revenue dollars, leaving less for schools, roads, or tax relief. Supporters of this view warn that high debt can push interest rates up, crowd out private investment, and leave less room to respond to the next emergency.</div>
+        <div class="opt"><h5>The Counter-Argument</h5>Others reply that a country that borrows in its own currency and has a large, growing economy can carry a large debt, that borrowing paid for useful investment can be worth its cost, and that cutting spending or raising taxes too quickly could itself harm the economy.</div>
+      </div>
+      <p class="ask">The Chapter 19 Case Study, <i>Is the Federal Deficit Too Large?</i>, asks you to weigh the data for yourself.</p>
+    </div>
+  </div>
+</div>
+<aside class="u-side">
+  <h3>BIG IDEAS</h3>
+  <ul class="bigideas">
+    <li><b>EVERY TAX AND EVERY PROGRAM HAS A COST</b>Governments pay for public goods and services with revenue, and citizens must weigh both benefits and costs (Ch. 18).</li>
+    <li><b>FISCAL POLICY STEERS WITH BUDGETS</b>Taxes, spending, and borrowing can be used to fight recessions or inflation, but they work with delays and side effects (Ch. 19).</li>
+    <li><b>MONETARY POLICY STEERS WITH CREDIT</b>The Fed influences interest rates and the money supply to pursue stable prices and high employment (Ch. 20).</li>
+    <li><b>REASONABLE PEOPLE DISAGREE, SO USE EVIDENCE</b>Economists debate the size of multipliers, the effect of tax cuts, and the danger of debt. Data and Counter-Arguments help settle what can be settled.</li>
+  </ul>
+  <h3>ESSENTIAL QUESTIONS</h3>
+  <ol class="eq">
+    <li>How do governments raise money, and who ultimately bears the burden of a tax?<i>Chapter 18</i></li>
+    <li>What does the federal government buy with its money, and how does it decide?<i>Chapter 18</i></li>
+    <li>Can taxing and spending steady the economy, and what do economists who disagree argue?<i>Chapter 19</i></li>
+    <li>What does it cost to run a deficit, and how large a problem is the national debt?<i>Chapter 19</i></li>
+    <li>How does the Federal Reserve move interest rates, and how do fiscal and monetary policy work together or at cross purposes?<i>Chapter 20</i></li>
+  </ol>
+  <div class="why">
+    <div class="wh">WHY THIS UNIT MATTERS</div>
+    <div class="wb">
+      <p><i>A hypothetical week for Marisol, a senior at Shafter High School.</i></p>
+      <p><b>Monday:</b> Her first taquería paycheck is smaller than she expected, and the stub lists taxes she cannot yet explain.</p>
+      <p><b>Wednesday:</b> The news says Congress is arguing over how much to borrow, while her uncle, who grows almonds near Wasco, wonders whether the interest rate on his equipment loan will rise.</p>
+      <p><b>Friday:</b> She hears that the Fed met this week and left rates unchanged. Her cousin wants to buy a used truck and asks whether to wait.</p>
+      <p style="margin:0">By the end of this unit, you will be able to explain each of these three moments and decide for yourself what policy would be best.</p>
+    </div>
+  </div>
+</aside>
+</div>
+<div class="runfoot"><span>UNIT 5 · UNIT OPENER · PAGE 1</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+
+<section class="upage" id="p2">
+<div class="pgtitle"><small>PAGE 2</small><h2>Unit at a Glance</h2></div>
+<div class="pgbody">
+<p style="font-size:17px">Unit 5 has three chapters and eleven sections. Each chapter ends in a Case Study that asks you to weigh evidence and Counter-Arguments on a real question. Use the cards below to preview each chapter, then follow the link to read it.</p>
+<div class="seatnote" style="background:var(--unit-lt);border-left-color:var(--unit)"><b style="color:var(--unit)">HOW THE CHAPTERS CONNECT.</b> <b>Chapter 18</b> explains the government&rsquo;s budget: the revenue it collects and the spending it chooses. <b>Chapter 19</b> uses that budget as a policy tool, asking when taxes, spending, and borrowing can steady the economy and what borrowing costs over time. <b>Chapter 20</b> adds the second tool, the Federal Reserve&rsquo;s control over interest rates and the money supply, and shows how the two tools work together. Read in order, each chapter gives you the vocabulary and data you need for the next one.</div>
+<div class="chcards"><div class="chcard" id="c18"><div class="cn"><small>CHAPTER</small><b>18</b></div><div class="cb">
+<h3>Government Revenue and Spending</h3><p style="margin:0 0 6px">Chapter 18 follows the money. You will learn how taxes work and who really bears them, compare the main federal taxes (income, payroll, corporate, excise, and tariffs), and see what the federal budget buys and how Congress decides. The chapter then moves to California and Kern County, where state and local taxes pay for schools and city services.</p>
+<div class="two3"><div><h4>SECTIONS</h4><ul style="list-style:none;padding-left:0"><li><b>Section 1.</b> How Taxes Work</li><li><b>Section 2.</b> Federal Taxes</li><li><b>Section 3.</b> Federal Government Spending</li><li><b>Section 4.</b> State and Local Taxes and Spending</li></ul></div>
+<div><h4>CASE STUDY</h4><p class="cs" style="margin:0 0 6px">Should Online Sales Be Taxed?</p><h4>ECONOMICS PACESETTER</h4><p style="margin:0">Alice Rivlin</p></div></div>
+<h4>KEY TERMS (SAMPLE)</h4><div class="tchips"><span>tax</span><span>tax base</span><span>progressive tax</span><span>regressive tax</span><span>incidence of a tax</span><span>withholding</span><span>tariff</span><span>mandatory spending</span><span>discretionary spending</span><span>fiscal year</span><span>balanced budget</span></div>
+<a class="readbtn" href="Chapter%2018%20-%20Government%20Revenue%20and%20Spending/Chapter-18-Government-Revenue-and-Spending.html">READ CHAPTER 18 &rarr;</a></div></div><div class="chcard" id="c19"><div class="cn"><small>CHAPTER</small><b>19</b></div><div class="cb">
+<h3>Using Fiscal Policy</h3><p style="margin:0 0 6px">Chapter 19 asks whether the government can use taxes and spending on purpose to smooth the business cycle. You will compare demand-side policies, which use the spending multiplier, with supply-side policies, which use incentives such as lower tax rates. You will then measure what the borrowing costs through deficits, the national debt, and interest payments.</p>
+<div class="two3"><div><h4>SECTIONS</h4><ul style="list-style:none;padding-left:0"><li><b>Section 1.</b> What Is Fiscal Policy?</li><li><b>Section 2.</b> Demand-Side and Supply-Side Policies</li><li><b>Section 3.</b> Deficits and the National Debt</li></ul></div>
+<div><h4>CASE STUDY</h4><p class="cs" style="margin:0 0 6px">Is the Federal Deficit Too Large?</p><h4>ECONOMICS PACESETTER</h4><p style="margin:0">John Maynard Keynes</p></div></div>
+<h4>KEY TERMS (SAMPLE)</h4><div class="tchips"><span>fiscal policy</span><span>expansionary fiscal policy</span><span>automatic stabilizers</span><span>spending multiplier effect</span><span>Laffer curve</span><span>budget deficit</span><span>national debt</span><span>Treasury bonds</span><span>crowding-out effect</span><span>debt limit</span></div>
+<a class="readbtn" href="Chapter%2019%20-%20Using%20Fiscal%20Policy/Chapter-19-Using-Fiscal-Policy.html">READ CHAPTER 19 &rarr;</a></div></div><div class="chcard" id="c20"><div class="cn"><small>CHAPTER</small><b>20</b></div><div class="cb">
+<h3>The Federal Reserve and Monetary Policy</h3><p style="margin:0 0 6px">Chapter 20 explains the Federal Reserve: how it is organized, how it keeps banking safe, and how it uses open market operations and the federal funds rate to fight inflation or support jobs. You will practice reading Fed decisions, and you will see how fiscal and monetary policy can reinforce or work against each other.</p>
+<div class="two3"><div><h4>SECTIONS</h4><ul style="list-style:none;padding-left:0"><li><b>Section 1.</b> The Federal Reserve System</li><li><b>Section 2.</b> Functions of the Federal Reserve</li><li><b>Section 3.</b> Monetary Policy</li><li><b>Section 4.</b> Applying Monetary and Fiscal Policy</li></ul></div>
+<div><h4>CASE STUDY</h4><p class="cs" style="margin:0 0 6px">Interpreting Signals from the Fed</p><h4>ECONOMICS PACESETTER</h4><p style="margin:0">Milton Friedman</p></div></div>
+<h4>KEY TERMS (SAMPLE)</h4><div class="tchips"><span>central bank</span><span>Board of Governors</span><span>dual mandate</span><span>reserve ratio</span><span>federal funds rate</span><span>open market operations</span><span>discount rate</span><span>expansionary monetary policy</span><span>stagflation</span><span>policy mix</span></div>
+<a class="readbtn" href="Chapter%2020%20-%20The%20Federal%20Reserve%20and%20Monetary%20Policy/Chapter-20-The-Federal-Reserve-and-Monetary-Policy.html">READ CHAPTER 20 &rarr;</a></div></div></div>
+<h3 class="kc" id="standards" style="margin-top:34px">California Content Standards</h3>
+<h3 class="head">What This Unit Covers</h3>
+<p style="font-family:var(--sans);font-size:14px;margin-bottom:6px">California History–Social Science Content Standards, Grade Twelve, Principles of Economics (HSS-PoE.12). Wording is quoted from the California Department of Education standards database.</p>
+<table class="std"><thead><tr><th>Code</th><th>Official wording</th><th>Where it is covered</th></tr></thead><tbody><tr><td class="code">HSS-PoE.12.3</td><td>Students analyze the influence of the federal government on the American economy.</td><td>The unit theme: Chapters 18, 19, and 20.</td></tr><tr><td class="code">12.3.1</td><td>Understand how the role of government in a market economy often includes providing for national defense, addressing environmental concerns, defining and enforcing property rights, attempting to make markets more competitive, and protecting consumers’ rights.</td><td>Ch. 18: Sections 1, 3, 4, Case Study.</td></tr><tr><td class="code">12.3.2</td><td>Identify the factors that may cause the costs of government actions to outweigh the benefits.</td><td>Ch. 18: Sections 1, 3, 4, Case Study. Ch. 19: Sections 1, 3, Case Study.</td></tr><tr><td class="code">12.3.3</td><td>Describe the aims of government fiscal policies (taxation, borrowing, spending) and their influence on production, employment, and price levels.</td><td>Ch. 19: Sections 1, 2, 3, Case Study (primary). Ch. 18: Sections 2, 3 (previewed). Ch. 20: Section 4.</td></tr><tr><td class="code">12.3.4</td><td>Understand the aims and tools of monetary policy and their influence on economic activity (e.g., the Federal Reserve).</td><td>Ch. 20: Sections 1, 2, 3, 4, Case Study.</td></tr></tbody></table>
+<h3 class="kc">Also Supports</h3>
+<table class="std"><thead><tr><th>Code</th><th>Official wording</th><th>Where it is covered</th></tr></thead><tbody><tr><td class="code">12.5.2</td><td>Define, calculate, and explain the significance of an unemployment rate, the number of new jobs created monthly, an inflation or deflation rate, and a rate of economic growth.</td><td>Ch. 19: Section 1 (Figures 19.2–19.4). Ch. 20: Sections 3, 4.</td></tr><tr><td class="code">12.5.3</td><td>Distinguish between short-term and long-term interest rates and explain their relative significance.</td><td>Ch. 19: Section 3. Ch. 20: Sections 3, 4, Case Study.</td></tr><tr><td class="code">12.2.3</td><td>Explain the roles of property rights, competition, and profit in a market economy.</td><td>Ch. 18: Section 4 (property tax).</td></tr><tr><td class="code">RH.11-12.7</td><td>Integrate and evaluate multiple sources of information presented in diverse formats and media (e.g., visually, quantitatively, as well as in words) in order to address a question or solve a problem.</td><td>All three chapters: figures and Case Studies.</td></tr></tbody></table>
+</div>
+<div class="runfoot"><span>UNIT 5 · UNIT OPENER · PAGE 2</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+
+<section class="upage" id="p3">
+<div class="pgtitle"><small>PAGE 3</small><h2>Connect and Prepare</h2></div>
+<div class="pgbody">
+<h3 class="kc" id="terms">Key Terms Preview</h3>
+<h3 class="head">Nineteen Words to Watch For</h3>
+<p style="font-family:var(--sans);font-size:14px">These terms appear across the unit. Definitions are the ones used in the chapters, shown with their Spanish equivalents. Each term is highlighted again where it is taught.</p>
+<table class="kt-table"><thead><tr><th>Term</th><th>Spanish</th><th>In plain English</th><th>Chapter</th></tr></thead><tbody>
+<tr><td>Tax</td><td class="sp">impuesto</td><td>Mandatory payment to a local, state, or national government.</td><td class="chn">Ch. 18</td></tr><tr><td>Progressive tax</td><td class="sp">impuesto progresivo</td><td>Takes a larger percentage of income as income rises.</td><td class="chn">Ch. 18</td></tr><tr><td>Regressive tax</td><td class="sp">impuesto regresivo</td><td>Takes a smaller percentage of income as income rises.</td><td class="chn">Ch. 18</td></tr><tr><td>Mandatory spending</td><td class="sp">gasto obligatorio</td><td>Spending required by existing law, such as Social Security and Medicare benefits.</td><td class="chn">Ch. 18</td></tr><tr><td>Discretionary spending</td><td class="sp">gasto discrecional</td><td>Spending that Congress sets each year through appropriations.</td><td class="chn">Ch. 18</td></tr><tr><td>Fiscal policy</td><td class="sp">política fiscal</td><td>Use of government taxes and spending to influence the economy.</td><td class="chn">Ch. 19</td></tr><tr><td>Expansionary fiscal policy</td><td class="sp">política fiscal expansiva</td><td>Increases total spending by raising government spending or cutting taxes.</td><td class="chn">Ch. 19</td></tr><tr><td>Automatic stabilizers</td><td class="sp">estabilizadores automáticos</td><td>Tax and spending rules that change government spending and taxes automatically as the economy changes.</td><td class="chn">Ch. 19</td></tr><tr><td>Spending multiplier effect</td><td class="sp">efecto multiplicador del gasto</td><td>Process in which an initial change in spending causes additional spending, so total output changes by more than the first amount.</td><td class="chn">Ch. 19</td></tr><tr><td>Supply-side fiscal policy</td><td class="sp">política fiscal de oferta</td><td>Uses tax cuts and other incentives to increase the economy's ability to produce goods and services.</td><td class="chn">Ch. 19</td></tr><tr><td>Budget deficit</td><td class="sp">déficit presupuestario</td><td>Amount by which government spending exceeds revenue in a year.</td><td class="chn">Ch. 19</td></tr><tr><td>National debt</td><td class="sp">deuda nacional</td><td>Total amount of money the federal government owes, the sum of past deficits less past surpluses.</td><td class="chn">Ch. 19</td></tr><tr><td>Crowding-out effect</td><td class="sp">efecto de desplazamiento</td><td>Reduction in private investment caused by higher interest rates when the government borrows.</td><td class="chn">Ch. 19</td></tr><tr><td>Central bank</td><td class="sp">banco central</td><td>Institution that serves a country's banks and government and conducts its monetary policy.</td><td class="chn">Ch. 20</td></tr><tr><td>Dual mandate</td><td class="sp">doble mandato</td><td>Pair of goals Congress set for the Fed: maximum employment and stable prices.</td><td class="chn">Ch. 20</td></tr><tr><td>Federal Open Market Committee</td><td class="sp">Comité Federal de Mercado Abierto</td><td>Twelve-member group in the Fed that decides monetary policy. It is often abbreviated FOMC.</td><td class="chn">Ch. 20</td></tr><tr><td>Federal funds rate</td><td class="sp">tasa de fondos federales</td><td>Interest rate that banks charge one another for overnight loans of reserves.</td><td class="chn">Ch. 20</td></tr><tr><td>Open market operations</td><td class="sp">operaciones de mercado abierto</td><td>Fed's purchases and sales of government securities in the open market.</td><td class="chn">Ch. 20</td></tr><tr><td>Contractionary monetary policy</td><td class="sp">política monetaria contractiva</td><td>Slows the growth of the money supply and raises interest rates to reduce spending and inflation.</td><td class="chn">Ch. 20</td></tr>
+</tbody></table>
+<h3 class="kc" id="skills">Skills You Will Practice</h3>
+<h3 class="head">Tools for Reading Government Data</h3>
+<div class="skills"><div><b>Reading budget data</b>Compare federal revenue, spending, and the deficit for two fiscal years, and read pie and bar charts of where the money comes from and goes.<span class="where">Ch. 18, Figures 18.5, 18.7, 18.9</span></div><div><b>Computing tax by bracket</b>Apply each rate only to the dollars in its bracket: ($12,400 × 0.10) + ($23,500 × 0.12) = $4,060 on $35,900 of taxable income.<span class="where">Ch. 18, Section 2 Math Handbook</span></div><div><b>Comparing tax burdens</b>Use a tax rate (tax ÷ amount taxed), burden shares, and shares of income versus shares of tax paid to judge who bears a tax.<span class="where">Ch. 18, Sections 1–2</span></div><div><b>Benefit-cost thinking</b>Divide total benefits by total costs and decide when the costs of a government action outweigh its benefits.<span class="where">Ch. 18, Math Handbook; Case Study</span></div><div><b>Growth rates and output gaps</b>Calculate (new − old) ÷ old × 100 and the output gap, (actual − potential) ÷ potential × 100.<span class="where">Ch. 19, Section 1, Figure 19.2</span></div><div><b>Multiplier arithmetic</b>Use multiplier = 1 ÷ (1 − MPC). With MPC = 0.75 the multiplier is 4, so $10 million of spending can raise total spending by up to $40 million.<span class="where">Ch. 19, Section 2, Figure 19.6</span></div><div><b>Testing the Laffer curve</b>Compute revenue = rate × income at different tax rates to see why a tax cut can lose or raise revenue.<span class="where">Ch. 19, Section 2, Figure 19.8</span></div><div><b>Debt, interest, and ratios</b>Compute debt-to-GDP, return on a Treasury bill ($200 ÷ $9,800 ≈ 2.04%), and read net interest as a share of revenue and GDP.<span class="where">Ch. 19, Section 3, Figures 19.12–19.14</span></div><div><b>Reading Fed policy decisions</b>Read a target range, a vote count, and statement wording; convert basis points to percentage points; compare the federal funds rate with inflation and unemployment.<span class="where">Ch. 20, Section 3, Figures 20.10, 20.16, Case Study</span></div><div><b>Deposit expansion</b>Use the deposit multiplier, 1 ÷ required reserve ratio, to trace how $1,000 of new reserves can become $10,000 of deposits at a 10 percent ratio.<span class="where">Ch. 20, Section 2, Figure 20.6</span></div><div><b>Short-term and long-term rates</b>Compare Treasury yields from 3 months to 30 years and explain why the two ends of the range can differ.<span class="where">Ch. 19, Section 3; Ch. 20, Section 3</span></div><div><b>Weighing Counter-Arguments</b>Read a claim, state the strongest Counter-Argument, and point to evidence that supports each side.<span class="where">All Case Studies</span></div></div>
+<div class="lookgrid">
+<div class="back"><h4>LOOK BACK · UNIT 4, MONEY AND THE MACROECONOMY</h4><ul>
+<li><b>Chapter 14, Money and Banking:</b> money serves as a medium of exchange, unit of account, and store of value, and banks create much of the money supply when they make loans. Chapter 20 shows how the Fed influences that process.</li>
+<li><b>Chapter 16, Economic Indicators and Measurements:</b> real GDP, unemployment, and inflation tell policymakers when to act. Chapters 19 and 20 use these same measures as warning lights.</li>
+<li><b>Chapter 17, Facing Economic Challenges:</b> unemployment, inflation, and poverty are the problems that fiscal and monetary policy try to ease.</li>
+<li><b>Chapter 15, Financial Markets:</b> savers and borrowers meet in markets, where the government also borrows by selling Treasury securities.</li></ul></div>
+<div class="ahead"><h4>LOOK AHEAD · UNIT 6, THE GLOBAL ECONOMY</h4><ul>
+<li><b>Chapter 21, International Trade:</b> tariffs raise revenue (about 3 percent of federal revenue in fiscal year 2026) but are also a tool of trade policy. Exchange rates and trade are also introduced here.</li>
+<li><b>Foreign lenders:</b> Chapter 19 shows that Japan, the United Kingdom, and China are among the largest foreign holders of U.S. Treasury securities. Government borrowing connects the United States to the world.</li>
+<li><b>Chapter 22, Issues of Economic Development:</b> many countries face the same questions about taxes, debt, and central banks, often with fewer resources.</li></ul></div>
+</div>
+<h3 class="kc" id="guide">Before You Read</h3>
+<h3 class="head">Anticipation Guide</h3>
+<div class="seatnote"><b>HOW IT WORKS (FROM YOUR SEAT).</b> 1) Read each statement and circle <b>A</b> (agree) or <b>D</b> (disagree) on your own. 2) Turn to your seat partner, compare any answers that differ, and take thirty seconds to defend yours. 3) After you finish the unit, return to this page and write what the chapters taught you in the <b>After You Read</b> column. Say whether you changed your mind and cite the chapter and section.</div>
+<table class="guide"><thead><tr><th>#</th><th>Statement</th><th>BEFORE<br>Circle one</th><th>AFTER YOU READ<br>What do the chapters say? Cite the section.</th></tr></thead><tbody>
+<tr><td class="n">1</td><td>The federal government spends more on national defense than on any other single category.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">2</td><td>If your income rises into a higher tax bracket, all of your income is taxed at the higher rate.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">3</td><td>The business that collects a sales tax always bears the whole burden of that tax.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">4</td><td>When the government spends one dollar on a project, total spending in the economy can rise by more than one dollar.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">5</td><td>Cutting tax rates always increases the total tax revenue the government collects.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">6</td><td>The budget deficit and the national debt are two names for the same thing.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">7</td><td>The Federal Reserve’s main tool for steering the economy is a target for the interest rate that banks charge one another for overnight loans.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr><tr><td class="n">8</td><td>When the Federal Reserve wants to fight inflation, it lowers interest rates to make borrowing cheaper.</td><td class="ad"><span>A</span><span>D</span></td><td class="after"><div class="ln"></div><div class="ln"></div><div class="ln"></div></td></tr>
+</tbody></table>
+<p style="font-family:var(--sans);font-size:13px;color:var(--ink-3);margin-top:16px"><b>Photo credits.</b> Unit opener: Friant-Kern Canal (East Visalia), June 13, 2010, by VISALIA2010 via Wikimedia Commons, licensed CC BY 3.0. Canal facts (152 miles, completed 1951, one million acres served) are from the U.S. Bureau of Reclamation Friant-Kern Canal fact sheet. Fiscal and monetary figures are those printed in Chapters 18–20 and current as of November 2026.</p>
+</div>
+<div class="runfoot"><span>UNIT 5 · UNIT OPENER · PAGE 3</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+</div>
+<script>
+(function(){var b=document.getElementById('bar');function u(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}window.addEventListener('scroll',u,{passive:true});u();})();
+</script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 6: The Global Economy | Unit Opener | Economics | Daniel Garza, M.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --ink:#1c2230; --ink-2:#4a5263; --ink-3:#6f7787;
+  --paper:#fbfaf6; --white:#ffffff;
+  --unit:#6a4c9c; --unit-dk:#3d2a5c; --unit-lt:#efe9f8; --unit-mid:#c3b3e0;
+  --amber:#e09f3e; --amber-lt:#fdf2de; --amber-dk:#965f12;
+  --coral:#c8553d; --coral-lt:#fbe9e4;
+  --sage:#4e7d4a; --sage-lt:#e8f1e5;
+  --violet:#5b4bb7; --violet-lt:#ecebfa;
+  --rule:#d9dde3; --grid:#e6e8ec;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --other:#9aa1ad;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Inter", "Segoe UI", Arial, sans-serif;
+  --cond:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e9e7e0;color:var(--ink);font-family:var(--serif);font-size:18.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:var(--unit)}
+.book{max-width:1180px;margin:0 auto;background:var(--paper);box-shadow:0 0 40px rgba(0,0,0,.08)}
+
+/* ---------- top navigation ---------- */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(61,42,92,.97);color:#fff;font-family:var(--sans);font-size:13px;display:flex;align-items:center;gap:6px;padding:0 18px;height:46px;overflow-x:auto;white-space:nowrap}
+.topnav .brand{font-family:var(--cond);font-weight:700;letter-spacing:.08em;font-size:16px;margin-right:14px;color:#f6d9a4}
+.topnav a{color:#f1ecfa;text-decoration:none;padding:6px 10px;border-radius:6px}
+.topnav a:hover{background:rgba(255,255,255,.12)}
+.progress{position:sticky;top:46px;z-index:49;height:4px;background:#dcd3ee}
+.progress span{display:block;height:100%;width:0;background:var(--amber)}
+
+/* ---------- chapter opener ---------- */
+.opener{position:relative;background:linear-gradient(160deg,var(--unit-dk) 0%,var(--unit) 70%);color:#fff;overflow:hidden}
+.opener-art{width:100%}
+.opener-head{position:absolute;left:0;right:0;top:0;padding:46px 56px 0;display:flex;gap:28px;align-items:flex-start}
+.chapnum{font-family:var(--cond);font-weight:800;font-size:170px;line-height:.78;color:#f6d9a4;text-shadow:0 4px 0 rgba(0,0,0,.18)}
+.chapword{font-family:var(--cond);letter-spacing:.32em;font-size:15px;font-weight:600;color:#f6d9a4;margin-bottom:4px}
+.unitline{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#e0d6f2;margin-bottom:10px}
+.opener h1{font-family:var(--cond);font-weight:700;font-size:72px;line-height:.95;margin:0;letter-spacing:.01em;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.opener-caption{background:var(--unit-dk);color:#e6def5;font-family:var(--sans);font-size:13.5px;line-height:1.5;padding:12px 56px}
+.opener-caption b{color:#f6d9a4}
+.opener-grid{display:grid;grid-template-columns:300px 1fr;background:var(--paper);color:var(--ink)}
+.sectionlist{background:var(--unit-lt);padding:30px 28px;border-right:1px solid var(--unit-mid)}
+.sectionlist h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:0 0 14px}
+.sectionlist a{display:block;text-decoration:none;color:var(--ink);padding:12px 0;border-bottom:1px solid var(--unit-mid)}
+.sectionlist a:last-child{border-bottom:0}
+.sectionlist .sl-tag{display:block;font-family:var(--cond);font-weight:700;font-size:14px;letter-spacing:.15em;color:var(--unit)}
+.sectionlist .sl-title{display:block;font-family:var(--sans);font-weight:600;font-size:16px;line-height:1.25}
+.sectionlist .cs .sl-tag{color:var(--coral)}
+.opener-main{padding:30px 44px 34px}
+.kicker{font-family:var(--cond);font-weight:700;letter-spacing:.2em;font-size:15px;color:var(--unit);margin:0 0 6px;text-transform:uppercase}
+.keyconcept{background:var(--white);border-left:6px solid var(--amber);padding:16px 20px;margin:12px 0 22px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.keyconcept .kicker{color:var(--amber-dk)}
+.keyconcept p{margin:0;font-size:20px;line-height:1.45}
+.standards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.stdbox{border:1px solid var(--rule);background:#fff;border-radius:10px;padding:14px 16px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.stdbox h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.12em;color:var(--unit)}
+.stdbox ul{margin:0;padding-left:0;list-style:none}
+.stdbox li{margin:0 0 7px}
+.stdbox code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12px}
+
+/* ---------- section openers ---------- */
+.section{padding:0 0 10px;scroll-margin-top:56px}
+.sec-banner{display:grid;grid-template-columns:130px 1fr 210px;align-items:stretch;background:var(--unit);color:#fff;min-height:150px}
+.sec-banner .num{background:var(--unit-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--cond)}
+.sec-banner .num small{letter-spacing:.3em;font-size:14px;color:#f6d9a4;font-weight:600}
+.sec-banner .num b{font-size:84px;line-height:.9;color:#f6d9a4}
+.sec-banner h2{font-family:var(--cond);font-size:50px;line-height:1;margin:0;padding:30px 30px;align-self:center;font-weight:700}
+.sec-banner .icon{display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(255,255,255,.06)}
+.sec-preview{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:0;border-bottom:3px solid var(--unit);background:#fff;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.sec-preview > div{padding:18px 22px;border-right:1px solid var(--rule)}
+.sec-preview > div:last-child{border-right:0}
+.sec-preview h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit)}
+.sec-preview ul{margin:0;padding-left:18px}
+.sec-preview li{margin-bottom:4px}
+.terms{columns:2;column-gap:16px;list-style:none;padding-left:0!important}
+.terms li{break-inside:avoid}
+.terms a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--unit)}
+.organizer svg{margin-top:8px}
+
+/* ---------- body text grid ---------- */
+.content{padding:8px 56px 10px}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 250px;column-gap:38px;align-items:start}
+.pair > .side{padding-top:22px}
+.wide{margin:26px 0}
+h3.kc{font-family:var(--cond);font-size:15px;letter-spacing:.22em;color:var(--amber-dk);margin:34px 0 0;text-transform:uppercase}
+h3.head{font-family:var(--cond);font-size:36px;line-height:1.05;color:var(--unit-dk);margin:4px 0 10px;font-weight:700}
+h4.sub{font-family:var(--sans);font-size:19px;color:var(--unit);margin:22px 0 4px;font-weight:700}
+p{margin:0 0 14px}
+.lead::first-letter{font-family:var(--cond);float:left;font-size:78px;line-height:.82;padding:6px 10px 0 0;color:var(--unit);font-weight:700}
+dfn,.kt{font-style:normal;font-weight:700;color:var(--unit-dk);background:linear-gradient(transparent 62%,#ffe4a8 62%)}
+.es{font-style:italic;color:var(--ink-3);font-size:.92em}
+
+/* margin notes */
+.qr{background:#fff;border-top:4px solid var(--unit);padding:12px 14px 12px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.qr .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--unit);margin-bottom:4px}
+.qr .term{font-weight:700;color:var(--unit-dk)}
+.qr .sp{display:block;margin-top:6px;color:var(--ink-3);font-size:12.5px}
+.fact{background:var(--amber-lt);border-top:4px solid var(--amber);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.fact .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);margin-bottom:4px}
+.fact .big{font-family:var(--cond);font-weight:800;font-size:40px;line-height:1;color:var(--amber-dk);display:block;margin:2px 0 4px}
+.math{background:var(--violet-lt);border-top:4px solid var(--violet);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.math .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--violet);margin-bottom:4px}
+.connect{background:var(--sage-lt);border-top:4px solid var(--sage);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.connect .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--sage);margin-bottom:4px}
+
+/* feature boxes */
+.box{border-radius:12px;margin:28px 0;overflow:hidden;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.box-h{display:flex;align-items:center;gap:12px;padding:12px 20px;color:#fff;font-family:var(--cond);font-size:21px;font-weight:700;letter-spacing:.06em}
+.box-h small{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.2em;opacity:.85;display:block}
+.box-b{padding:18px 22px 16px;font-size:17px}
+.box-b p:last-child{margin-bottom:0}
+.example .box-h{background:var(--unit)}
+.example{border:2px solid var(--unit)}
+.choices .box-h{background:var(--coral)}
+.choices{border:2px solid var(--coral)}
+.choices .opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.choices .opt{background:var(--coral-lt);border-radius:10px;padding:14px;font-size:16px}
+.choices .opt h5{margin:8px 0 4px;font-family:var(--sans);font-size:16px;color:var(--coral)}
+.choices .ask{margin-top:14px;font-family:var(--sans);font-weight:600;font-size:15px}
+.global .box-h{background:var(--sage)}
+.global{border:2px solid var(--sage)}
+.app{border:2px dashed var(--amber);background:var(--amber-lt);box-shadow:none}
+.app .box-h{background:transparent;color:var(--amber-dk);padding-bottom:0}
+.app .box-b{font-family:var(--sans);font-size:15.5px}
+.skill .box-h{background:var(--violet)}
+.skill{border:2px solid var(--violet)}
+.skill ol{font-family:var(--sans);font-size:15.5px;padding-left:22px}
+.skill li{margin-bottom:6px}
+.thinking{border-left:6px solid var(--unit);background:var(--unit-lt);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0 22px;font-family:var(--sans);font-size:15px}
+.thinking b.t{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:14px;display:block}
+
+/* figures */
+figure{margin:28px 0;background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px 20px 14px}
+figure.bare{background:none;border:0;padding:0}
+.figlabel{font-family:var(--cond);font-weight:700;font-size:20px;letter-spacing:.05em;color:var(--unit-dk);margin:0 0 2px}
+.figlabel span{color:var(--amber-dk);margin-right:8px}
+.figsub{font-family:var(--sans);font-size:13.5px;color:var(--ink-2);margin:0 0 10px}
+figcaption,.source{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.45}
+.analyze{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px;font-family:var(--sans);font-size:14.5px}
+.analyze b{font-family:var(--cond);letter-spacing:.16em;color:var(--amber-dk);font-size:14px;margin-right:6px}
+.analyze ol{margin:4px 0 0;padding-left:20px}
+details.dt{margin-top:8px;font-family:var(--sans);font-size:13px}
+details.dt summary{cursor:pointer;color:var(--unit);font-weight:600}
+table.data{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;margin:8px 0}
+table.data th{background:var(--unit);color:#fff;text-align:left;padding:7px 10px;font-weight:600}
+table.data td{padding:7px 10px;border-bottom:1px solid var(--rule)}
+table.data tr:nth-child(even) td{background:#f6f8f9}
+table.data td.num,table.data th.num{text-align:right;font-variant-numeric:tabular-nums}
+table.data tr.hl td{background:var(--amber-lt)!important;font-weight:600}
+.essentials{border:3px solid var(--unit);background:#fff}
+.essentials .es-head{background:var(--unit);color:#fff;margin:-18px -20px 16px;padding:10px 20px;font-family:var(--cond);font-size:22px;font-weight:700;letter-spacing:.06em;border-radius:9px 9px 0 0}
+.essentials .es-head small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;color:#f6d9a4}
+.fop{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fop .svgw svg{margin:0}
+.fop > div{border-radius:10px;padding:12px;font-family:var(--sans);font-size:13.5px;line-height:1.4}
+.fop h5{font-family:var(--cond);font-size:22px;margin:6px 0 2px;letter-spacing:.04em}
+.fop .what{font-weight:600;margin-bottom:6px}
+.fop ul{margin:0;padding-left:16px}
+.questions3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.questions3 > div{background:var(--unit-lt);border-radius:10px;padding:14px;font-family:var(--sans);font-size:14px}
+.questions3 h5{margin:6px 0 4px;font-family:var(--cond);font-size:22px;color:var(--unit-dk)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.chart svg text{font-family:var(--sans)}
+svg .bar:hover,svg .pt:hover,svg .slice:hover{opacity:.82}
+
+/* pacesetter */
+.pacesetter{display:grid;grid-template-columns:240px 1fr;border:2px solid var(--unit-dk);border-radius:12px;overflow:hidden;margin:30px 0;background:#fff}
+.pacesetter .ps-side{background:var(--unit-dk);color:#eee9f8;padding:18px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.pacesetter .ps-side h5{font-family:var(--cond);color:#f6d9a4;letter-spacing:.2em;font-size:15px;margin:12px 0 8px}
+.pacesetter .ps-side dt{font-weight:700;color:#f6d9a4;margin-top:8px}
+.pacesetter .ps-side dd{margin:0}
+.pacesetter .ps-main{padding:18px 24px}
+.pacesetter .ps-main .kicker{color:var(--amber-dk)}
+.pacesetter h4{font-family:var(--cond);font-size:34px;margin:0 0 10px;color:var(--unit-dk);line-height:1}
+.pacesetter h4 span{display:block;font-size:20px;color:var(--ink-2);font-weight:600}
+
+.ps-photo{margin:0 0 6px;padding:0;border:0;background:none;border-radius:0}
+.ps-photo img{width:100%;border-radius:8px;display:block}
+.ps-photo figcaption{color:#e0d6f2;font-size:12.5px;line-height:1.45;margin-top:8px}
+.ps-photo figcaption span{display:block;margin-top:4px;font-size:11px;color:#c3b3e0}
+.ps-photo figcaption a{color:#c3b3e0}
+.packet-note{display:flex;gap:16px;align-items:center;margin:32px 0 10px;padding:16px 20px;border:3px solid var(--unit);border-radius:14px;background:var(--unit-lt);font-family:var(--sans);font-size:15.5px;line-height:1.5}
+.packet-note svg{flex:none}
+.packet-note b{display:block;font-family:var(--cond);font-size:20px;letter-spacing:.1em;color:var(--unit-dk)}
+/* assessments */
+.assess{margin:34px 0 10px;border:3px solid var(--unit);border-radius:14px;overflow:hidden;background:#fff}
+.assess-h{background:var(--unit);color:#fff;padding:12px 22px;display:flex;align-items:baseline;gap:14px;font-family:var(--cond)}
+.assess-h b{font-size:28px;letter-spacing:.06em}
+.assess-h span{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:#f6d9a4}
+.assess-grid{display:grid;grid-template-columns:1fr 1fr;font-family:var(--sans);font-size:15px;line-height:1.5}
+.assess-grid > div{padding:16px 22px}
+.assess-grid > div:first-child{border-right:1px solid var(--rule)}
+.assess h5{font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit);margin:4px 0 8px}
+.assess ol{padding-left:22px;margin:0 0 10px}
+.assess li{margin-bottom:8px}
+.inpractice{background:var(--amber-lt);border-top:1px solid var(--rule);padding:16px 22px;font-family:var(--sans);font-size:15px}
+.inpractice h5{color:var(--amber-dk)}
+.inpractice table.data{background:#fff}
+.inpractice td.blank{color:#b0b5bd}
+
+/* case study */
+.case{background:#f3efe6;padding:0 0 20px}
+.case-banner{background:var(--coral);color:#fff;padding:34px 56px 28px;position:relative;overflow:hidden}
+.case-banner .kicker{color:#ffe3c2;letter-spacing:.3em}
+.case-banner h2{font-family:var(--cond);font-size:58px;margin:4px 0 6px;line-height:1}
+.case-banner p{font-family:var(--sans);font-size:15px;max-width:720px;margin:0;color:#fff3ee}
+.doc{background:#fff;border:1px solid #e0d7c6;border-radius:10px;margin:22px 0;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.doc-h{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid #eee4d3}
+.doc-h .letter{width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-family:var(--cond);font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;flex:none}
+.doc-h b{font-family:var(--cond);font-size:22px;color:var(--ink)}
+.doc-h small{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+.doc-b{padding:14px 20px;font-size:16.5px}
+.doc .think{background:var(--coral-lt);padding:10px 20px;font-family:var(--sans);font-size:14.5px;border-radius:0 0 10px 10px}
+.doc .think b{color:var(--coral)}
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.voice{background:#faf7f1;border-radius:10px;padding:14px;font-size:15.5px}
+.voice h6{margin:0 0 6px;font-family:var(--sans);font-size:14px;color:var(--coral)}
+
+/* chapter assessment */
+.chap-assess .sec-banner{background:var(--ink)}
+.chap-assess .sec-banner .num{background:#0f131c}
+.wordbank{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.wordbank span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:3px 12px;font-family:var(--sans);font-size:14px}
+.cloze{font-size:17.5px;line-height:1.9}
+.cloze .bl{display:inline-block;min-width:34px;border-bottom:2px solid var(--ink);text-align:center;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--unit)}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.summary-grid > div{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 16px;font-family:var(--sans);font-size:14.5px}
+.summary-grid h5{margin:0 0 6px;font-family:var(--cond);font-size:19px;color:var(--unit-dk)}
+.sim{border:3px solid var(--violet);border-radius:14px;background:#fff;overflow:hidden;margin:28px 0}
+.sim .box-h{background:var(--violet)}
+.sim .box-b{font-family:var(--sans);font-size:15.5px}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps li{counter-increment:st;position:relative;padding:0 0 10px 44px}
+.steps li::before{content:counter(st);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--violet);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.credits{font-family:var(--sans);font-size:13px;color:var(--ink-2);padding:22px 56px;background:#f1f0eb;border-top:1px solid var(--rule)}
+.credits h4{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:16px;margin:0 0 8px}
+.credits li{margin-bottom:4px}
+
+/* running footer */
+.runfoot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;background:var(--unit-dk);color:#e0d8f1;font-family:var(--sans);font-size:11.5px;letter-spacing:.16em;font-weight:600;padding:10px 56px;margin-top:26px}
+.runfoot span:nth-child(2){color:#f6d9a4}
+.runfoot span:last-child{text-align:right}
+
+
+/* photos */
+figure.photo{padding:0;overflow:hidden;background:#fff}
+figure.photo img{width:100%;display:block;background:#e9e7e0}
+figure.photo .crop{position:relative;overflow:hidden;width:100%;background:#e9e7e0}
+.kl{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.2em;color:#fff;background:rgba(0,0,0,.6);padding:3px 12px;border-radius:3px;white-space:nowrap}.kn{top:12px}.ks{bottom:12px}
+figure.photo.sidefig{float:left;width:270px;margin:4px 28px 14px 0}
+.pair > .body{display:flow-root}
+figure.photo figcaption{margin:0;padding:10px 16px 12px;font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-2);border-top:4px solid var(--amber)}
+figure.photo .phlabel{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);text-transform:uppercase;margin-bottom:2px}
+figure.photo .credit{display:block;margin-top:5px;font-size:11.5px;color:var(--ink-3)}
+figure.photo .credit a{color:var(--ink-3)}
+.side figure.photo{margin:0 0 18px}
+.side figure.photo figcaption{font-size:12.5px;padding:8px 12px 10px}
+figure.photo.sidefig figcaption{font-size:12.5px;padding:8px 12px 10px}
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0}
+.photo-row figure.photo{margin:0}
+.opener-photo{position:relative;height:560px;overflow:hidden}
+.opener-photo img{width:100%;height:100%;object-fit:cover;object-position:center 70%;display:block}
+.opener-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(61,42,92,.78) 0%,rgba(61,42,92,.35) 45%,rgba(0,0,0,0) 70%)}
+.opener-head{z-index:2}
+.opener-caption .credit{display:block;font-size:11.5px;color:#c3b3e0;margin-top:4px}
+.opener-caption .credit a{color:#c3b3e0}
+@media (max-width:900px){.photo-row{grid-template-columns:1fr}.opener-photo{height:300px}}
+
+/* responsive */
+@media (max-width:900px){
+  body{font-size:17px}
+  .content{padding:8px 20px}
+  .pair{grid-template-columns:1fr}
+  figure.photo.sidefig{float:none;width:100%;max-width:380px;margin:12px auto}
+  .opener-head{position:static;padding:24px 20px 0;background:var(--unit-dk)}
+  .chapnum{font-size:110px}
+  .opener h1{font-size:48px}
+  .opener-grid,.sec-preview,.standards,.assess-grid,.two,.choices .opts,.pacesetter,.voices,.summary-grid{grid-template-columns:1fr}
+  .fop,.questions3{grid-template-columns:1fr 1fr}
+  .sec-banner{grid-template-columns:90px 1fr}
+  .sec-banner .icon{display:none}
+  .sec-banner h2{font-size:34px;padding:20px}
+  .case-banner{padding:26px 20px}
+  .runfoot{padding:10px 20px;grid-template-columns:1fr;text-align:center}
+  .runfoot span:last-child{text-align:center}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .topnav,.progress{display:none}
+  .book{box-shadow:none}
+  .section,.case,.chap-assess{break-before:page}
+  figure,.box,.assess,.doc,.pacesetter{break-inside:avoid}
+  details.dt{display:none}
+}
+</style>
+<style>
+.k{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 18px;margin:12px 0;font-family:var(--sans);font-size:15px;line-height:1.55}
+.k .q{margin:0 0 6px;font-weight:700;color:var(--unit-dk)}
+.k .q .loc{display:inline-block;font-family:var(--cond);letter-spacing:.14em;font-size:14px;color:var(--amber-dk);text-transform:uppercase;margin-right:10px}
+.k .a{margin:0 0 6px}
+.upage{scroll-margin-top:56px}
+.tagline{font-family:var(--sans);font-size:18px;line-height:1.4;color:#f1ecfa;margin:12px 0 0;max-width:640px;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.u-grid{display:grid;grid-template-columns:minmax(0,1fr) 410px;background:var(--paper);color:var(--ink)}
+.u-left{padding:30px 44px 34px}
+.u-right{background:var(--unit-lt);border-left:1px solid var(--unit-mid);padding:30px 28px 34px;font-family:var(--sans);font-size:15px;line-height:1.5}
+.u-right h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:0 0 10px;text-transform:uppercase}
+.u-right .blk{margin-bottom:26px}
+.bigideas{list-style:none;padding:0;margin:0;counter-reset:bi}
+.bigideas li{counter-increment:bi;position:relative;padding:0 0 12px 40px}
+.bigideas li::before{content:counter(bi);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--unit);color:#f6d9a4;font-family:var(--cond);font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center}
+.eq{padding-left:22px;margin:0}.eq li{margin-bottom:8px}
+.why{background:var(--amber-lt);border-top:4px solid var(--amber);padding:14px 16px}
+.why .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);margin-bottom:6px}
+.debate{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0 8px;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.debate>div{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:12px 16px}
+.debate .lab{display:block;font-family:var(--cond);font-weight:700;letter-spacing:.16em;font-size:14px;margin-bottom:4px}
+.debate .a .lab{color:var(--unit)} .debate .b{border-top:4px solid var(--amber)} .debate .a{border-top:4px solid var(--unit)} .debate .b .lab{color:var(--amber-dk)}
+.debate ul{margin:4px 0 0;padding-left:18px}
+.dbhead{font-family:var(--cond);font-weight:700;letter-spacing:.16em;color:var(--unit-dk);font-size:18px;margin:22px 0 2px;text-transform:uppercase}
+.upage-wrap{padding:30px 44px 10px}
+.pagehead{display:flex;align-items:center;gap:16px;background:var(--unit);color:#fff;padding:0;margin:0}
+.pagehead .num{background:var(--unit-dk);padding:18px 26px;font-family:var(--cond);text-align:center}
+.pagehead .num small{display:block;letter-spacing:.3em;font-size:13px;color:#f6d9a4;font-weight:600}
+.pagehead .num b{font-size:56px;line-height:.9;color:#f6d9a4}
+.pagehead h2{font-family:var(--cond);font-size:46px;margin:0;font-weight:700;line-height:1}
+.chcards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:6px 0 10px}
+.chcard{background:#fff;border:1px solid var(--rule);border-top:8px solid var(--unit);border-radius:12px;padding:18px 22px 20px;font-family:var(--sans);font-size:14.5px;line-height:1.5;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.chcard .cn{font-family:var(--cond);font-weight:800;font-size:76px;line-height:.8;color:var(--unit);float:left;margin:2px 14px 4px 0}
+.chcard h3{font-family:var(--cond);font-size:34px;line-height:1;color:var(--unit-dk);margin:0 0 4px}
+.chcard .kk{font-family:var(--cond);font-weight:700;letter-spacing:.16em;font-size:13px;color:var(--amber-dk);display:block;margin:12px 0 3px;text-transform:uppercase;clear:both}
+.chcard ol,.chcard ul{margin:0;padding-left:20px}
+.chcard .case{background:var(--coral-lt);border-left:5px solid var(--coral);padding:8px 12px;border-radius:0 8px 8px 0;margin-top:12px;font-weight:600;padding-bottom:8px}
+.chcard .case small{display:block;font-family:var(--cond);letter-spacing:.16em;color:var(--coral);font-size:13px}
+.chcard .tm{display:flex;flex-wrap:wrap;gap:6px}
+.chcard .tm span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:16px;padding:2px 10px;font-size:13px}
+.readbtn{display:inline-block;margin-top:14px;background:var(--unit);color:#fff!important;text-decoration:none;font-family:var(--cond);font-weight:700;letter-spacing:.12em;font-size:18px;padding:9px 20px;border-radius:8px}
+.readbtn:hover{background:var(--unit-dk)}
+table.std{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;line-height:1.45;background:#fff;margin:8px 0 6px}
+table.std th{background:var(--unit);color:#fff;text-align:left;padding:8px 10px;font-weight:600}
+table.std td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+table.std tr:nth-child(even) td{background:#f7f5fb}
+table.std td.code{white-space:nowrap;font-weight:700;color:var(--unit-dk)}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px 22px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.tgrid>div{border-bottom:1px solid var(--rule);padding:6px 0}
+.tgrid b{color:var(--unit-dk)} .tgrid .es{display:block;color:var(--ink-3);font-style:italic;font-size:13px} .tgrid .ch{font-family:var(--cond);font-size:12px;letter-spacing:.12em;color:var(--amber-dk);margin-left:6px}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;font-family:var(--sans);font-size:14px;line-height:1.5}
+.cols3>div{background:#fff;border:1px solid var(--rule);border-top:4px solid var(--unit);border-radius:8px;padding:10px 14px}
+.cols3 h5{margin:0 0 4px;font-family:var(--cond);font-size:19px;color:var(--unit-dk)}
+.lblock{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px 18px;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.lblock h4{margin:0 0 6px;font-family:var(--cond);letter-spacing:.14em;font-size:17px;color:var(--unit);text-transform:uppercase}
+.two2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+table.ag{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14.5px;line-height:1.45;background:#fff}
+table.ag th{background:var(--unit-dk);color:#fff;padding:8px 10px;text-align:left;font-size:13px;letter-spacing:.06em}
+table.ag td{border:1px solid var(--rule);padding:8px 10px;vertical-align:top}
+table.ag td.n{font-family:var(--cond);font-weight:800;font-size:24px;color:var(--unit);text-align:center;width:38px}
+table.ag td.ba{width:118px;font-size:14px}
+table.ag td.aft{width:250px}
+table.ag .ln{display:block;border-bottom:1.5px solid #8a8f9b;height:22px}
+.cb{display:inline-block;width:14px;height:14px;border:2px solid var(--unit-dk);border-radius:3px;vertical-align:-2px;margin-right:6px}
+.wrap{background:var(--amber-lt);border:3px solid var(--amber);border-radius:14px;padding:18px 24px;margin:26px 0 6px;font-family:var(--sans);font-size:15px;line-height:1.55}
+.wrap h4{font-family:var(--cond);letter-spacing:.14em;color:var(--amber-dk);font-size:22px;margin:0 0 8px;text-transform:uppercase}
+.wrap ol{margin:6px 0 10px;padding-left:22px}
+.pgsmall{font-family:var(--sans);font-size:13px;color:var(--ink-2)}
+@media (max-width:900px){.u-grid,.chcards,.debate,.tgrid,.cols3,.two2{grid-template-columns:1fr}.u-left,.u-right,.upage-wrap{padding:22px 20px}.pagehead h2{font-size:32px}}
+@media print{.upage{break-before:page}}
+</style>
+</head>
+<body>
+<div class="book">
+<nav class="topnav" aria-label="Unit pages"><span class="brand">UNIT 6 · THE GLOBAL ECONOMY</span><a href="#page1">Unit Opener</a><a href="#page2">Unit at a Glance</a><a href="#page3">Connect and Prepare</a><a href="#anticipation">Before You Read</a></nav>
+<div class="progress"><span id="bar"></span></div>
+<!-- ===================== PAGE 1: UNIT OPENER ===================== -->
+<header class="opener upage" id="page1">
+  <div class="opener-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port%20of%20Oakland%20Berth%2032%2C%20Outer%20Harbor%20%2825.%20April%202021%29.jpg?width=2400" alt="A container ship stacked high with colorful shipping containers beside tall white gantry cranes at the Port of Oakland, with downtown Oakland buildings and the Oakland Hills in the background." style="object-position:center 60%"></div>
+  <div class="opener-head">
+    <div class="chapnum">6</div>
+    <div>
+      <div class="unitline">Economics · Chapters 21–22</div>
+      <div class="chapword">UNIT 6</div>
+      <h1>The Global<br>Economy</h1>
+      <p class="tagline">How nations trade, how their currencies connect them, and how poorer countries build richer futures.</p>
+    </div>
+  </div>
+  <div class="opener-caption"><b>Where does the global economy touch California?</b> On April 25, 2021, a photographer captured a container ship and cranes at Berth 32 in the Outer Harbor of the Port of Oakland, with downtown Oakland and the Oakland Hills behind them. Ports such as Oakland, Los Angeles, and Long Beach are where California’s farm exports leave and where many imported goods arrive, including goods sold in Bakersfield and Shafter.<span class="credit">Photo: David Abercrombie / <a href="https://commons.wikimedia.org/wiki/File:Port_of_Oakland_Berth_32,_Outer_Harbor_(25._April_2021).jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></span></div>
+  <div class="u-grid">
+    <div class="u-left">
+      <p class="kicker">Unit Overview</p>
+      <p class="lead">Every economy you have studied so far has had a border around it. In Unit 1 you learned that scarcity forces choices. In Units 2 through 5 you watched prices coordinate buyers and sellers, followed money through banks and the Federal Reserve, and saw how governments tax, spend, and try to steady the economy. Unit 6 removes the border. When a Kern County grower sells pistachios to a buyer overseas, or a Bakersfield family buys a phone assembled on another continent, the same ideas of opportunity cost, incentives, and prices are at work, but two new things appear: national borders and different currencies.</p>
+      <p>Chapter 21, <i>International Trade</i>, explains why nations trade at all. The answer is comparative advantage: a country gains by specializing in what it makes at the lowest opportunity cost and trading for the rest, even if another country is better at making everything. The chapter then turns to the tools governments use to shape trade (tariffs, quotas, subsidies, and embargoes), the exchange rates that translate one country’s money into another’s, and the trade agreements and institutions, such as the World Trade Organization, that set the rules. The chapter ends with a Case Study of how tariffs and retaliation affected Kern County’s almond and pistachio growers, using the evidence and the competing views of farmers, consumers, and policymakers.</p>
+      <p>Kern County is a good place to study this unit. Almonds were California’s leading agricultural export in 2024, at about $4.95 billion, and pistachios were second at about $2.93 billion; both are Kern County crops, and many are packed in places like Shafter and Wasco. Citrus, grapes, and other crops also leave the Central Valley for buyers abroad. Meanwhile, much of what fills local stores comes the other way, through the Port of Oakland to the north and the ports of Los Angeles and Long Beach to the south. In 2025, the Port of Los Angeles alone handled about 10.2 million twenty-foot container units. A change in a tariff or in the value of the dollar can therefore show up in a Shafter packing house, a Bakersfield store, or a family budget within weeks.</p>
+      <p>Chapter 22, <i>Issues of Economic Development</i>, widens the lens from how countries trade to how they grow. Worldwide, average income per person was about $13,433 in 2024, but the high-income group averaged $49,418 and the low-income group only $765. Why such a gap? Chapter 22 shows how economists measure development with income, purchasing power parity, and the Human Development Index; how productivity depends on human capital, physical capital, technology, and institutions such as property rights and the rule of law; how countries finance development through saving, foreign investment, aid, loans, and remittances; and how former command economies moved toward markets. Its Case Study follows Vietnam, where income per person rose from about $2,500 in 1990 to about $14,400 in 2024 (in 2021 dollars). The two chapters fit together: trade is one of the ways poorer countries can grow, and development changes who we trade with. Both chapters ask you to weigh evidence, because the experts do not always agree.</p>
+      <p>Here is how the two chapters connect. Chapter 21 asks what happens when countries <i>exchange</i> goods, services, and money. Chapter 22 asks what lets a country <i>produce</i> enough to take part in that exchange on good terms. A country with skilled workers, modern equipment, reliable courts, and open markets has more to sell, and it earns the foreign currency it needs to buy what it lacks. A country without those foundations may export only a few raw products and import almost everything else. Notice that Chapter 21 describes how exchange rates, tariffs, and trade agreements affect a country that is already trading, while Chapter 22 explains why the starting points differ so much, and why some governments chose to open their economies, some chose to protect them, and others did both at different times.</p>
+      <p>As you read, practice three habits of mind. First, ask <b>who gains and who loses</b> from every policy, because the answer is rarely “everyone” or “no one.” Second, ask <b>compared with what?</b>, because a price, a trade deficit, or an income figure means little until you know the alternative. Third, ask <b>what does the evidence show, and what does it not show?</b>, because one case, such as a single country’s reforms or one year of tariff data, can illustrate an idea without proving it. These habits matter well beyond this course: you will vote on trade policy, shop in a global market, and may someday work for a company, farm, or government that depends on it.</p>
+      <p class="dbhead">Weighing a Contested Question: Should the Government Limit Imports?</p>
+      <p style="font-size:16.5px;margin-bottom:6px">Few trade questions are more debated than tariffs and other trade barriers. This unit asks you to understand the best case that each side makes, so that you can judge the evidence for yourself.</p>
+      <div class="debate">
+        <div class="a"><span class="lab">THE CASE FOR TRADE BARRIERS</span>Supporters argue that barriers can:<ul><li>protect jobs and communities that depend on industries facing foreign competition;</li><li>keep production of goods considered vital to national security at home;</li><li>answer practices they consider unfair, such as dumping;</li><li>raise revenue for the government.</li></ul></div>
+        <div class="b"><span class="lab">COUNTER-ARGUMENT: THE CASE FOR FREER TRADE</span>Supporters argue that barriers:<ul><li>raise prices for consumers and for businesses that use imported parts;</li><li>invite retaliation that harms exporters, such as California farmers;</li><li>shelter inefficient producers and give up the gains from comparative advantage;</li><li>can be replaced by help for workers, such as job training.</li></ul></div>
+      </div>
+      <p class="pgsmall" style="margin-top:8px">Chapter 21, Section 2 and the Case Study give the evidence on both sides. Economists agree that trade creates winners and losers inside each country; they disagree about how much protection, if any, is worth its cost.</p>
+      <p class="dbhead">A Second Debate: Should a Developing Country Open Its Economy to Trade?</p>
+      <div class="debate">
+        <div class="a"><span class="lab">THE CASE FOR OPENING</span>Supporters argue that trade lets a country use its resources better, brings new ideas and technology, and that the countries that have grown fastest are mostly those that traded more. Several East Asian economies grew quickly after they began selling manufactured goods to the world.</div>
+        <div class="b"><span class="lab">COUNTER-ARGUMENT: THE CASE FOR CAUTION</span>Critics note that trade can hurt workers and firms that face new competition, that countries depending on a few raw materials are exposed when prices fall, and that rich countries have sometimes kept their own markets closed to goods poor countries make well. Most economists take a middle view: openness helps when schools and strong institutions help workers and firms adjust.</div>
+      </div>
+      <p class="pgsmall" style="margin-top:8px">Chapter 22, Section 2 (“Openness to Trade”) examines this question. You will be asked to write one piece of evidence for a claim and a Counter-Argument against it.</p>
+    </div>
+    <aside class="u-right">
+      <div class="blk"><h3>Big Ideas</h3>
+        <ol class="bigideas">
+          <li><b>Trade creates gains from specialization.</b> Countries benefit when each produces what it makes at the lowest opportunity cost, but trade also creates winners and losers.</li>
+          <li><b>Trade policy is a set of trade-offs.</b> Tariffs, quotas, and subsidies help some groups and cost others, and they can invite retaliation.</li>
+          <li><b>Money links economies.</b> Exchange rates and the trade balance connect the value of the dollar to prices, jobs, and export sales.</li>
+          <li><b>Rules and borders shape trade.</b> Agreements, global institutions, and supply chains show both the reach and the limits of national sovereignty.</li>
+          <li><b>Development is about people.</b> Countries grow when they build human capital, physical capital, technology, and strong institutions, and economists debate the best path.</li>
+        </ol>
+      </div>
+      <div class="blk"><h3>Essential Questions</h3>
+        <ol class="eq">
+          <li>How can two countries both gain from trade, even if one is better at making everything?</li>
+          <li>What tools do governments use to limit trade, and who gains and loses from each?</li>
+          <li>How do exchange rates and the trade balance connect the dollar to prices that growers and shoppers face?</li>
+          <li>How do agreements, borders, and the World Trade Organization shape what a country can do?</li>
+          <li>Why are some countries rich and others poor, and what can a country do to develop?</li>
+        </ol>
+        <p class="pgsmall" style="margin:8px 0 0">You should be able to answer all five by the end of the unit.</p>
+      </div>
+      <div class="blk"><div class="why"><span class="tag">WHY THIS UNIT MATTERS</span>
+        Imagine it is July and you are working a summer shift at a packing house in Shafter, boxing pistachios for export. At lunch you scroll through your phone, which was assembled overseas, and see that a foreign government has placed a new tax on California nuts. Your hours are cut the next week. The same news report says the dollar has gotten stronger, so the sneakers you wanted are cheaper but your boss says overseas buyers are ordering less. Your aunt, who sends money every month to relatives in Mexico, asks whether the exchange rate is helping or hurting. Is a tax on shoes good for American shoemakers? Is the foreign tax on nuts fair? Who gains and who loses? By the end of this unit you will be able to answer questions like these with evidence.
+      </div></div>
+    </aside>
+  </div>
+  <div class="runfoot"><span>UNIT 6 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</header>
+
+<!-- ===================== PAGE 2: UNIT AT A GLANCE ===================== -->
+<section class="upage" id="page2">
+  <div class="pagehead"><div class="num"><small>UNIT 6</small><b>2</b></div><h2>Unit at a Glance</h2></div>
+  <div class="upage-wrap">
+    <p class="kicker">The Two Chapters of Unit 6</p>
+    <div class="chcards">
+      <div class="chcard">
+  <div class="cn">21</div><h3>International Trade</h3>
+  <p style="margin:6px 0 0">Why do countries trade, and what happens when governments step in? This chapter explains comparative advantage and the gains from specialization, the tools of trade policy, how exchange rates and trade balances work, and the trade agreements and institutions that govern global trade. It closes with a Case Study of tariffs and retaliation in Kern County’s nut orchards.</p>
+  <span class="kk">Sections</span><ol><li><a href="Chapter%2021%20-%20International%20Trade/Chapter-21-International-Trade.html#s1">Why Nations Trade</a></li><li><a href="Chapter%2021%20-%20International%20Trade/Chapter-21-International-Trade.html#s2">Trade Barriers and Trade Policy</a></li><li><a href="Chapter%2021%20-%20International%20Trade/Chapter-21-International-Trade.html#s3">Exchange Rates and the Balance of Trade</a></li><li><a href="Chapter%2021%20-%20International%20Trade/Chapter-21-International-Trade.html#s4">Trade Agreements, Borders, and Global Institutions</a></li></ol>
+  <div class="case"><small>CASE STUDY</small><a href="Chapter%2021%20-%20International%20Trade/Chapter-21-International-Trade.html#case">Tariffs, Retaliation, and Kern County's Nuts</a></div>
+  <span class="kk">Key terms (sample)</span><div class="tm"><span>specialization</span><span>comparative advantage</span><span>tariff</span><span>quota</span><span>exchange rate</span><span>trade deficit</span><span>free-trade area</span><span>World Trade Organization</span></div>
+  <a class="readbtn" href="Chapter%2021%20-%20International%20Trade/Chapter-21-International-Trade.html">READ CHAPTER 21 &rarr;</a>
+</div>
+      <div class="chcard">
+  <div class="cn">22</div><h3>Issues of Economic Development</h3>
+  <p style="margin:6px 0 0">Why are some countries rich and others poor, and what can a country do about it? This chapter shows how development is measured, which foundations make countries more productive, how development is financed, and how economies move from central planning to markets. It closes with the Case Study of Vietnam’s Doi Moi reforms.</p>
+  <span class="kk">Sections</span><ol><li><a href="Chapter%2022%20-%20Issues%20of%20Economic%20Development/Chapter-22-Issues-of-Economic-Development.html#s1">Defining and Measuring Development</a></li><li><a href="Chapter%2022%20-%20Issues%20of%20Economic%20Development/Chapter-22-Issues-of-Economic-Development.html#s2">Foundations for Development</a></li><li><a href="Chapter%2022%20-%20Issues%20of%20Economic%20Development/Chapter-22-Issues-of-Economic-Development.html#s3">Financing Development</a></li><li><a href="Chapter%2022%20-%20Issues%20of%20Economic%20Development/Chapter-22-Issues-of-Economic-Development.html#s4">Transition to Market Economies</a></li></ol>
+  <div class="case"><small>CASE STUDY</small><a href="Chapter%2022%20-%20Issues%20of%20Economic%20Development/Chapter-22-Issues-of-Economic-Development.html#case">Vietnam's Doi Moi</a></div>
+  <span class="kk">Key terms (sample)</span><div class="tm"><span>economic development</span><span>Human Development Index</span><span>human capital</span><span>institutions</span><span>foreign direct investment</span><span>remittance</span><span>privatization</span><span>special economic zone</span></div>
+  <a class="readbtn" href="Chapter%2022%20-%20Issues%20of%20Economic%20Development/Chapter-22-Issues-of-Economic-Development.html">READ CHAPTER 22 &rarr;</a>
+</div>
+    </div>
+    <p class="kicker" style="margin-top:30px">California Content Standards</p>
+    <p class="pgsmall" style="margin:0 0 4px">History–Social Science Content Standards for California Public Schools, Principles of Economics, Grade 12. Wording is from the California Department of Education standards database.</p>
+    <table class="std"><thead><tr><th>Code</th><th>Standard</th><th>Where covered</th></tr></thead><tbody><tr><td class="code">HSS-PoE.12.6</td><td>Students analyze issues of international trade and explain how the U.S. economy affects, and is affected by, economic forces beyond the United States’s borders.</td><td>Ch. 21: all sections. Ch. 22: all sections.</td></tr><tr><td class="code">HSS-PoE.12.6.1</td><td>Identify the gains in consumption and production efficiency from trade, with emphasis on the main products and changing geographic patterns of twentieth-century trade among countries in the Western Hemisphere.</td><td>Ch. 21: Sections 1, 4. Ch. 22: Section 2, Case Study.</td></tr><tr><td class="code">HSS-PoE.12.6.2</td><td>Compare the reasons for and the effects of trade restrictions during the Great Depression compared with present-day arguments among labor, business, and political leaders over the effects of free trade on the economic and social interests of various groups of Americans.</td><td>Ch. 21: Sections 2, 4, Case Study.</td></tr><tr><td class="code">HSS-PoE.12.6.3</td><td>Understand the changing role of international political borders and territorial sovereignty in a global economy.</td><td>Ch. 21: Section 4. Ch. 22: Sections 3, 4.</td></tr><tr><td class="code">HSS-PoE.12.6.4</td><td>Explain foreign exchange, the manner in which exchange rates are determined, and the effects of the dollar’s gaining (or losing) value relative to other currencies.</td><td>Ch. 21: Section 3.</td></tr></tbody></table>
+    <p class="kicker" style="margin-top:26px">Also Supports</p>
+    <table class="std"><thead><tr><th>Code</th><th>Standard</th><th>Where covered</th></tr></thead><tbody><tr><td class="code">HSS-PoE.12.1.1</td><td>Examine the causal relationship between scarcity and the need for choices.</td><td>Ch. 21: Section 1 (opportunity cost, reviewed from Chapter 1).</td></tr><tr><td class="code">HSS-PoE.12.1.4</td><td>Evaluate the role of private property as an incentive in conserving and improving scarce resources, including renewable and nonrenewable natural resources.</td><td>Ch. 22: Sections 2, 4.</td></tr><tr><td class="code">HSS-PoE.12.1.5</td><td>Analyze the role of a market economy in establishing and preserving political and personal liberty (e.g., through the works of Adam Smith).</td><td>Ch. 21: Section 4. Ch. 22: Section 4, Case Study.</td></tr><tr><td class="code">RH.11-12.7</td><td>Integrate and evaluate multiple sources of information presented in diverse formats and media (e.g., visually, quantitatively, as well as in words) in order to address a question or solve a problem.</td><td>Both chapters: all sections and Case Studies.</td></tr></tbody></table>
+    <div class="packet-note" style="margin-top:26px"><svg viewBox="0 0 48 48" width="46" height="46" aria-hidden="true"><rect x="9" y="5" width="30" height="38" rx="4" fill="#fff" stroke="#6a4c9c" stroke-width="3"/><path d="M16 17h16M16 25h16M16 33h10" stroke="#e09f3e" stroke-width="3" stroke-linecap="round"/></svg><div><b>HOW THE UNIT RUNS</b>Read each chapter, complete each Section Assessment in the <i>Chapter Assignment</i> packet, and finish with the Chapter Assessment and Simulation. Use this unit page to preview the big ideas before you begin and to connect them when you finish.</div></div>
+  </div>
+  <div class="runfoot"><span>UNIT 6 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+
+<!-- ===================== PAGE 3: CONNECT AND PREPARE ===================== -->
+<section class="upage" id="page3">
+  <div class="pagehead"><div class="num"><small>UNIT 6</small><b>3</b></div><h2>Connect and Prepare</h2></div>
+  <div class="upage-wrap">
+    <p class="kicker">Key Terms Preview</p>
+    <p class="pgsmall" style="margin:0 0 6px">Twenty terms you will meet in this unit, with plain-English meanings from the chapters and Spanish equivalents. Each is defined fully in the Quick Reference notes beside the reading.</p>
+    <div class="tgrid"><div><b>comparative advantage</b><span class="ch">CH. 21</span> Being able to make a good at a lower opportunity cost than someone else.<span class="es">Spanish: ventaja comparativa</span></div><div><b>export</b><span class="ch">CH. 21</span> A good or service made in one country and sold to buyers in another.<span class="es">Spanish: exportación</span></div><div><b>import</b><span class="ch">CH. 21</span> A good or service bought from sellers in another country.<span class="es">Spanish: importación</span></div><div><b>terms of trade</b><span class="ch">CH. 21</span> The rate at which one country’s goods exchange for another’s.<span class="es">Spanish: términos de intercambio</span></div><div><b>tariff</b><span class="ch">CH. 21</span> A tax on imported goods.<span class="es">Spanish: arancel</span></div><div><b>quota</b><span class="ch">CH. 21</span> A legal limit on how much of a good may be imported.<span class="es">Spanish: cuota de importación</span></div><div><b>subsidy</b><span class="ch">CH. 21</span> A payment or other aid from the government that lowers a producer’s costs.<span class="es">Spanish: subsidio</span></div><div><b>protectionism</b><span class="ch">CH. 21</span> Using trade barriers to shield domestic producers from foreign competition.<span class="es">Spanish: proteccionismo</span></div><div><b>free trade</b><span class="ch">CH. 21</span> Trade among countries with few or no barriers such as tariffs and quotas.<span class="es">Spanish: libre comercio</span></div><div><b>exchange rate</b><span class="ch">CH. 21</span> The price of one currency in terms of another, such as 18.57 pesos per dollar.<span class="es">Spanish: tipo de cambio</span></div><div><b>appreciation</b><span class="ch">CH. 21</span> A rise in the value of a currency compared with another currency.<span class="es">Spanish: apreciación</span></div><div><b>trade deficit</b><span class="ch">CH. 21</span> A trade balance in which imports are greater than exports.<span class="es">Spanish: déficit comercial</span></div><div><b>World Trade Organization</b><span class="ch">CH. 21</span> The international organization, created in 1995, that sets rules for trade among its members and helps settle disputes.<span class="es">Spanish: Organización Mundial del Comercio</span></div><div><b>supply chain</b><span class="ch">CH. 21</span> The network of producers, shippers, and sellers that moves a product from raw materials to the consumer.<span class="es">Spanish: cadena de suministro</span></div><div><b>economic development</b><span class="ch">CH. 22</span> A sustained improvement in a country’s standard of living, including income, health, education, and opportunities.<span class="es">Spanish: desarrollo económico</span></div><div><b>Human Development Index</b><span class="ch">CH. 22</span> A measure from 0 to 1 that combines life expectancy, schooling, and income per person to compare countries.<span class="es">Spanish: Índice de Desarrollo Humano</span></div><div><b>human capital</b><span class="ch">CH. 22</span> The knowledge, skills, and health of workers that raise their productivity.<span class="es">Spanish: capital humano</span></div><div><b>foreign direct investment</b><span class="ch">CH. 22</span> Buying or building businesses in one country by a firm based in another country.<span class="es">Spanish: inversión extranjera directa</span></div><div><b>microfinance</b><span class="ch">CH. 22</span> Very small loans, savings, and other financial services for low-income people who cannot use banks.<span class="es">Spanish: microfinanzas</span></div><div><b>transition economy</b><span class="ch">CH. 22</span> An economy that is moving from central planning toward a market economy.<span class="es">Spanish: economía en transición</span></div></div>
+
+    <p class="kicker" style="margin-top:32px">Skills You Will Practice</p>
+    <div class="cols3">
+      <div><h5>Comparative advantage arithmetic</h5>Opportunity cost = what you give up ÷ what you gain. In Chapter 21 you will find that Valleyland gives up 2 crates per tablet and Harborland gives up 1, then test whether a trade at 1.6 crates per tablet leaves both better off. You will also work with tariff revenue = tariff per unit × quantity imported.</div>
+      <div><h5>Reading trade and exchange-rate data</h5>Foreign price = domestic price × exchange rate (for example, $10 × 18.57 pesos per dollar). Trade balance = exports − imports, for goods and for services. You will read line charts of pesos per dollar and the dollar index, and tables of trading partners and deficits.</div>
+      <div><h5>Development indicators</h5>Per capita = total ÷ population. Percent difference and percent change compare countries and years. You will read tables of GNI per person, Human Development Index scores, schooling, and poverty rates, and use evidence from several sources to answer a question.</div>
+    </div>
+
+    <div class="two2" style="margin-top:30px">
+      <div class="lblock"><h4>Look Back</h4>
+        <p style="margin:0 0 6px"><b>Unit 1 (Chapters 1–3).</b> Scarcity and opportunity cost (Chapter 1) are the engine behind comparative advantage. Economic systems and the South Korea story (Chapter 2) return in the development chapter, and secure property rights (Chapter 3) are one of the institutions development needs.</p>
+        <p style="margin:0 0 6px"><b>Unit 4 (Chapters 14–17).</b> Banks and financial markets connect savers and borrowers, which is how countries finance development. Gross domestic product (Chapter 16) is the starting point for measures such as GNI.</p>
+        <p style="margin:0"><b>Unit 5 (Chapters 18–20).</b> Tariffs are a tax and a source of federal revenue, as in Chapter 18, and the Federal Reserve’s interest-rate decisions (Chapter 20) can affect the value of the dollar.</p>
+      </div>
+      <div class="lblock"><h4>Look Ahead</h4>
+        <p style="margin:0 0 6px">Unit 6 is the last unit of the course. After Chapter 22 you will finish the Chapter Assessment and Simulation and then complete a capstone reflection that asks how all six units connect.</p>
+        <p style="margin:0">As you read, notice every place where an idea from an earlier unit comes back in a new setting: scarcity, incentives, prices, money, and the role of government. Mark each one in the margin. You will use your list in the capstone.</p>
+      </div>
+    </div>
+
+    <p class="kicker" id="anticipation" style="margin-top:34px">Before You Read: Anticipation Guide</p>
+    <p class="pgsmall" style="margin:0 0 8px"><b>Directions (seat-based).</b> 1) Alone, read each statement and check Agree or Disagree in the Before You Read column. There are no wrong answers yet. 2) Turn to your seat partner and compare your answers for two minutes; stay in your seat. 3) After you finish the unit, return to this page, check Agree or Disagree in the After You Read column, and write one sentence of evidence from a chapter on the lines. Circle any answer you changed.</p>
+    <table class="ag"><thead><tr><th>#</th><th>Statement</th><th>Before You Read</th><th>After You Read</th></tr></thead><tbody><tr><td class="n">1</td><td>A country that can make everything more cheaply than its trading partner gains nothing from trading with it.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr><tr><td class="n">2</td><td>A tariff on an imported good usually raises the price that people in the importing country pay for that good.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr><tr><td class="n">3</td><td>When the dollar appreciates, U.S. goods become more expensive for foreign buyers.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr><tr><td class="n">4</td><td>A trade deficit always means that a country’s economy is weak.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr><tr><td class="n">5</td><td>Most of the world’s trade takes place among countries that belong to the World Trade Organization.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr><tr><td class="n">6</td><td>The best way to tell how well people in a country are living is to look at average income per person.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr><tr><td class="n">7</td><td>Poor countries stay poor mainly because the people who live there do not work hard enough.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr><tr><td class="n">8</td><td>Every country that has moved from central planning to a market economy has followed the same strategy at the same speed.</td><td class="ba"><span class="cb"></span>Agree<br><span class="cb" style="margin-top:8px"></span>Disagree</td><td class="aft"><span class="cb"></span>Agree &nbsp; <span class="cb"></span>Disagree<span class="ln"></span><span class="ln"></span></td></tr></tbody></table>
+
+    <div class="wrap"><h4>Course Wrap-Up: Bringing the Six Units Together</h4>
+      <p style="margin:0 0 6px">Unit 6 completes the course. Each unit answered a different part of one question: how do people, businesses, and governments make choices when resources are scarce?</p>
+      <ol>
+        <li><b>Unit 1, Foundations of Economics:</b> scarcity, opportunity cost, and economic systems.</li>
+        <li><b>Unit 2, Microeconomics:</b> demand, supply, prices, market structures, businesses, and labor.</li>
+        <li><b>Unit 3, Consumer and Personal Finance:</b> budgets, credit, big purchases, and living on your own.</li>
+        <li><b>Unit 4, Money and the Macroeconomy:</b> money, banking, financial markets, and economic indicators.</li>
+        <li><b>Unit 5, Government and Policy:</b> taxes, spending, fiscal policy, and the Federal Reserve.</li>
+        <li><b>Unit 6, The Global Economy:</b> trade, exchange rates, and development.</li>
+      </ol>
+      <p style="margin:0"><b>Capstone Reflection preview (done at your seat).</b> Choose one product you use, such as a pair of shoes, a phone, or a bag of pistachios. In a short written reflection, trace it through all six units: what scarcity and opportunity cost shaped it (Unit 1), what sets its price (Unit 2), how you pay for it (Unit 3), how money and the economy affect it (Unit 4), what government does to it (Unit 5), and how it crosses borders (Unit 6). Your teacher will give the full directions at the end of the unit.</p>
+    </div>
+    <p class="pgsmall" style="margin-top:20px"><b>Photo credits:</b> Hero photograph, Port of Oakland, Berth 32, Outer Harbor (April 25, 2021), by David Abercrombie, Wikimedia Commons, licensed CC BY-SA 2.0. Shown unaltered except for cropping in the page layout. <b>Sources:</b> California Department of Education, History–Social Science Content Standards for California Public Schools (Principles of Economics, Grade 12) and the CDE California Content Standards database; Common Core State Standards Initiative, RH.11-12.7. Facts and figures in this unit page are from Chapters 21 and 22, where each is cited to its source.</p>
+  </div>
+  <div class="runfoot"><span>UNIT 6 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+</div>
+<script>
+(function(){var b=document.getElementById('bar');function u(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}window.addEventListener('scroll',u,{passive:true});u();})();
+</script>
+</body>
+</html>

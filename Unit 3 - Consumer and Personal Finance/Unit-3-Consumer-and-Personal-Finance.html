@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 3: Consumer and Personal Finance | Unit Opener | Economics | Daniel Garza, M.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --ink:#1c2230; --ink-2:#4a5263; --ink-3:#6f7787;
+  --paper:#fbfaf6; --white:#ffffff;
+  --unit:#2e7a46; --unit-dk:#1f4a2c; --unit-lt:#e6f2ea; --unit-mid:#a8d1b4;
+  --amber:#c9a227; --amber-lt:#faf3d6; --amber-dk:#7d6312;
+  --coral:#c8553d; --coral-lt:#fbe9e4;
+  --sage:#4e7d4a; --sage-lt:#e8f1e5;
+  --violet:#5b4bb7; --violet-lt:#ecebfa;
+  --rule:#d9dde3; --grid:#e6e8ec;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --other:#9aa1ad;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Inter", "Segoe UI", Arial, sans-serif;
+  --cond:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e9e7e0;color:var(--ink);font-family:var(--serif);font-size:18.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:var(--unit)}
+.book{max-width:1180px;margin:0 auto;background:var(--paper);box-shadow:0 0 40px rgba(0,0,0,.08)}
+
+/* ---------- top navigation ---------- */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(31,74,44,.97);color:#fff;font-family:var(--sans);font-size:13px;display:flex;align-items:center;gap:6px;padding:0 18px;height:46px;overflow-x:auto;white-space:nowrap}
+.topnav .brand{font-family:var(--cond);font-weight:700;letter-spacing:.08em;font-size:16px;margin-right:14px;color:#f2de8c}
+.topnav a{color:#e9f5ec;text-decoration:none;padding:6px 10px;border-radius:6px}
+.topnav a:hover{background:rgba(255,255,255,.12)}
+.progress{position:sticky;top:46px;z-index:49;height:4px;background:#d6e8dc}
+.progress span{display:block;height:100%;width:0;background:var(--amber)}
+
+/* ---------- chapter opener ---------- */
+.opener{position:relative;background:linear-gradient(160deg,var(--unit-dk) 0%,var(--unit) 70%);color:#fff;overflow:hidden}
+.opener-art{width:100%}
+.opener-head{position:absolute;left:0;right:0;top:0;padding:46px 56px 0;display:flex;gap:28px;align-items:flex-start}
+.chapnum{font-family:var(--cond);font-weight:800;font-size:170px;line-height:.78;color:#f2de8c;text-shadow:0 4px 0 rgba(0,0,0,.18)}
+.chapword{font-family:var(--cond);letter-spacing:.32em;font-size:15px;font-weight:600;color:#f2de8c;margin-bottom:4px}
+.unitline{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#d4ead9;margin-bottom:10px}
+.opener h1{font-family:var(--cond);font-weight:700;font-size:72px;line-height:.95;margin:0;letter-spacing:.01em;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.opener-caption{background:var(--unit-dk);color:#e0f1e5;font-family:var(--sans);font-size:13.5px;line-height:1.5;padding:12px 56px}
+.opener-caption b{color:#f2de8c}
+.opener-grid{display:grid;grid-template-columns:300px 1fr;background:var(--paper);color:var(--ink)}
+.sectionlist{background:var(--unit-lt);padding:30px 28px;border-right:1px solid var(--unit-mid)}
+.sectionlist h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:0 0 14px}
+.sectionlist a{display:block;text-decoration:none;color:var(--ink);padding:12px 0;border-bottom:1px solid var(--unit-mid)}
+.sectionlist a:last-child{border-bottom:0}
+.sectionlist .sl-tag{display:block;font-family:var(--cond);font-weight:700;font-size:14px;letter-spacing:.15em;color:var(--unit)}
+.sectionlist .sl-title{display:block;font-family:var(--sans);font-weight:600;font-size:16px;line-height:1.25}
+.sectionlist .cs .sl-tag{color:var(--coral)}
+.opener-main{padding:30px 44px 34px}
+.kicker{font-family:var(--cond);font-weight:700;letter-spacing:.2em;font-size:15px;color:var(--unit);margin:0 0 6px;text-transform:uppercase}
+.keyconcept{background:var(--white);border-left:6px solid var(--amber);padding:16px 20px;margin:12px 0 22px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.keyconcept .kicker{color:var(--amber-dk)}
+.keyconcept p{margin:0;font-size:20px;line-height:1.45}
+.standards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.stdbox{border:1px solid var(--rule);background:#fff;border-radius:10px;padding:14px 16px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.stdbox h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.12em;color:var(--unit)}
+.stdbox ul{margin:0;padding-left:0;list-style:none}
+.stdbox li{margin:0 0 7px}
+.stdbox code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12px}
+
+/* ---------- section openers ---------- */
+.section{padding:0 0 10px;scroll-margin-top:56px}
+.sec-banner{display:grid;grid-template-columns:130px 1fr 210px;align-items:stretch;background:var(--unit);color:#fff;min-height:150px}
+.sec-banner .num{background:var(--unit-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--cond)}
+.sec-banner .num small{letter-spacing:.3em;font-size:14px;color:#f2de8c;font-weight:600}
+.sec-banner .num b{font-size:84px;line-height:.9;color:#f2de8c}
+.sec-banner h2{font-family:var(--cond);font-size:50px;line-height:1;margin:0;padding:30px 30px;align-self:center;font-weight:700}
+.sec-banner .icon{display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(255,255,255,.06)}
+.sec-preview{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:0;border-bottom:3px solid var(--unit);background:#fff;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.sec-preview > div{padding:18px 22px;border-right:1px solid var(--rule)}
+.sec-preview > div:last-child{border-right:0}
+.sec-preview h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit)}
+.sec-preview ul{margin:0;padding-left:18px}
+.sec-preview li{margin-bottom:4px}
+.terms{columns:2;column-gap:16px;list-style:none;padding-left:0!important}
+.terms li{break-inside:avoid}
+.terms a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--unit)}
+.organizer svg{margin-top:8px}
+
+/* ---------- body text grid ---------- */
+.content{padding:8px 56px 10px}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 250px;column-gap:38px;align-items:start}
+.pair > .side{padding-top:22px}
+.wide{margin:26px 0}
+h3.kc{font-family:var(--cond);font-size:15px;letter-spacing:.22em;color:var(--amber-dk);margin:34px 0 0;text-transform:uppercase}
+h3.head{font-family:var(--cond);font-size:36px;line-height:1.05;color:var(--unit-dk);margin:4px 0 10px;font-weight:700}
+h4.sub{font-family:var(--sans);font-size:19px;color:var(--unit);margin:22px 0 4px;font-weight:700}
+p{margin:0 0 14px}
+.lead::first-letter{font-family:var(--cond);float:left;font-size:78px;line-height:.82;padding:6px 10px 0 0;color:var(--unit);font-weight:700}
+dfn,.kt{font-style:normal;font-weight:700;color:var(--unit-dk);background:linear-gradient(transparent 62%,#ffe4a8 62%)}
+.es{font-style:italic;color:var(--ink-3);font-size:.92em}
+
+/* margin notes */
+.qr{background:#fff;border-top:4px solid var(--unit);padding:12px 14px 12px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.qr .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--unit);margin-bottom:4px}
+.qr .term{font-weight:700;color:var(--unit-dk)}
+.qr .sp{display:block;margin-top:6px;color:var(--ink-3);font-size:12.5px}
+.fact{background:var(--amber-lt);border-top:4px solid var(--amber);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.fact .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);margin-bottom:4px}
+.fact .big{font-family:var(--cond);font-weight:800;font-size:40px;line-height:1;color:var(--amber-dk);display:block;margin:2px 0 4px}
+.math{background:var(--violet-lt);border-top:4px solid var(--violet);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.math .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--violet);margin-bottom:4px}
+.connect{background:var(--sage-lt);border-top:4px solid var(--sage);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.connect .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--sage);margin-bottom:4px}
+
+/* feature boxes */
+.box{border-radius:12px;margin:28px 0;overflow:hidden;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.box-h{display:flex;align-items:center;gap:12px;padding:12px 20px;color:#fff;font-family:var(--cond);font-size:21px;font-weight:700;letter-spacing:.06em}
+.box-h small{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.2em;opacity:.85;display:block}
+.box-b{padding:18px 22px 16px;font-size:17px}
+.box-b p:last-child{margin-bottom:0}
+.example .box-h{background:var(--unit)}
+.example{border:2px solid var(--unit)}
+.choices .box-h{background:var(--coral)}
+.choices{border:2px solid var(--coral)}
+.choices .opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.choices .opt{background:var(--coral-lt);border-radius:10px;padding:14px;font-size:16px}
+.choices .opt h5{margin:8px 0 4px;font-family:var(--sans);font-size:16px;color:var(--coral)}
+.choices .ask{margin-top:14px;font-family:var(--sans);font-weight:600;font-size:15px}
+.global .box-h{background:var(--sage)}
+.global{border:2px solid var(--sage)}
+.app{border:2px dashed var(--amber);background:var(--amber-lt);box-shadow:none}
+.app .box-h{background:transparent;color:var(--amber-dk);padding-bottom:0}
+.app .box-b{font-family:var(--sans);font-size:15.5px}
+.skill .box-h{background:var(--violet)}
+.skill{border:2px solid var(--violet)}
+.skill ol{font-family:var(--sans);font-size:15.5px;padding-left:22px}
+.skill li{margin-bottom:6px}
+.thinking{border-left:6px solid var(--unit);background:var(--unit-lt);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0 22px;font-family:var(--sans);font-size:15px}
+.thinking b.t{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:14px;display:block}
+
+/* figures */
+figure{margin:28px 0;background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px 20px 14px}
+figure.bare{background:none;border:0;padding:0}
+.figlabel{font-family:var(--cond);font-weight:700;font-size:20px;letter-spacing:.05em;color:var(--unit-dk);margin:0 0 2px}
+.figlabel span{color:var(--amber-dk);margin-right:8px}
+.figsub{font-family:var(--sans);font-size:13.5px;color:var(--ink-2);margin:0 0 10px}
+figcaption,.source{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.45}
+.analyze{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px;font-family:var(--sans);font-size:14.5px}
+.analyze b{font-family:var(--cond);letter-spacing:.16em;color:var(--amber-dk);font-size:14px;margin-right:6px}
+.analyze ol{margin:4px 0 0;padding-left:20px}
+details.dt{margin-top:8px;font-family:var(--sans);font-size:13px}
+details.dt summary{cursor:pointer;color:var(--unit);font-weight:600}
+table.data{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;margin:8px 0}
+table.data th{background:var(--unit);color:#fff;text-align:left;padding:7px 10px;font-weight:600}
+table.data td{padding:7px 10px;border-bottom:1px solid var(--rule)}
+table.data tr:nth-child(even) td{background:#f6f8f9}
+table.data td.num,table.data th.num{text-align:right;font-variant-numeric:tabular-nums}
+table.data tr.hl td{background:var(--amber-lt)!important;font-weight:600}
+.essentials{border:3px solid var(--unit);background:#fff}
+.essentials .es-head{background:var(--unit);color:#fff;margin:-18px -20px 16px;padding:10px 20px;font-family:var(--cond);font-size:22px;font-weight:700;letter-spacing:.06em;border-radius:9px 9px 0 0}
+.essentials .es-head small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;color:#f2de8c}
+.fop{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fop > div{border-radius:10px;padding:12px;font-family:var(--sans);font-size:13.5px;line-height:1.4}
+.fop h5{font-family:var(--cond);font-size:22px;margin:6px 0 2px;letter-spacing:.04em}
+.fop .what{font-weight:600;margin-bottom:6px}
+.fop ul{margin:0;padding-left:16px}
+.questions3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.questions3 > div{background:var(--unit-lt);border-radius:10px;padding:14px;font-family:var(--sans);font-size:14px}
+.questions3 h5{margin:6px 0 4px;font-family:var(--cond);font-size:22px;color:var(--unit-dk)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.chart svg text{font-family:var(--sans)}
+svg .bar:hover,svg .pt:hover,svg .slice:hover{opacity:.82}
+
+/* pacesetter */
+.pacesetter{display:grid;grid-template-columns:240px 1fr;border:2px solid var(--unit-dk);border-radius:12px;overflow:hidden;margin:30px 0;background:#fff}
+.pacesetter .ps-side{background:var(--unit-dk);color:#e7f2f4;padding:18px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.pacesetter .ps-side h5{font-family:var(--cond);color:#f2de8c;letter-spacing:.2em;font-size:15px;margin:12px 0 8px}
+.pacesetter .ps-side dt{font-weight:700;color:#f2de8c;margin-top:8px}
+.pacesetter .ps-side dd{margin:0}
+.pacesetter .ps-main{padding:18px 24px}
+.pacesetter .ps-main .kicker{color:var(--amber-dk)}
+.pacesetter h4{font-family:var(--cond);font-size:34px;margin:0 0 10px;color:var(--unit-dk);line-height:1}
+.pacesetter h4 span{display:block;font-size:20px;color:var(--ink-2);font-weight:600}
+
+.ps-photo{margin:0 0 6px;padding:0;border:0;background:none;border-radius:0}
+.ps-photo img{width:100%;border-radius:8px;display:block}
+.ps-photo figcaption{color:#d4ead9;font-size:12.5px;line-height:1.45;margin-top:8px}
+.ps-photo figcaption span{display:block;margin-top:4px;font-size:11px;color:#a8d1b4}
+.ps-photo figcaption a{color:#a8d1b4}
+.packet-note{display:flex;gap:16px;align-items:center;margin:32px 0 10px;padding:16px 20px;border:3px solid var(--unit);border-radius:14px;background:var(--unit-lt);font-family:var(--sans);font-size:15.5px;line-height:1.5}
+.packet-note svg{flex:none}
+.packet-note b{display:block;font-family:var(--cond);font-size:20px;letter-spacing:.1em;color:var(--unit-dk)}
+/* assessments */
+.assess{margin:34px 0 10px;border:3px solid var(--unit);border-radius:14px;overflow:hidden;background:#fff}
+.assess-h{background:var(--unit);color:#fff;padding:12px 22px;display:flex;align-items:baseline;gap:14px;font-family:var(--cond)}
+.assess-h b{font-size:28px;letter-spacing:.06em}
+.assess-h span{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:#f2de8c}
+.assess-grid{display:grid;grid-template-columns:1fr 1fr;font-family:var(--sans);font-size:15px;line-height:1.5}
+.assess-grid > div{padding:16px 22px}
+.assess-grid > div:first-child{border-right:1px solid var(--rule)}
+.assess h5{font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit);margin:4px 0 8px}
+.assess ol{padding-left:22px;margin:0 0 10px}
+.assess li{margin-bottom:8px}
+.inpractice{background:var(--amber-lt);border-top:1px solid var(--rule);padding:16px 22px;font-family:var(--sans);font-size:15px}
+.inpractice h5{color:var(--amber-dk)}
+.inpractice table.data{background:#fff}
+.inpractice td.blank{color:#b0b5bd}
+
+/* case study */
+.case{background:#f3efe6;padding:0 0 20px}
+.case-banner{background:var(--coral);color:#fff;padding:34px 56px 28px;position:relative;overflow:hidden}
+.case-banner .kicker{color:#ffe3c2;letter-spacing:.3em}
+.case-banner h2{font-family:var(--cond);font-size:58px;margin:4px 0 6px;line-height:1}
+.case-banner p{font-family:var(--sans);font-size:15px;max-width:720px;margin:0;color:#fff3ee}
+.doc{background:#fff;border:1px solid #e0d7c6;border-radius:10px;margin:22px 0;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.doc-h{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid #eee4d3}
+.doc-h .letter{width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-family:var(--cond);font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;flex:none}
+.doc-h b{font-family:var(--cond);font-size:22px;color:var(--ink)}
+.doc-h small{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+.doc-b{padding:14px 20px;font-size:16.5px}
+.doc .think{background:var(--coral-lt);padding:10px 20px;font-family:var(--sans);font-size:14.5px;border-radius:0 0 10px 10px}
+.doc .think b{color:var(--coral)}
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.voice{background:#faf7f1;border-radius:10px;padding:14px;font-size:15.5px}
+.voice h6{margin:0 0 6px;font-family:var(--sans);font-size:14px;color:var(--coral)}
+
+/* chapter assessment */
+.chap-assess .sec-banner{background:var(--ink)}
+.chap-assess .sec-banner .num{background:#0f131c}
+.wordbank{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.wordbank span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:3px 12px;font-family:var(--sans);font-size:14px}
+.cloze{font-size:17.5px;line-height:1.9}
+.cloze .bl{display:inline-block;min-width:34px;border-bottom:2px solid var(--ink);text-align:center;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--unit)}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.summary-grid > div{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 16px;font-family:var(--sans);font-size:14.5px}
+.summary-grid h5{margin:0 0 6px;font-family:var(--cond);font-size:19px;color:var(--unit-dk)}
+.sim{border:3px solid var(--violet);border-radius:14px;background:#fff;overflow:hidden;margin:28px 0}
+.sim .box-h{background:var(--violet)}
+.sim .box-b{font-family:var(--sans);font-size:15.5px}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps li{counter-increment:st;position:relative;padding:0 0 10px 44px}
+.steps li::before{content:counter(st);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--violet);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.credits{font-family:var(--sans);font-size:13px;color:var(--ink-2);padding:22px 56px;background:#f1f0eb;border-top:1px solid var(--rule)}
+.credits h4{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:16px;margin:0 0 8px}
+.credits li{margin-bottom:4px}
+
+/* running footer */
+.runfoot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;background:var(--unit-dk);color:#d5e9ec;font-family:var(--sans);font-size:11.5px;letter-spacing:.16em;font-weight:600;padding:10px 56px;margin-top:26px}
+.runfoot span:nth-child(2){color:#f2de8c}
+.runfoot span:last-child{text-align:right}
+
+
+/* photos */
+figure.photo{padding:0;overflow:hidden;background:#fff}
+figure.photo img{width:100%;display:block;background:#e9e7e0}
+figure.photo .crop{position:relative;overflow:hidden;width:100%;background:#e9e7e0}
+.kl{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.2em;color:#fff;background:rgba(0,0,0,.6);padding:3px 12px;border-radius:3px;white-space:nowrap}.kn{top:12px}.ks{bottom:12px}
+figure.photo.sidefig{float:right;width:270px;margin:4px 0 14px 28px}
+.pair > .body{display:flow-root}
+figure.photo figcaption{margin:0;padding:10px 16px 12px;font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-2);border-top:4px solid var(--amber)}
+figure.photo .phlabel{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);text-transform:uppercase;margin-bottom:2px}
+figure.photo .credit{display:block;margin-top:5px;font-size:11.5px;color:var(--ink-3)}
+figure.photo .credit a{color:var(--ink-3)}
+.side figure.photo{margin:0 0 18px}
+.side figure.photo figcaption{font-size:12.5px;padding:8px 12px 10px}
+figure.photo.sidefig figcaption{font-size:12.5px;padding:8px 12px 10px}
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0}
+.photo-row figure.photo{margin:0}
+.opener-photo{position:relative;height:560px;overflow:hidden}
+.opener-photo img{width:100%;height:100%;object-fit:cover;object-position:center 70%;display:block}
+.opener-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,74,44,.78) 0%,rgba(31,74,44,.35) 45%,rgba(0,0,0,0) 70%)}
+.opener-head{z-index:2}
+.opener-caption .credit{display:block;font-size:11.5px;color:#a8d1b4;margin-top:4px}
+.opener-caption .credit a{color:#a8d1b4}
+@media (max-width:900px){.photo-row{grid-template-columns:1fr}.opener-photo{height:300px}}
+
+/* responsive */
+@media (max-width:900px){
+  body{font-size:17px}
+  .content{padding:8px 20px}
+  .pair{grid-template-columns:1fr}
+  figure.photo.sidefig{float:none;width:100%;max-width:380px;margin:12px auto}
+  .opener-head{position:static;padding:24px 20px 0;background:var(--unit-dk)}
+  .chapnum{font-size:110px}
+  .opener h1{font-size:48px}
+  .opener-grid,.sec-preview,.standards,.assess-grid,.two,.choices .opts,.pacesetter,.voices,.summary-grid{grid-template-columns:1fr}
+  .fop,.questions3{grid-template-columns:1fr 1fr}
+  .sec-banner{grid-template-columns:90px 1fr}
+  .sec-banner .icon{display:none}
+  .sec-banner h2{font-size:34px;padding:20px}
+  .case-banner{padding:26px 20px}
+  .runfoot{padding:10px 20px;grid-template-columns:1fr;text-align:center}
+  .runfoot span:last-child{text-align:center}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .topnav,.progress{display:none}
+  .book{box-shadow:none}
+  .section,.case,.chap-assess{break-before:page}
+  figure,.box,.assess,.doc,.pacesetter{break-inside:avoid}
+  details.dt{display:none}
+}
+
+/* ---------- unit opener pages ---------- */
+.upage{scroll-margin-top:52px;background:var(--paper)}
+.unit-hero .hero-crop{position:relative;overflow:hidden;width:100%;background:#1f4a2c}
+.unit-hero .hero-crop img{position:absolute;max-width:none;height:auto;object-fit:fill}
+.unit-hero .opener-photo{height:auto}
+.unit-hero .opener-photo::after{background:linear-gradient(180deg,rgba(20,52,31,.88) 0%,rgba(31,74,44,.66) 42%,rgba(31,74,44,.18) 75%,rgba(0,0,0,0) 100%)}
+.unit-hero .opener-head{padding-top:40px}
+.unit-hero .chapnum{font-size:230px}
+.unit-hero .chapword{font-size:22px;letter-spacing:.4em}
+.unit-hero h1{font-size:82px}
+.tagline{font-family:var(--serif);font-style:italic;font-size:23px;line-height:1.35;color:#fbf3cf;margin:16px 0 0;max-width:640px;text-shadow:0 2px 8px rgba(0,0,0,.55)}
+.unit-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);background:var(--paper);color:var(--ink)}
+.unit-left{padding:34px 40px 34px 56px}
+.unit-right{background:var(--unit-lt);border-left:1px solid var(--unit-mid);padding:30px 30px 34px}
+.pg-h{font-family:var(--cond);font-size:42px;color:var(--unit-dk);margin:0 0 12px;line-height:1;font-weight:700}
+.unit-left p{font-size:18px}
+.unit-right h3{font-family:var(--cond);font-size:16px;letter-spacing:.2em;color:var(--unit);margin:0 0 10px;text-transform:uppercase}
+.bigideas,.eqlist{list-style:none;padding:0;margin:0 0 26px;counter-reset:bi}
+.bigideas li,.eqlist li{counter-increment:bi;position:relative;padding:0 0 11px 40px;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.bigideas li::before,.eqlist li::before{content:counter(bi);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--unit);color:#fff;font-family:var(--cond);font-weight:800;font-size:17px;display:flex;align-items:center;justify-content:center}
+.eqlist li::before{background:var(--amber);color:var(--unit-dk)}
+.bigideas b{color:var(--unit-dk)}
+.chtag{display:inline-block;font-family:var(--cond);font-weight:700;letter-spacing:.08em;font-size:12.5px;color:var(--amber-dk);background:var(--amber-lt);border-radius:4px;padding:0 6px;margin-left:4px;white-space:nowrap}
+.matters{background:#fff;border-top:5px solid var(--amber);padding:14px 18px 6px;font-family:var(--sans);font-size:14px;line-height:1.55;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.matters p{margin:0 0 10px;font-size:14px}
+.matters .kicker{color:var(--amber-dk)}
+.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 0}
+.statrow .fact{margin:0}
+.statrow .fact .big{font-size:36px}
+.pagehead .sec-banner{grid-template-columns:150px 1fr 210px}
+.intro3{padding:26px 56px 4px;font-size:17.5px}
+.chapcards{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:14px 56px 24px}
+.ccard{background:#fff;border:1px solid var(--rule);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.ccard-h{background:var(--unit-dk);color:#fff;display:flex;gap:16px;align-items:center;padding:14px 20px}
+.ccard-h .n{font-family:var(--cond);font-weight:800;font-size:68px;line-height:.85;color:#f2de8c}
+.ccard-h small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;color:#d4ead9}
+.ccard-h b{font-family:var(--cond);font-size:29px;line-height:1.05;font-weight:700}
+.ccard-b{padding:16px 20px 12px;font-family:var(--sans);font-size:14px;line-height:1.55;flex:1}
+.ccard-b p{margin:0 0 12px;font-size:14px}
+.ccard-b h5{font-family:var(--cond);font-size:14.5px;letter-spacing:.18em;color:var(--unit);margin:12px 0 4px}
+.ccard-b ol{margin:0;padding-left:20px}
+.ccard-b ol li{margin-bottom:2px}
+.cs-tag{background:var(--coral-lt);border-left:5px solid var(--coral);padding:8px 12px;margin:12px 0 0;border-radius:0 8px 8px 0}
+.cs-tag small{display:block;font-family:var(--cond);font-weight:700;letter-spacing:.2em;font-size:13px;color:var(--coral)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:2px 10px;font-size:12.5px}
+.readbtn{display:block;text-align:center;background:var(--unit);color:#fff!important;text-decoration:none;font-family:var(--cond);font-weight:700;letter-spacing:.14em;font-size:19px;padding:12px;margin-top:auto}
+.readbtn:hover{background:var(--unit-dk)}
+.stdwrap{padding:6px 56px 20px}
+.stdwrap h3{font-family:var(--cond);font-size:34px;color:var(--unit-dk);margin:10px 0 6px}
+table.std{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:13.5px;line-height:1.45;background:#fff}
+table.std th{background:var(--unit);color:#fff;text-align:left;padding:8px 10px;font-weight:600}
+table.std td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+table.std tr.grp td{background:var(--unit-lt);font-family:var(--cond);font-weight:700;letter-spacing:.14em;color:var(--unit-dk);font-size:15px}
+table.std code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12px;white-space:nowrap}
+table.std td.where{white-space:nowrap;font-size:12.5px}
+.note{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin:10px 0 0;line-height:1.5}
+.also{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.also .stdbox{font-size:13.5px}
+.p3wrap{padding:22px 56px 8px}
+.p3wrap h3.pg{font-family:var(--cond);font-size:34px;color:var(--unit-dk);margin:22px 0 4px;font-weight:700}
+.p3wrap h3.pg small{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:var(--amber-dk);margin-left:10px;font-weight:700}
+.p3wrap .sub3{font-family:var(--sans);font-size:14px;color:var(--ink-2);margin:0 0 12px}
+.kt3{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.kt3 > div{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:8px 12px;font-family:var(--sans);font-size:13.5px;line-height:1.45;break-inside:avoid}
+.kt3 b{color:var(--unit-dk)}
+.kt3 .es{display:block;font-size:12.5px}
+.skills3{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;font-family:var(--sans);font-size:14px;line-height:1.5}
+.skills3 > div{background:#fff;border:1px solid var(--rule);border-top:4px solid var(--violet);border-radius:8px;padding:9px 13px}
+.skills3 b{color:var(--violet)}
+.lblab{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lbbox{border-radius:12px;padding:16px 20px 8px;font-family:var(--sans);font-size:14px;line-height:1.55}
+.lbbox h4{font-family:var(--cond);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+.lbbox p{font-size:14px;margin:0 0 9px}
+.lb{background:var(--sage-lt);border-top:5px solid var(--sage)}
+.lb h4{color:var(--sage)}
+.la{background:var(--amber-lt);border-top:5px solid var(--amber)}
+.la h4{color:var(--amber-dk)}
+.nameline{display:flex;gap:24px;font-family:var(--sans);font-size:13.5px;margin:0 0 10px}
+.nameline span{flex:1;border-bottom:1.5px solid #8a909c;padding-bottom:2px;color:var(--ink-3)}
+table.ag{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;line-height:1.45;background:#fff}
+table.ag th{background:var(--unit-dk);color:#fff;padding:8px 10px;text-align:left;font-weight:600;font-size:13px;letter-spacing:.03em}
+table.ag th.c{text-align:center}
+table.ag td{border:1px solid var(--rule);padding:9px 10px;vertical-align:top}
+table.ag td.n{font-family:var(--cond);font-weight:800;font-size:22px;color:var(--unit);text-align:center;width:38px}
+table.ag td.ad{text-align:center;width:104px;white-space:nowrap}
+.ring{display:inline-block;width:30px;height:30px;line-height:27px;border:2px solid var(--unit);border-radius:50%;font-family:var(--cond);font-weight:700;font-size:16px;color:var(--unit);margin:0 3px}
+.ln{border-bottom:1.5px solid #9aa1ad;height:24px}
+.ln small{font-size:11px;color:var(--ink-3)}
+.after{width:36%}
+.credline{font-family:var(--sans);font-size:12.5px;color:var(--ink-2);padding:6px 56px 18px;line-height:1.55}
+.unit-key .k{margin:10px 0}
+.unit-key table.std td.where{white-space:normal}
+@media (max-width:900px){
+  .unit-hero .chapnum{font-size:120px}.unit-hero h1{font-size:46px}.tagline{font-size:18px}
+  .unit-grid,.chapcards,.also,.lblab,.kt3,.skills3,.statrow{grid-template-columns:1fr}
+  .unit-left,.unit-right,.stdwrap,.p3wrap,.intro3,.chapcards,.credline{padding-left:20px;padding-right:20px}
+  .ccard-h .n{font-size:52px}
+  table.std td.where{white-space:normal}
+  .unit-hero .hero-crop{aspect-ratio:1180/640}
+}
+@media print{
+  .upage{break-before:page}
+  #p1{break-before:auto}
+  .ccard,.kt3 > div,.skills3 > div,.lbbox,table.ag tr{break-inside:avoid}
+}
+.k{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 18px;margin:12px 0;font-family:var(--sans);font-size:15px;line-height:1.55}
+.k .q{margin:0 0 6px;font-weight:700;color:var(--unit-dk)}
+.k .q .loc{display:inline-block;font-family:var(--cond);letter-spacing:.14em;font-size:14px;color:var(--amber-dk);text-transform:uppercase;margin-right:10px}
+.k .a{margin:0 0 6px}
+.k .a:last-child{margin-bottom:0}
+.k .resp{display:inline-block;font-family:var(--cond);font-weight:800;letter-spacing:.1em;font-size:15px;color:#fff;background:var(--unit);padding:1px 10px;border-radius:4px;margin-right:8px}
+.k .resp.d{background:var(--coral)}
+</style>
+</head>
+<body>
+<div class="book">
+<nav class="topnav" aria-label="Unit sections">
+  <span class="brand">UNIT 3 · CONSUMER AND PERSONAL FINANCE</span>
+  <a href="#p1">Page 1 · Unit Opener</a><a href="#overview">Overview</a><a href="#p2">Page 2 · At a Glance</a><a href="#standards">Standards</a><a href="#p3">Page 3 · Connect and Prepare</a><a href="#guide">Anticipation Guide</a>
+</nav>
+<div class="progress"><span id="bar"></span></div>
+<!-- ===================== PAGE 1: UNIT OPENER ===================== -->
+<section class="upage" id="p1">
+<header class="opener unit-hero" id="opener">
+  <div class="opener-photo"><div class="hero-crop" style="aspect-ratio:1180/640"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shafter%20Fountain.jpg?width=2400" alt="A decorated fountain with an archway and painted panels in downtown Shafter, California, with water flowing in front of it." style="width:100.0%;left:0.0%;top:-15.15%"></div></div>
+  <div class="opener-head">
+    <div class="chapnum">3</div>
+    <div>
+      <div class="chapword">UNIT 3</div>
+      <div class="unitline">Chapters 10–13</div>
+      <h1>Consumer and<br>Personal Finance</h1>
+      <p class="tagline">From your first paycheck to your first apartment: the money skills that make independence possible.</p>
+    </div>
+  </div>
+  <div class="opener-caption"><b>Your money story starts at home.</b> A fountain in downtown Shafter, California, photographed on March 4, 2014. Every household in Kern County, from Shafter to Bakersfield to Tehachapi, makes the same kinds of choices that this unit studies: how to spend, save, borrow, insure, and earn.<span class="credit">Photo: Brittneal / <a href="https://commons.wikimedia.org/wiki/File:Shafter_Fountain.jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></div>
+  <div class="unit-grid" id="overview">
+    <div class="unit-left">
+      <h2 class="pg-h">Unit Overview</h2>
+      <p>Units 1 and 2 looked at the economy from the outside. You learned that scarcity forces choices, that every choice has an opportunity cost, and that prices, businesses, and labor markets coordinate millions of decisions. Unit 3 turns the lens around and points it at <b>you</b>. Every household is a small economy: it earns income by selling labor, it decides how to divide that income among competing uses, and it often borrows against the future to buy something today. The tools of economics (opportunity cost, incentives, marginal thinking, and the price of money) are the same tools that help a person run a budget, compare two loans, or decide whether a health plan is worth its price.</p>
+      <p>The four chapters fit together like the parts of a single financial life. <b>Chapter 10, Budgeting and Money Management</b>, lays the foundation: a plan built on take-home pay, a safe and low-cost place to keep money, and a habit of saving so that interest and time work in your favor. <b>Chapter 11, Credit</b>, shows the borrower’s side of the same ledger. The interest rate that rewards a saver is a cost to a borrower, and your record as a borrower becomes a credit report and a score that follow you for years, which is why protecting your identity belongs in the same chapter. <b>Chapter 12, Wise Choices for Big Purchases</b>, applies budgeting and credit to the largest decisions a household makes (a place to live, a vehicle, an education) and adds insurance, the tool that shares the risk of rare but costly events. <b>Chapter 13, Getting Out on Your Own</b>, returns to where income comes from: choosing a career, reading a pay stub, understanding taxes and tax forms, and planning for retirement. Chapter 10 treats take-home pay as a given, and Chapter 13 explains how that number is produced, which completes the circle.</p>
+      <p>These ideas are not abstract in Kern County. California’s statewide minimum wage is $16.90 an hour in 2026, and the median household income in Kern County was $70,210 in 2024, but the county’s unemployment rate of 7.9 percent in September 2026 was well above California’s 5.1 percent, so many families know what it means to plan around uncertain hours. Distribution centers near Shafter and Bakersfield, farms and packing houses, oil and energy employers, and community college classes at Bakersfield College all appear in this unit’s examples. A student who takes a first job after graduation, or a part-time job while attending Bakersfield College, will face most of the decisions in these chapters within a few years, often without anyone nearby to explain them.</p>
+      <p>California has decided that every high school graduate should study these skills. Assembly Bill 2927 (2024) added a stand-alone personal finance course to the graduation requirements, beginning with the graduating class of 2030–31, and requires schools to offer the course starting in 2027–28. This unit connects the closest Grade 12 Principles of Economics standards with the topics listed in California Education Code section 51284.5. As in every chapter of this book, the goal is <b>general education, not individualized financial, tax, or legal advice</b>: no single rule fits every person, so the lasting skill is learning which questions to ask (What is the total cost? What is the interest rate? What is the risk? What happens if my income changes?) and how to find reliable information to answer them.</p>
+      <div class="statrow">
+        <div class="fact"><span class="tag">FAST FACT</span><span class="big">63%</span>of U.S. adults said they could cover a surprise $400 expense with cash or its equivalent in 2025, which means more than one in three could not (Federal Reserve survey, as reported in Chapter 10).</div>
+        <div class="fact"><span class="tag">FAST FACT</span><span class="big">$70,210</span>Median household income in Kern County in 2024 (American Community Survey, via Data USA, as reported in Chapter 12).</div>
+        <div class="fact"><span class="tag">FAST FACT</span><span class="big">7.9%</span>Kern County’s unemployment rate in September 2026, compared with 5.1% for California (California Employment Development Department, as reported in Chapter 13).</div>
+      </div>
+    </div>
+    <aside class="unit-right">
+      <h3>Big Ideas</h3>
+      <ol class="bigideas">
+        <li><b>A budget makes opportunity costs visible.</b> Every dollar has competing uses, and a plan built on net pay decides them in advance. <span class="chtag">CH. 10</span></li>
+        <li><b>Interest works in both directions.</b> It pays savers and charges borrowers, and time is the ingredient that makes it powerful. <span class="chtag">CH. 10</span><span class="chtag">CH. 11</span><span class="chtag">CH. 13</span></li>
+        <li><b>Total cost beats sticker price.</b> The best choice compares everything you will pay over time, and insurance shares the risk of costly surprises. <span class="chtag">CH. 12</span></li>
+        <li><b>Information is a financial asset.</b> Your credit record, pay stub, tax forms, and personal data can help you or hurt you, so you must read them and protect them. <span class="chtag">CH. 11</span><span class="chtag">CH. 13</span></li>
+      </ol>
+      <h3>Essential Questions</h3>
+      <p style="font-family:var(--sans);font-size:13px;color:var(--ink-2);margin:0 0 8px">You should be able to answer these by the end of the unit.</p>
+      <ol class="eqlist">
+        <li>How can a budget built on take-home pay help you choose among needs, wants, and savings goals?</li><li>What does credit really cost, and how do your credit report and score change the price you pay?</li><li>How do you compare the total cost and risk of a big purchase, such as a car, a home, or college, and when does insurance make sense?</li><li>Where does a paycheck go, and how do career choices, taxes, and benefits shape the income you keep?</li><li>How can saving early, protecting your identity, and planning ahead make you more financially independent?</li>
+      </ol>
+      <h3>Why This Unit Matters</h3>
+      <div class="matters">
+        <p class="kicker" style="font-size:13px">A Made-Up Scenario</p>
+        <p>Alma is a senior at Shafter High School (a hypothetical student). In May she accepts a job at a distribution center near Bakersfield at $19 an hour, to start in June, and plans to take classes at Bakersfield College in the fall.</p>
+        <p>Within a few months she faces a string of decisions. Her first paycheck deposit is smaller than hours times wage. A store offers 20 percent off a TV if she opens a card. A car dealer asks, “What monthly payment works for you?” A text message that claims to be her bank asks for a code. She must decide whether to enroll in her employer’s health plan, and in January a form called a W-2 arrives in the mail.</p>
+        <p>None of these decisions is hard once you know the tools, and each can cost hundreds or thousands of dollars if you do not. This unit gives you the tools.</p>
+      </div>
+    </aside>
+  </div>
+  </header>
+  <div class="runfoot"><span>UNIT 3 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+<!-- ===================== PAGE 2: UNIT AT A GLANCE ===================== -->
+<section class="upage" id="p2">
+  <div class="pagehead"><div class="sec-banner">
+    <div class="num"><small>PAGE</small><b>2</b></div>
+    <h2>Unit 3 at a Glance</h2>
+    <div class="icon"><svg viewBox="0 0 120 90" width="150" aria-hidden="true"><g fill="none" stroke="#f2de8c" stroke-width="3"><rect x="10" y="12" width="44" height="30" rx="5"/><rect x="66" y="12" width="44" height="30" rx="5"/><rect x="10" y="50" width="44" height="30" rx="5"/><rect x="66" y="50" width="44" height="30" rx="5"/></g><g fill="#f2de8c" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="22" text-anchor="middle"><text x="32" y="34">10</text><text x="88" y="34">11</text><text x="32" y="72">12</text><text x="88" y="72">13</text></g></svg></div>
+  </div></div>
+  <p class="intro3">Each chapter in this unit has three sections, a Case Study built on real data and documents, and a Chapter Review. The Section Assessments, Chapter Assessment, and Simulation for each chapter are in its <i>Assignment</i> packet. Use the buttons below to open a chapter.</p>
+  <div class="chapcards">
+    <article class="ccard" id="card10">
+      <div class="ccard-h"><div class="n">10</div><div><small>CHAPTER 10</small><b>Budgeting and Money Management</b></div></div>
+      <div class="ccard-b">
+        <p>Chapter 10 builds the foundation of personal finance: a monthly budget built on net pay, a checking account that does not drain your money in fees, and a saving habit that lets interest and time work in your favor. You will compare your spending with the average household, practice reconciling a bank statement, and see how inflation, risk, and retirement accounts such as a 401(k) change what savings can become. The Case Study asks whether a typical household could cover a surprise $400 expense.</p>
+        <h5>SECTIONS</h5>
+        <ol><li>Budgeting</li><li>Checking Accounts and Banking</li><li>Saving and Investing</li></ol>
+        <div class="cs-tag"><small>CASE STUDY</small>The $400 Question: Could You Cover a Surprise?</div>
+        <h5>KEY TERMS SAMPLE</h5>
+        <div class="chips"><span>budget</span><span>net income</span><span>zero-based budget</span><span>checking account</span><span>overdraft</span><span>deposit insurance</span><span>compound interest</span><span>emergency fund</span></div>
+      </div>
+      <a class="readbtn" href="Chapter%2010%20-%20Budgeting%20and%20Money%20Management/Chapter-10-Budgeting-and-Money-Management.html">READ CHAPTER 10 &rarr;</a>
+    </article>
+    <article class="ccard" id="card11">
+      <div class="ccard-h"><div class="n">11</div><div><small>CHAPTER 11</small><b>Credit</b></div></div>
+      <div class="ccard-b">
+        <p>Credit is the other side of the ledger from saving: when you save, you lend to a bank and earn interest, and when you use credit, you borrow and pay it. You will sort the kinds of credit, calculate what interest and APR add to the price of a purchase, learn how a credit report becomes a score, and practice protecting your name from thieves and scammers. The Case Study examines the 2017 Equifax data breach and what it cost ordinary consumers.</p>
+        <h5>SECTIONS</h5>
+        <ol><li>Types of Credit</li><li>Credit Reports and Scores</li><li>Identity Theft and Fraud</li></ol>
+        <div class="cs-tag"><small>CASE STUDY</small>147 Million Files: The Equifax Breach and Your Credit</div>
+        <h5>KEY TERMS SAMPLE</h5>
+        <div class="chips"><span>credit</span><span>APR</span><span>installment loan</span><span>revolving credit</span><span>credit report</span><span>credit score</span><span>credit utilization</span><span>identity theft</span><span>credit freeze</span></div>
+      </div>
+      <a class="readbtn" href="Chapter%2011%20-%20Credit/Chapter-11-Credit.html">READ CHAPTER 11 &rarr;</a>
+    </article>
+    <article class="ccard" id="card12">
+      <div class="ccard-h"><div class="n">12</div><div><small>CHAPTER 12</small><b>Wise Choices for Big Purchases</b></div></div>
+      <div class="ccard-b">
+        <p>This chapter applies the tools of budgeting and credit to the largest purchases in a household budget. You will learn a five-step buying process, comparison shopping, and total cost; compare renting and buying, count the full cost of owning a vehicle, and weigh the price of college and career training; and see how insurance spreads the risk of rare but costly events. The Case Study asks whether college is worth the price.</p>
+        <h5>SECTIONS</h5>
+        <ol><li>Smart Consumer Decisions</li><li>Housing, Vehicles, and College</li><li>Insurance and Risk</li></ol>
+        <div class="cs-tag"><small>CASE STUDY</small>Is College Worth the Price?</div>
+        <h5>KEY TERMS SAMPLE</h5>
+        <div class="chips"><span>unit price</span><span>total cost of ownership</span><span>warranty</span><span>lease</span><span>mortgage</span><span>down payment</span><span>depreciation</span><span>premium</span><span>deductible</span></div>
+      </div>
+      <a class="readbtn" href="Chapter%2012%20-%20Wise%20Choices%20for%20Big%20Purchases/Chapter-12-Wise-Choices-for-Big-Purchases.html">READ CHAPTER 12 &rarr;</a>
+    </article>
+    <article class="ccard" id="card13">
+      <div class="ccard-h"><div class="n">13</div><div><small>CHAPTER 13</small><b>Getting Out on Your Own</b></div></div>
+      <div class="ccard-b">
+        <p>Chapter 13 returns to the source of all income. You will explore why jobs pay different amounts, compare job offers by total compensation, follow a paycheck from gross pay to net pay, and read the tax forms W-4, W-2, and 1040. The chapter closes with planning for independence, from an emergency fund and Social Security to retirement accounts, and a Case Study on employees versus independent contractors.</p>
+        <h5>SECTIONS</h5>
+        <ol><li>Planning a Career and Finding Work</li><li>Paychecks, Taxes, and Tax Forms</li><li>Independence and Planning Ahead</li></ol>
+        <div class="cs-tag"><small>CASE STUDY</small>Employee or Independent Contractor?</div>
+        <h5>KEY TERMS SAMPLE</h5>
+        <div class="chips"><span>wage</span><span>productivity</span><span>total compensation</span><span>gross pay</span><span>net pay</span><span>FICA</span><span>Form W-4</span><span>tax bracket</span><span>independent contractor</span></div>
+      </div>
+      <a class="readbtn" href="Chapter%2013%20-%20Getting%20Out%20on%20Your%20Own/Chapter-13-Getting-Out-on-Your-Own.html">READ CHAPTER 13 &rarr;</a>
+    </article>
+  </div>
+  <div class="stdwrap" id="standards">
+    <h3>California Content Standards</h3>
+    <table class="std">
+      <thead><tr><th style="width:17%">Code</th><th>Official wording</th><th style="width:20%">Where covered</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">CALIFORNIA HISTORY–SOCIAL SCIENCE CONTENT STANDARDS, PRINCIPLES OF ECONOMICS, GRADE 12: CLOSEST MATCHES</td></tr>
+        <tr><td><code>HSS-PoE.12.1.2</code></td><td>Explain opportunity cost and marginal benefit and marginal cost.</td><td class="where">Ch. 10 §1, §3 · Ch. 11 §1 · Ch. 12 §1, §2 · Ch. 13 §1, §3</td></tr><tr><td><code>HSS-PoE.12.1.3</code></td><td>Identify the difference between monetary and nonmonetary incentives and how changes in incentives cause changes in behavior.</td><td class="where">Ch. 10 §1, §2, §3 · Ch. 11 §1, §2 · Ch. 12 §1, §3 · Ch. 13 §1, §2, §3</td></tr><tr><td><code>HSS-PoE.12.2.9</code></td><td>Describe the functions of the financial markets.</td><td class="where">Ch. 10 §2, §3 · Ch. 11 §1 · Ch. 12 §2, §3</td></tr><tr><td><code>HSS-PoE.12.4.2</code></td><td>Describe the current economy and labor market, including the types of goods and services produced, the types of skills workers need, the effects of rapid technological change, and the impact of international competition.</td><td class="where">Ch. 13 §1, Case Study</td></tr><tr><td><code>HSS-PoE.12.4.3</code></td><td>Discuss wage differences among jobs and professions, using the laws of demand and supply and the concept of productivity.</td><td class="where">Ch. 13 §1</td></tr><tr><td><code>HSS-PoE.12.5.1</code></td><td>Distinguish between nominal and real data.</td><td class="where">Ch. 10 §3</td></tr><tr><td><code>HSS-PoE.12.5.3</code></td><td>Distinguish between short-term and long-term interest rates and explain their relative significance.</td><td class="where">Ch. 10 §3 (introduced) · Ch. 11 §1 · Ch. 12 §2</td></tr>
+        <tr class="grp"><td colspan="3">CALIFORNIA PERSONAL FINANCE REQUIREMENT: EDUCATION CODE SECTION 51284.5(a)</td></tr>
+        <tr><td><code>Ed. Code 51284.5(a)(1)</code></td><td>Fundamentals of banking for personal use, including, but not limited to, savings and checking and managing to minimize fees.</td><td class="where">Ch. 10 §2</td></tr><tr><td><code>Ed. Code 51284.5(a)(2)</code></td><td>Principles of budgeting for independent living.</td><td class="where">Ch. 10 §1</td></tr><tr><td><code>Ed. Code 51284.5(a)(3)</code></td><td>Employment and understanding factors that affect net income, including the topics described in subdivision (a) of Section 49110.5.</td><td class="where">Ch. 13 §1, §2</td></tr><tr><td><code>Ed. Code 51284.5(a)(4)</code></td><td>Uses and effects of credit, including managing credit scores and the relation of debt and interest to credit.</td><td class="where">Ch. 11 §1, §2</td></tr><tr><td><code>Ed. Code 51284.5(a)(5)</code></td><td>Uses and costs of loans, including student loans, as well as policies that provide student loan forgiveness.</td><td class="where">Ch. 11 §1 (student loans continue in Ch. 12) · Ch. 12 §2, Case Study</td></tr><tr><td><code>Ed. Code 51284.5(a)(6)</code></td><td>Types and costs of insurance, including home, auto, health, and life insurance.</td><td class="where">Ch. 12 §3</td></tr><tr><td><code>Ed. Code 51284.5(a)(7)</code></td><td>Impacts of the tax system, including its impact on personal income, the process to file taxes, and how to read tax forms and pay stubs.</td><td class="where">Ch. 13 §2, Case Study</td></tr><tr><td><code>Ed. Code 51284.5(a)(8)</code></td><td>Principles of investing and building wealth, including investment alternatives to build financial security, including tax-advantaged investments such as pensions and 401(k) plans, individual retirement accounts (IRAs), and stocks, bonds, mutual funds, and index funds.</td><td class="where">Ch. 10 §3</td></tr><tr><td><code>Ed. Code 51284.5(a)(9)</code></td><td>Enhancing consumer protection skills by raising awareness of common scams and frauds and preventing identity theft.</td><td class="where">Ch. 11 §3, Case Study · Ch. 12 §1 · Ch. 13 §1</td></tr><tr><td><code>Ed. Code 51284.5(a)(10)</code></td><td>Identifying means to finance college, workforce education, low-cost community college options, and other career technical educational pathways or apprenticeships. Financing options covered may include scholarships, merit aid, and student loans.</td><td class="where">Ch. 12 §2, Case Study · Ch. 13 §1</td></tr><tr><td><code>Ed. Code 51284.5(a)(11)</code></td><td>Understanding how psychology can impact one’s financial well-being.</td><td class="where">Ch. 10 §1, §3</td></tr><tr><td><code>Ed. Code 51284.5(a)(12)</code></td><td>Charitable giving.</td><td class="where">Ch. 10 §1, §3</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Labeling note: The Grade 12 History–Social Science Principles of Economics standards (HSS-PoE) are quoted from the California Department of Education’s content standards database and are the closest existing matches; they do not include a stand-alone personal finance strand. The personal finance topics are quoted from California Education Code section 51284.5(a), as amended by Assembly Bill 2927 (Chapter 37, Statutes of 2024), which requires public high schools to offer a stand-alone personal finance course in 2027–28 and makes it a graduation requirement for the class of 2030–31. The State Board of Education adopted the statewide Personal Finance Curriculum Guide on March 11, 2026. Section numbers (§) refer to the sections of each chapter, and the “Where covered” column follows the standards boxes on each chapter’s opener.</p>
+    <h3 style="margin-top:22px">Also Supports</h3>
+    <div class="also">
+      <div class="stdbox"><h4>READING AND ANALYSIS</h4><ul>
+        <li><code>RH.11-12.7</code> Integrate and evaluate multiple sources of information presented in diverse formats and media (e.g., visually, quantitatively, as well as in words) in order to address a question or solve a problem. <i>(Figures and Case Studies, Ch. 10–13)</i></li>
+        <li>Spanish equivalents for key terms in the margin Quick Reference notes of every chapter support multilingual learners.</li>
+      </ul></div>
+      <div class="stdbox"><h4>OTHER PERSONAL FINANCE TOPICS (Ed. Code 51284.5(a)(13))</h4><ul>
+        <li>Renting an apartment, buying a home, and purchasing versus leasing a vehicle: Chapter 12, Section 2.</li>
+        <li>Predatory lending, including payday loans: Chapter 11, Section 1.</li>
+        <li>California-specific information, such as Bakersfield College fees (Chapter 12) and Proposition 22 (Chapter 13 Case Study).</li>
+      </ul></div>
+    </div>
+  </div>
+  <div class="runfoot"><span>UNIT 3 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+<!-- ===================== PAGE 3: CONNECT AND PREPARE ===================== -->
+<section class="upage" id="p3">
+  <div class="pagehead"><div class="sec-banner">
+    <div class="num"><small>PAGE</small><b>3</b></div>
+    <h2>Connect and Prepare</h2>
+    <div class="icon"><svg viewBox="0 0 120 90" width="150" aria-hidden="true"><g fill="none" stroke="#f2de8c" stroke-width="3" stroke-linecap="round"><path d="M12 62 h96"/><path d="M24 62 v-20 M44 62 v-34 M64 62 v-14 M84 62 v-40"/><circle cx="24" cy="36" r="5"/><circle cx="44" cy="22" r="5"/><circle cx="64" cy="42" r="5"/><circle cx="84" cy="16" r="5"/></g></svg></div>
+  </div></div>
+  <div class="p3wrap">
+    <h3 class="pg">Key Terms Preview <small>20 TERMS</small></h3>
+    <p class="sub3">You will meet these terms in the chapters. The definitions are the ones used in each chapter’s Quick Reference notes, with Spanish equivalents.</p>
+    <div class="kt3"><div><b>Budget</b><span class="chtag">CH. 10</span><span class="es">Spanish: presupuesto</span>A plan for how to earn, spend, and save money over a period of time.</div><div><b>Net income</b><span class="chtag">CH. 10</span><span class="es">Spanish: ingreso neto</span>The amount left after payroll deductions; also called take-home pay.</div><div><b>Compound interest</b><span class="chtag">CH. 10</span><span class="es">Spanish: interés compuesto</span>Interest paid on both the original principal and on interest already earned.</div><div><b>Deposit insurance</b><span class="chtag">CH. 10</span><span class="es">Spanish: seguro de depósitos</span>Federal protection of deposits in banks and credit unions, up to $250,000 per depositor, per institution, per ownership category.</div><div><b>Emergency fund</b><span class="chtag">CH. 10</span><span class="es">Spanish: fondo de emergencia</span>Money kept in a safe, accessible account for unexpected expenses.</div><div><b>APR</b><span class="chtag">CH. 11</span><span class="es">Spanish: tasa de porcentaje anual (TAE)</span>The annual percentage rate: the yearly cost of credit expressed as a percentage, including certain fees.</div><div><b>Credit score</b><span class="chtag">CH. 11</span><span class="es">Spanish: puntaje de crédito</span>A number, usually 300 to 850, that estimates how likely a borrower is to repay on time.</div><div><b>Credit report</b><span class="chtag">CH. 11</span><span class="es">Spanish: informe de crédito</span>A record of a person’s borrowing and repayment history, compiled by a credit bureau.</div><div><b>Credit freeze</b><span class="chtag">CH. 11</span><span class="es">Spanish: congelamiento de crédito</span>Blocks access to your credit report so that new credit cannot be opened in your name until you lift the freeze.</div><div><b>Identity theft</b><span class="chtag">CH. 11</span><span class="es">Spanish: robo de identidad</span>The use of another person’s personal information without permission to commit fraud or other crimes.</div><div><b>Unit price</b><span class="chtag">CH. 12</span><span class="es">Spanish: precio por unidad</span>The price per unit of measure, such as per ounce or per item.</div><div><b>Total cost of ownership</b><span class="chtag">CH. 12</span><span class="es">Spanish: costo total de propiedad</span>The full cost of owning a product over time, including purchase, financing, operating, and repair costs.</div><div><b>Mortgage</b><span class="chtag">CH. 12</span><span class="es">Spanish: hipoteca</span>A long-term loan used to buy real estate, with the property as collateral.</div><div><b>Premium</b><span class="chtag">CH. 12</span><span class="es">Spanish: prima (del seguro)</span>The regular payment that a policyholder makes to keep an insurance policy in force.</div><div><b>Deductible</b><span class="chtag">CH. 12</span><span class="es">Spanish: deducible</span>The amount a policyholder must pay on a covered loss before the insurer starts paying.</div><div><b>Gross pay</b><span class="chtag">CH. 13</span><span class="es">Spanish: salario bruto</span>The total amount earned before taxes and other deductions are subtracted.</div><div><b>FICA</b><span class="chtag">CH. 13</span><span class="es">Spanish: impuestos de la Ley FICA (Seguro Social y Medicare)</span>The Social Security and Medicare payroll taxes: 7.65% of wages for the employee and 7.65% for the employer.</div><div><b>Marginal tax rate</b><span class="chtag">CH. 13</span><span class="es">Spanish: tasa marginal de impuestos</span>The rate that applies to the next dollar of taxable income.</div><div><b>401(k)</b><span class="chtag">CH. 13</span><span class="es">Spanish: plan 401(k) de jubilación</span>An employer-sponsored retirement plan in which workers contribute part of their pay to an investment account.</div><div><b>Independent contractor</b><span class="chtag">CH. 13</span><span class="es">Spanish: contratista independiente</span>A worker who is in business for himself or herself and is paid by clients, not an employer.</div></div>
+
+    <h3 class="pg">Skills You Will Practice <small>HOW YOU WILL USE THE TOOLS</small></h3>
+    <p class="sub3">Each skill is practiced in the Applications, Figures, Section Assessments, and Simulations of the chapters shown.</p>
+    <div class="skills3"><div><b>Building a zero-based monthly budget on net pay</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 10 §1 (Fig. 10.3)</span></div><div><b>Reading a pay stub: from gross pay to net pay</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 10 Fig. 10.1 · Ch. 13 §2 (Fig. 13.5)</span></div><div><b>Comparing your spending with the average household</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 10 §1 (Fig. 10.4)</span></div><div><b>Avoiding overdraft fees and reconciling a statement</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 10 §2</span></div><div><b>Comparing savings choices by risk, return, and liquidity; nominal and real returns</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 10 §3</span></div><div><b>Calculating compound interest and using the Rule of 72</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 10 §3 · Ch. 13 §3</span></div><div><b>Comparing APRs and the total cost of credit; computing debt-to-income ratio</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 11 §1</span></div><div><b>Reading a credit report and credit-score data</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 11 §2</span></div><div><b>Spotting scams and building an identity-theft recovery plan</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 11 §3</span></div><div><b>Using unit price and cost per use to compare products</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 12 §1</span></div><div><b>Finding total cost of ownership; renting versus buying; lease versus loan</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 12 §2</span></div><div><b>Choosing a deductible and working out who pays what on a claim</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 12 §3</span></div><div><b>Comparing job offers by total compensation</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 13 §1</span></div><div><b>Calculating marginal and effective tax rates with the standard deduction</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 13 §2</span></div><div><b>Matching the forms W-4, W-2, and 1040 to their jobs</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 13 §2</span></div><div><b>Integrating charts, data, and viewpoints in a Case Study (RH.11-12.7)</b><br><span style="color:var(--ink-3);font-size:12.5px">Ch. 10–13 Case Studies</span></div></div>
+
+    <h3 class="pg">Look Back and Look Ahead</h3>
+    <div class="lblab">
+      <div class="lbbox lb"><h4>LOOK BACK: UNITS 1 AND 2</h4>
+        <p><b>Unit 1 · Chapter 1.</b> Scarcity and opportunity cost return in every budget and every big purchase (Chapters 10, 12, and 13).</p>
+        <p><b>Chapters 4–6 · Demand, Supply, and Prices.</b> The interest rate is the price that coordinates savers and borrowers, and the prices of housing, vehicles, and insurance respond to the same forces you studied there (Chapters 11 and 12).</p>
+        <p><b>Chapters 7–8 · Market Structures and Business Organizations.</b> Banks, credit unions, and insurers compete for your business, a credit union is a member-owned cooperative, and a stock is a share of ownership in a corporation (Chapter 10).</p>
+        <p><b>Chapter 9 · The Role of Labor.</b> Wages depend on the supply of and demand for skills, education is an investment in human capital, and benefits such as health insurance are part of the pay package (Chapters 12 and 13).</p>
+      </div>
+      <div class="lbbox la"><h4>LOOK AHEAD: UNIT 4, MONEY AND THE MACROECONOMY</h4>
+        <p><b>Chapter 14 · Money and Banking.</b> Your deposit in Chapter 10 is the loan that another person receives in Chapter 11, and Chapter 14 explains how banks stand in the middle.</p>
+        <p><b>Chapter 15 · Financial Markets.</b> Bonds, stocks, and other markets connect lenders and borrowers on a much larger scale, and they are where retirement savings are invested.</p>
+        <p><b>Chapter 16 · Economic Indicators and Measurements.</b> You will see how the Consumer Price Index is built and how economists tell nominal data from real data, the idea behind inflation’s effect on savings.</p>
+        <p><b>Chapter 17 · Facing Economic Challenges.</b> You will study unemployment and how technology and trade can change which jobs are available, a theme that begins with the career choices in Chapter 13. Taxes and the Federal Reserve follow in Unit 5.</p>
+      </div>
+    </div>
+
+    <h3 class="pg" id="guide">Before You Read: Anticipation Guide <small>WORK AT YOUR SEAT</small></h3>
+    <div class="nameline"><span>Name</span><span>Period</span><span>Date</span></div>
+    <p class="sub3"><b>Directions.</b> Read each statement. In the <b>Before You Read</b> column, circle <b>A</b> if you agree or <b>D</b> if you disagree, based on what you think right now. Then turn to your shoulder partner, share your answer and one reason, and listen to theirs. Do not worry about being right: this is about your current thinking. As you finish each chapter, return here, circle your answer in the <b>After You Read</b> column, and write the chapter and section that confirmed or changed your mind.</p>
+    <table class="ag">
+      <thead><tr><th class="c">#</th><th>Statement</th><th class="c">Before You Read<br>(circle one)</th><th class="c">After You Read<br>(circle one)</th><th>After You Read: my evidence</th></tr></thead>
+      <tbody><tr><td class="n">1</td><td>A good budget starts with your gross pay, the biggest number on your pay stub.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr><tr><td class="n">2</td><td>A person who starts saving early can end up with more money than a person who starts later and saves much more in total.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr><tr><td class="n">3</td><td>Paying only the minimum on a credit card makes a balance take years to pay off.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr><tr><td class="n">4</td><td>Your credit score is mostly based on how much money you earn.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr><tr><td class="n">5</td><td>A loan with a low monthly payment can still cost more in total than a loan with a higher monthly payment.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr><tr><td class="n">6</td><td>Insurance is worth paying for even in a year when you never file a claim.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr><tr><td class="n">7</td><td>If you earn $18.50 an hour and work 80 hours in a pay period, the deposit in your bank account will be $1,480.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr><tr><td class="n">8</td><td>A large tax refund is a bonus from the government.</td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="ad"><span class="ring">A</span><span class="ring">D</span></td><td class="after"><div class="ln"><small>Evidence: Chapter ___, Section ___</small></div><div class="ln"></div></td></tr></tbody>
+    </table>
+  </div>
+  <div class="credits">
+    <h4>SOURCES AND ATTRIBUTION</h4>
+    <ul style="margin:0;padding-left:18px">
+      <li>California Department of Education, History–Social Science Content Standards, Principles of Economics, Grade 12 (standards database): <a href="https://www.cde.ca.gov/be/st/ss/documents/histsocscistnd.pdf">cde.ca.gov</a></li>
+      <li>California Legislature, Assembly Bill 2927 (Chapter 37, Statutes of 2024), text of Education Code section 51284.5: <a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2927">leginfo.legislature.ca.gov</a>; California Department of Education, Personal Finance: <a href="https://www.cde.ca.gov/ci/cr/cf/personalfinance.asp">cde.ca.gov/ci/cr/cf/personalfinance.asp</a></li>
+      <li>Common Core State Standards Initiative, Reading Standards for Literacy in History/Social Studies, RH.11-12.7: <a href="https://www.thecorestandards.org/ELA-Literacy/RH/11-12/7/">thecorestandards.org</a></li>
+      <li>Statistics on this page are reported, with their sources, in Chapters 10, 12, and 13: Board of Governors of the Federal Reserve System, <i>Economic Well-Being of U.S. Households in 2025</i> (<a href="https://www.federalreserve.gov/consumerscommunities/shed.htm">federalreserve.gov</a>); U.S. Census Bureau, American Community Survey, via Data USA (<a href="https://datausa.io/profile/geo/kern-county-ca/">datausa.io</a>); California Department of Industrial Relations (<a href="https://www.dir.ca.gov/dlse/minimum_wage.htm">dir.ca.gov</a>); California Employment Development Department.</li>
+      <li>The chapters in this unit adapt material from OpenStax, <i>Principles of Economics 3e</i> (CC BY 4.0); see each chapter’s Sources and Attribution. Alma is a hypothetical person created for this textbook. This unit provides general educational information and is not financial, tax, or legal advice.</li>
+    </ul>
+    <p style="margin:10px 0 0"><b>Photo credits:</b> The unit opener photograph, a fountain in downtown Shafter, California, photographed March 4, 2014, is by Brittneal, <a href="https://commons.wikimedia.org/wiki/File:Shafter_Fountain.jpg">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and is shown unaltered except for cropping in the page layout.</p>
+  </div>
+  <div class="runfoot"><span>UNIT 3 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+</div>
+<script>
+(function(){var b=document.getElementById('bar');function u(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}window.addEventListener('scroll',u,{passive:true});u();})();
+</script>
+</body>
+</html>

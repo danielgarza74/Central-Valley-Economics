@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 2: Microeconomics · Unit Opener | Economics | Daniel Garza, M.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --ink:#1c2230; --ink-2:#4a5263; --ink-3:#6f7787;
+  --paper:#fbfaf6; --white:#ffffff;
+  --unit:#2f4a9c; --unit-dk:#1e2a5e; --unit-lt:#e7ecf8; --unit-mid:#a9b8e0;
+  --amber:#e0603a; --amber-lt:#fde9e2; --amber-dk:#a63d1f;
+  --coral:#c8553d; --coral-lt:#fbe9e4;
+  --sage:#4e7d4a; --sage-lt:#e8f1e5;
+  --violet:#5b4bb7; --violet-lt:#ecebfa;
+  --rule:#d9dde3; --grid:#e6e8ec;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --other:#9aa1ad;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Inter", "Segoe UI", Arial, sans-serif;
+  --cond:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e9e7e0;color:var(--ink);font-family:var(--serif);font-size:18.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:var(--unit)}
+.book{max-width:1180px;margin:0 auto;background:var(--paper);box-shadow:0 0 40px rgba(0,0,0,.08)}
+
+/* ---------- top navigation ---------- */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(30,42,94,.97);color:#fff;font-family:var(--sans);font-size:13px;display:flex;align-items:center;gap:6px;padding:0 18px;height:46px;overflow-x:auto;white-space:nowrap}
+.topnav .brand{font-family:var(--cond);font-weight:700;letter-spacing:.08em;font-size:16px;margin-right:14px;color:#ffc2ad}
+.topnav a{color:#e8ecf8;text-decoration:none;padding:6px 10px;border-radius:6px}
+.topnav a:hover{background:rgba(255,255,255,.12)}
+.progress{position:sticky;top:46px;z-index:49;height:4px;background:#d6dcef}
+.progress span{display:block;height:100%;width:0;background:var(--amber)}
+
+/* ---------- chapter opener ---------- */
+.opener{position:relative;background:linear-gradient(160deg,var(--unit-dk) 0%,var(--unit) 70%);color:#fff;overflow:hidden}
+.opener-art{width:100%}
+.opener-head{position:absolute;left:0;right:0;top:0;padding:46px 56px 0;display:flex;gap:28px;align-items:flex-start}
+.chapnum{font-family:var(--cond);font-weight:800;font-size:170px;line-height:.78;color:#ffc2ad;text-shadow:0 4px 0 rgba(0,0,0,.18)}
+.chapword{font-family:var(--cond);letter-spacing:.32em;font-size:15px;font-weight:600;color:#ffc2ad;margin-bottom:4px}
+.unitline{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#d3dbf3;margin-bottom:10px}
+.opener h1{font-family:var(--cond);font-weight:700;font-size:72px;line-height:.95;margin:0;letter-spacing:.01em;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.opener-caption{background:var(--unit-dk);color:#dde3f5;font-family:var(--sans);font-size:13.5px;line-height:1.5;padding:12px 56px}
+.opener-caption b{color:#ffc2ad}
+.opener-grid{display:grid;grid-template-columns:300px 1fr;background:var(--paper);color:var(--ink)}
+.sectionlist{background:var(--unit-lt);padding:30px 28px;border-right:1px solid var(--unit-mid)}
+.sectionlist h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:0 0 14px}
+.sectionlist a{display:block;text-decoration:none;color:var(--ink);padding:12px 0;border-bottom:1px solid var(--unit-mid)}
+.sectionlist a:last-child{border-bottom:0}
+.sectionlist .sl-tag{display:block;font-family:var(--cond);font-weight:700;font-size:14px;letter-spacing:.15em;color:var(--unit)}
+.sectionlist .sl-title{display:block;font-family:var(--sans);font-weight:600;font-size:16px;line-height:1.25}
+.sectionlist .cs .sl-tag{color:var(--coral)}
+.opener-main{padding:30px 44px 34px}
+.kicker{font-family:var(--cond);font-weight:700;letter-spacing:.2em;font-size:15px;color:var(--unit);margin:0 0 6px;text-transform:uppercase}
+.keyconcept{background:var(--white);border-left:6px solid var(--amber);padding:16px 20px;margin:12px 0 22px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.keyconcept .kicker{color:var(--amber-dk)}
+.keyconcept p{margin:0;font-size:20px;line-height:1.45}
+.standards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.stdbox{border:1px solid var(--rule);background:#fff;border-radius:10px;padding:14px 16px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.stdbox h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.12em;color:var(--unit)}
+.stdbox ul{margin:0;padding-left:0;list-style:none}
+.stdbox li{margin:0 0 7px}
+.stdbox code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12px}
+
+/* ---------- section openers ---------- */
+.section{padding:0 0 10px;scroll-margin-top:56px}
+.sec-banner{display:grid;grid-template-columns:130px 1fr 210px;align-items:stretch;background:var(--unit);color:#fff;min-height:150px}
+.sec-banner .num{background:var(--unit-dk);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--cond)}
+.sec-banner .num small{letter-spacing:.3em;font-size:14px;color:#ffc2ad;font-weight:600}
+.sec-banner .num b{font-size:84px;line-height:.9;color:#ffc2ad}
+.sec-banner h2{font-family:var(--cond);font-size:50px;line-height:1;margin:0;padding:30px 30px;align-self:center;font-weight:700}
+.sec-banner .icon{display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(255,255,255,.06)}
+.sec-preview{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:0;border-bottom:3px solid var(--unit);background:#fff;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.sec-preview > div{padding:18px 22px;border-right:1px solid var(--rule)}
+.sec-preview > div:last-child{border-right:0}
+.sec-preview h4{margin:0 0 8px;font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit)}
+.sec-preview ul{margin:0;padding-left:18px}
+.sec-preview li{margin-bottom:4px}
+.terms{columns:2;column-gap:16px;list-style:none;padding-left:0!important}
+.terms li{break-inside:avoid}
+.terms a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--unit)}
+.organizer svg{margin-top:8px}
+
+/* ---------- body text grid ---------- */
+.content{padding:8px 56px 10px}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 250px;column-gap:38px;align-items:start}
+.pair > .side{padding-top:22px}
+.wide{margin:26px 0}
+h3.kc{font-family:var(--cond);font-size:15px;letter-spacing:.22em;color:var(--amber-dk);margin:34px 0 0;text-transform:uppercase}
+h3.head{font-family:var(--cond);font-size:36px;line-height:1.05;color:var(--unit-dk);margin:4px 0 10px;font-weight:700}
+h4.sub{font-family:var(--sans);font-size:19px;color:var(--unit);margin:22px 0 4px;font-weight:700}
+p{margin:0 0 14px}
+.lead::first-letter{font-family:var(--cond);float:left;font-size:78px;line-height:.82;padding:6px 10px 0 0;color:var(--unit);font-weight:700}
+dfn,.kt{font-style:normal;font-weight:700;color:var(--unit-dk);background:linear-gradient(transparent 62%,#ffe4a8 62%)}
+.es{font-style:italic;color:var(--ink-3);font-size:.92em}
+
+/* margin notes */
+.qr{background:#fff;border-top:4px solid var(--unit);padding:12px 14px 12px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.qr .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--unit);margin-bottom:4px}
+.qr .term{font-weight:700;color:var(--unit-dk)}
+.qr .sp{display:block;margin-top:6px;color:var(--ink-3);font-size:12.5px}
+.fact{background:var(--amber-lt);border-top:4px solid var(--amber);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.fact .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);margin-bottom:4px}
+.fact .big{font-family:var(--cond);font-weight:800;font-size:40px;line-height:1;color:var(--amber-dk);display:block;margin:2px 0 4px}
+.math{background:var(--violet-lt);border-top:4px solid var(--violet);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.math .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--violet);margin-bottom:4px}
+.connect{background:var(--sage-lt);border-top:4px solid var(--sage);padding:12px 14px;margin:0 0 18px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.connect .tag{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--sage);margin-bottom:4px}
+
+/* feature boxes */
+.box{border-radius:12px;margin:28px 0;overflow:hidden;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.box-h{display:flex;align-items:center;gap:12px;padding:12px 20px;color:#fff;font-family:var(--cond);font-size:21px;font-weight:700;letter-spacing:.06em}
+.box-h small{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.2em;opacity:.85;display:block}
+.box-b{padding:18px 22px 16px;font-size:17px}
+.box-b p:last-child{margin-bottom:0}
+.example .box-h{background:var(--unit)}
+.example{border:2px solid var(--unit)}
+.choices .box-h{background:var(--coral)}
+.choices{border:2px solid var(--coral)}
+.choices .opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.choices .opt{background:var(--coral-lt);border-radius:10px;padding:14px;font-size:16px}
+.choices .opt h5{margin:8px 0 4px;font-family:var(--sans);font-size:16px;color:var(--coral)}
+.choices .ask{margin-top:14px;font-family:var(--sans);font-weight:600;font-size:15px}
+.global .box-h{background:var(--sage)}
+.global{border:2px solid var(--sage)}
+.app{border:2px dashed var(--amber);background:var(--amber-lt);box-shadow:none}
+.app .box-h{background:transparent;color:var(--amber-dk);padding-bottom:0}
+.app .box-b{font-family:var(--sans);font-size:15.5px}
+.skill .box-h{background:var(--violet)}
+.skill{border:2px solid var(--violet)}
+.skill ol{font-family:var(--sans);font-size:15.5px;padding-left:22px}
+.skill li{margin-bottom:6px}
+.thinking{border-left:6px solid var(--unit);background:var(--unit-lt);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0 22px;font-family:var(--sans);font-size:15px}
+.thinking b.t{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:14px;display:block}
+
+/* figures */
+figure{margin:28px 0;background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px 20px 14px}
+figure.bare{background:none;border:0;padding:0}
+.figlabel{font-family:var(--cond);font-weight:700;font-size:20px;letter-spacing:.05em;color:var(--unit-dk);margin:0 0 2px}
+.figlabel span{color:var(--amber-dk);margin-right:8px}
+.figsub{font-family:var(--sans);font-size:13.5px;color:var(--ink-2);margin:0 0 10px}
+figcaption,.source{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.45}
+.analyze{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px;font-family:var(--sans);font-size:14.5px}
+.analyze b{font-family:var(--cond);letter-spacing:.16em;color:var(--amber-dk);font-size:14px;margin-right:6px}
+.analyze ol{margin:4px 0 0;padding-left:20px}
+details.dt{margin-top:8px;font-family:var(--sans);font-size:13px}
+details.dt summary{cursor:pointer;color:var(--unit);font-weight:600}
+table.data{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14px;margin:8px 0}
+table.data th{background:var(--unit);color:#fff;text-align:left;padding:7px 10px;font-weight:600}
+table.data td{padding:7px 10px;border-bottom:1px solid var(--rule)}
+table.data tr:nth-child(even) td{background:#f6f8f9}
+table.data td.num,table.data th.num{text-align:right;font-variant-numeric:tabular-nums}
+table.data tr.hl td{background:var(--amber-lt)!important;font-weight:600}
+.essentials{border:3px solid var(--unit);background:#fff}
+.essentials .es-head{background:var(--unit);color:#fff;margin:-18px -20px 16px;padding:10px 20px;font-family:var(--cond);font-size:22px;font-weight:700;letter-spacing:.06em;border-radius:9px 9px 0 0}
+.essentials .es-head small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;color:#ffc2ad}
+.fop{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fop > div{border-radius:10px;padding:12px;font-family:var(--sans);font-size:13.5px;line-height:1.4}
+.fop h5{font-family:var(--cond);font-size:22px;margin:6px 0 2px;letter-spacing:.04em}
+.fop .what{font-weight:600;margin-bottom:6px}
+.fop ul{margin:0;padding-left:16px}
+.questions3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.questions3 > div{background:var(--unit-lt);border-radius:10px;padding:14px;font-family:var(--sans);font-size:14px}
+.questions3 h5{margin:6px 0 4px;font-family:var(--cond);font-size:22px;color:var(--unit-dk)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.chart svg text{font-family:var(--sans)}
+svg .bar:hover,svg .pt:hover,svg .slice:hover{opacity:.82}
+
+/* pacesetter */
+.pacesetter{display:grid;grid-template-columns:240px 1fr;border:2px solid var(--unit-dk);border-radius:12px;overflow:hidden;margin:30px 0;background:#fff}
+.pacesetter .ps-side{background:var(--unit-dk);color:#e8edf8;padding:18px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.pacesetter .ps-side h5{font-family:var(--cond);color:#ffc2ad;letter-spacing:.2em;font-size:15px;margin:12px 0 8px}
+.pacesetter .ps-side dt{font-weight:700;color:#ffc2ad;margin-top:8px}
+.pacesetter .ps-side dd{margin:0}
+.pacesetter .ps-main{padding:18px 24px}
+.pacesetter .ps-main .kicker{color:var(--amber-dk)}
+.pacesetter h4{font-family:var(--cond);font-size:34px;margin:0 0 10px;color:var(--unit-dk);line-height:1}
+.pacesetter h4 span{display:block;font-size:20px;color:var(--ink-2);font-weight:600}
+
+.ps-photo{margin:0 0 6px;padding:0;border:0;background:none;border-radius:0}
+.ps-photo img{width:100%;border-radius:8px;display:block}
+.ps-photo figcaption{color:#d3dbf3;font-size:12.5px;line-height:1.45;margin-top:8px}
+.ps-photo figcaption span{display:block;margin-top:4px;font-size:11px;color:#a9b8e0}
+.ps-photo figcaption a{color:#a9b8e0}
+.packet-note{display:flex;gap:16px;align-items:center;margin:32px 0 10px;padding:16px 20px;border:3px solid var(--unit);border-radius:14px;background:var(--unit-lt);font-family:var(--sans);font-size:15.5px;line-height:1.5}
+.packet-note svg{flex:none}
+.packet-note b{display:block;font-family:var(--cond);font-size:20px;letter-spacing:.1em;color:var(--unit-dk)}
+/* assessments */
+.assess{margin:34px 0 10px;border:3px solid var(--unit);border-radius:14px;overflow:hidden;background:#fff}
+.assess-h{background:var(--unit);color:#fff;padding:12px 22px;display:flex;align-items:baseline;gap:14px;font-family:var(--cond)}
+.assess-h b{font-size:28px;letter-spacing:.06em}
+.assess-h span{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:#ffc2ad}
+.assess-grid{display:grid;grid-template-columns:1fr 1fr;font-family:var(--sans);font-size:15px;line-height:1.5}
+.assess-grid > div{padding:16px 22px}
+.assess-grid > div:first-child{border-right:1px solid var(--rule)}
+.assess h5{font-family:var(--cond);font-size:16px;letter-spacing:.16em;color:var(--unit);margin:4px 0 8px}
+.assess ol{padding-left:22px;margin:0 0 10px}
+.assess li{margin-bottom:8px}
+.inpractice{background:var(--amber-lt);border-top:1px solid var(--rule);padding:16px 22px;font-family:var(--sans);font-size:15px}
+.inpractice h5{color:var(--amber-dk)}
+.inpractice table.data{background:#fff}
+.inpractice td.blank{color:#b0b5bd}
+
+/* case study */
+.case{background:#f3efe6;padding:0 0 20px}
+.case-banner{background:var(--coral);color:#fff;padding:34px 56px 28px;position:relative;overflow:hidden}
+.case-banner .kicker{color:#ffe3c2;letter-spacing:.3em}
+.case-banner h2{font-family:var(--cond);font-size:58px;margin:4px 0 6px;line-height:1}
+.case-banner p{font-family:var(--sans);font-size:15px;max-width:720px;margin:0;color:#fff3ee}
+.doc{background:#fff;border:1px solid #e0d7c6;border-radius:10px;margin:22px 0;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.doc-h{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid #eee4d3}
+.doc-h .letter{width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-family:var(--cond);font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;flex:none}
+.doc-h b{font-family:var(--cond);font-size:22px;color:var(--ink)}
+.doc-h small{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:.06em}
+.doc-b{padding:14px 20px;font-size:16.5px}
+.doc .think{background:var(--coral-lt);padding:10px 20px;font-family:var(--sans);font-size:14.5px;border-radius:0 0 10px 10px}
+.doc .think b{color:var(--coral)}
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.voice{background:#faf7f1;border-radius:10px;padding:14px;font-size:15.5px}
+.voice h6{margin:0 0 6px;font-family:var(--sans);font-size:14px;color:var(--coral)}
+
+/* chapter assessment */
+.chap-assess .sec-banner{background:var(--ink)}
+.chap-assess .sec-banner .num{background:#0f131c}
+.wordbank{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.wordbank span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:20px;padding:3px 12px;font-family:var(--sans);font-size:14px}
+.cloze{font-size:17.5px;line-height:1.9}
+.cloze .bl{display:inline-block;min-width:34px;border-bottom:2px solid var(--ink);text-align:center;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--unit)}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.summary-grid > div{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 16px;font-family:var(--sans);font-size:14.5px}
+.summary-grid h5{margin:0 0 6px;font-family:var(--cond);font-size:19px;color:var(--unit-dk)}
+.sim{border:3px solid var(--violet);border-radius:14px;background:#fff;overflow:hidden;margin:28px 0}
+.sim .box-h{background:var(--violet)}
+.sim .box-b{font-family:var(--sans);font-size:15.5px}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps li{counter-increment:st;position:relative;padding:0 0 10px 44px}
+.steps li::before{content:counter(st);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--violet);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.credits{font-family:var(--sans);font-size:13px;color:var(--ink-2);padding:22px 56px;background:#f1f0eb;border-top:1px solid var(--rule)}
+.credits h4{font-family:var(--cond);letter-spacing:.16em;color:var(--unit);font-size:16px;margin:0 0 8px}
+.credits li{margin-bottom:4px}
+
+/* running footer */
+.runfoot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;background:var(--unit-dk);color:#d4dbef;font-family:var(--sans);font-size:11.5px;letter-spacing:.16em;font-weight:600;padding:10px 56px;margin-top:26px}
+.runfoot span:nth-child(2){color:#ffc2ad}
+.runfoot span:last-child{text-align:right}
+
+
+/* photos */
+figure.photo{padding:0;overflow:hidden;background:#fff}
+figure.photo img{width:100%;display:block;background:#e9e7e0}
+figure.photo .crop{position:relative;overflow:hidden;width:100%;background:#e9e7e0}
+.kl{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.2em;color:#fff;background:rgba(0,0,0,.6);padding:3px 12px;border-radius:3px;white-space:nowrap}.kn{top:12px}.ks{bottom:12px}
+figure.photo.sidefig{float:left;width:270px;margin:4px 28px 14px 0}
+.pair > .body{display:flow-root}
+figure.photo figcaption{margin:0;padding:10px 16px 12px;font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-2);border-top:4px solid var(--amber)}
+figure.photo .phlabel{display:block;font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.18em;color:var(--amber-dk);text-transform:uppercase;margin-bottom:2px}
+figure.photo .credit{display:block;margin-top:5px;font-size:11.5px;color:var(--ink-3)}
+figure.photo .credit a{color:var(--ink-3)}
+.side figure.photo{margin:0 0 18px}
+.side figure.photo figcaption{font-size:12.5px;padding:8px 12px 10px}
+figure.photo.sidefig figcaption{font-size:12.5px;padding:8px 12px 10px}
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0}
+.photo-row figure.photo{margin:0}
+.opener-photo{position:relative;height:560px;overflow:hidden}
+.opener-photo img{width:100%;height:100%;object-fit:cover;object-position:center 70%;display:block}
+.opener-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,42,94,.78) 0%,rgba(30,42,94,.35) 45%,rgba(0,0,0,0) 70%)}
+.opener-head{z-index:2}
+.opener-caption .credit{display:block;font-size:11.5px;color:#a9b8e0;margin-top:4px}
+.opener-caption .credit a{color:#a9b8e0}
+@media (max-width:900px){.photo-row{grid-template-columns:1fr}.opener-photo{height:300px}}
+
+/* responsive */
+@media (max-width:900px){
+  body{font-size:17px}
+  .content{padding:8px 20px}
+  .pair{grid-template-columns:1fr}
+  figure.photo.sidefig{float:none;width:100%;max-width:380px;margin:12px auto}
+  .opener-head{position:static;padding:24px 20px 0;background:var(--unit-dk)}
+  .chapnum{font-size:110px}
+  .opener h1{font-size:48px}
+  .opener-grid,.sec-preview,.standards,.assess-grid,.two,.choices .opts,.pacesetter,.voices,.summary-grid{grid-template-columns:1fr}
+  .fop,.questions3{grid-template-columns:1fr 1fr}
+  .sec-banner{grid-template-columns:90px 1fr}
+  .sec-banner .icon{display:none}
+  .sec-banner h2{font-size:34px;padding:20px}
+  .case-banner{padding:26px 20px}
+  .runfoot{padding:10px 20px;grid-template-columns:1fr;text-align:center}
+  .runfoot span:last-child{text-align:center}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .topnav,.progress{display:none}
+  .book{box-shadow:none}
+  .section,.case,.chap-assess{break-before:page}
+  figure,.box,.assess,.doc,.pacesetter{break-inside:avoid}
+  details.dt{display:none}
+}
+.k{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:12px 18px;margin:12px 0;font-family:var(--sans);font-size:15px;line-height:1.55}
+.k .q{margin:0 0 6px;font-weight:700;color:var(--unit-dk)}
+.k .q .loc{display:inline-block;font-family:var(--cond);letter-spacing:.14em;font-size:14px;color:var(--amber-dk);text-transform:uppercase;margin-right:10px}
+.k .a{margin:0}
+.k table.data{margin:6px 0 10px}
+.opener .chapword{font-size:17px}
+</style>
+
+<style>
+/* ---- Unit opener additions (same palette and components as the chapters) ---- */
+.upage{scroll-margin-top:56px}
+.opener .runfoot{margin-top:0}
+.opener-photo.cropped{height:auto}
+.opener-photo.cropped::after{background:linear-gradient(180deg,rgba(30,42,94,.86) 0%,rgba(30,42,94,.55) 48%,rgba(0,0,0,0) 78%)}
+.opener-photo .crop{position:relative;overflow:hidden;width:100%;background:#e9e7e0}
+.unitnum{font-family:var(--cond);font-weight:800;font-size:200px;line-height:.78;color:#ffc2ad;text-shadow:0 4px 0 rgba(0,0,0,.18)}
+.tagline{font-family:var(--sans);font-size:19px;line-height:1.4;color:#fff;margin:14px 0 0;max-width:640px;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.opener h1.unit-h1{font-size:84px}
+.uo-grid{display:grid;grid-template-columns:1.25fr 1fr;background:var(--paper);color:var(--ink)}
+.uo-left{padding:34px 44px 34px 56px}
+.uo-right{background:var(--unit-lt);border-left:1px solid var(--unit-mid);padding:30px 30px 34px}
+.uo-left h2,.uo-right h2{font-family:var(--cond);font-size:34px;line-height:1.05;color:var(--unit-dk);margin:0 0 12px}
+.uo-right h3{font-family:var(--cond);font-size:15px;letter-spacing:.2em;color:var(--unit);margin:22px 0 10px;text-transform:uppercase}
+.bigidea{display:flex;gap:12px;margin:0 0 12px;font-family:var(--sans);font-size:14.5px;line-height:1.45}
+.bigidea b.n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--unit);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:17px}
+.eq{margin:0;padding-left:0;list-style:none;counter-reset:eq;font-family:var(--sans);font-size:14.5px;line-height:1.45}
+.eq li{counter-increment:eq;position:relative;padding:0 0 10px 38px}
+.eq li::before{content:"Q" counter(eq);position:absolute;left:0;top:0;font-family:var(--cond);font-weight:800;font-size:17px;color:var(--amber-dk);letter-spacing:.04em}
+.eq i{color:var(--ink-3);font-size:12.5px}
+.why{background:var(--amber-lt);border-top:4px solid var(--amber);padding:14px 18px;margin:20px 0 0;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.why .tag{display:block;font-family:var(--cond);font-weight:700;font-size:14px;letter-spacing:.18em;color:var(--amber-dk);margin-bottom:4px}
+.pagebanner .num b{font-size:76px}
+.pg-intro{font-family:var(--sans);font-size:15.5px;line-height:1.55;margin:18px 0 6px;color:var(--ink-2)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:18px 0 8px}
+.card{background:#fff;border:1px solid var(--rule);border-top:6px solid var(--unit);border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;flex-direction:column;font-family:var(--sans);font-size:14px;line-height:1.5;overflow:hidden}
+.card-h{display:flex;gap:14px;align-items:center;background:var(--unit-lt);padding:12px 16px;border-bottom:1px solid var(--unit-mid)}
+.card-h .cn{font-family:var(--cond);font-weight:800;font-size:60px;line-height:.85;color:var(--unit)}
+.card-h small{display:block;font-family:var(--cond);letter-spacing:.24em;font-weight:700;font-size:12.5px;color:var(--amber-dk)}
+.card-h h3{font-family:var(--cond);font-size:27px;line-height:1.02;margin:2px 0 0;color:var(--unit-dk)}
+.card-b{padding:12px 16px 14px;flex:1}
+.card-b p{margin:0 0 9px}
+.card-b h4{font-family:var(--cond);font-size:14px;letter-spacing:.16em;color:var(--unit);margin:10px 0 4px}
+.card-b ol{margin:0;padding-left:20px}
+.card-b li{margin-bottom:2px}
+.csline{background:var(--coral-lt);border-left:4px solid var(--coral);padding:6px 10px;margin:10px 0 0;border-radius:0 6px 6px 0}
+.csline b{font-family:var(--cond);letter-spacing:.14em;color:var(--coral);font-size:13px;margin-right:6px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chips span{background:var(--unit-lt);border:1px solid var(--unit-mid);border-radius:14px;padding:1px 9px;font-size:12.5px}
+.readbtn{display:block;text-align:center;background:var(--unit);color:#fff!important;text-decoration:none;font-family:var(--cond);font-weight:700;letter-spacing:.14em;font-size:17px;padding:10px;margin:0}
+.readbtn:hover{background:var(--unit-dk)}
+table.std{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:13.5px;line-height:1.45;margin:10px 0 6px;background:#fff}
+table.std th{background:var(--unit);color:#fff;text-align:left;padding:8px 10px;font-weight:600}
+table.std td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+table.std tr.intro td{background:var(--unit-lt);font-weight:600;color:var(--unit-dk)}
+table.std code{font-family:var(--sans);font-weight:700;color:var(--unit-dk);background:var(--unit-lt);padding:1px 6px;border-radius:4px;font-size:12px;white-space:nowrap}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.tcard{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--unit);border-radius:8px;padding:9px 14px;font-family:var(--sans);font-size:14px;line-height:1.45}
+.tcard b{color:var(--unit-dk);font-size:15px}
+.tcard .sp{color:var(--ink-3);font-style:italic;font-size:12.5px}
+.tcard .ch{float:right;font-family:var(--cond);font-weight:700;letter-spacing:.12em;color:var(--amber-dk);font-size:12.5px}
+.sgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0}
+.scard{background:var(--violet-lt);border-top:4px solid var(--violet);border-radius:6px;padding:10px 14px;font-family:var(--sans);font-size:13.5px;line-height:1.45}
+.scard b{display:block;font-family:var(--cond);letter-spacing:.06em;font-size:18px;color:var(--violet);margin-bottom:3px}
+.scard i{color:var(--ink-3);font-size:12px}
+.lalb{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:16px 0}
+.lalb > div{border-radius:10px;padding:14px 18px;font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.lalb .back{background:var(--sage-lt);border-top:5px solid var(--sage)}
+.lalb .ahead{background:var(--unit-lt);border-top:5px solid var(--unit)}
+.lalb h3{font-family:var(--cond);letter-spacing:.14em;font-size:20px;margin:0 0 6px}
+.lalb .back h3{color:var(--sage)}.lalb .ahead h3{color:var(--unit)}
+.lalb p{margin:0 0 8px}
+table.ag{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:14.5px;line-height:1.45;background:#fff;margin:12px 0}
+table.ag th{background:var(--unit-dk);color:#fff;padding:8px 10px;text-align:left;font-weight:600;font-size:13.5px}
+table.ag td{border:1px solid var(--rule);padding:9px 10px;vertical-align:top}
+table.ag td.n{font-family:var(--cond);font-weight:800;font-size:24px;color:var(--unit);text-align:center;width:44px}
+table.ag td.ab{width:150px;font-size:13.5px}
+table.ag td.aa{width:270px;font-size:13.5px}
+.bub{display:inline-block;width:15px;height:15px;border:2px solid var(--unit);border-radius:50%;vertical-align:-3px;margin:0 3px 0 8px}
+.bub:first-child{margin-left:0}
+.ln{border-bottom:1.5px solid var(--ink-3);height:22px}
+.nameline{display:flex;gap:28px;font-family:var(--sans);font-size:14px;margin:6px 0 4px}
+.nameline span{flex:1;border-bottom:1.5px solid var(--ink);padding-bottom:1px}
+.agdir{background:var(--amber-lt);border-left:6px solid var(--amber);padding:10px 16px;font-family:var(--sans);font-size:14.5px;line-height:1.5;margin:12px 0}
+.upage .content{padding:6px 56px 8px}
+.credline{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin:14px 0 0}
+.k .a .rat{display:block;margin-top:4px}
+.keyflag{display:inline-block;background:var(--amber);color:#fff;font-family:var(--cond);letter-spacing:.14em;font-weight:700;font-size:13px;padding:2px 10px;border-radius:3px;margin-left:8px}
+.fixline{margin:0 0 3px}
+@media (max-width:900px){.uo-grid,.cards,.tgrid,.sgrid,.lalb{grid-template-columns:1fr}.uo-left,.upage .content{padding:20px}.unitnum{font-size:120px}.opener h1.unit-h1{font-size:48px}}
+@media print{.upage{break-before:page}.card,table.ag tr{break-inside:avoid}}
+</style>
+
+</head>
+<body>
+<div class="book">
+<nav class="topnav" aria-label="Unit sections">
+  <span class="brand">UNIT 2 · MICROECONOMICS</span>
+  <a href="#p1">Page 1 · Opener</a><a href="#overview">Overview</a><a href="#bigideas">Big Ideas</a><a href="#p2">Page 2 · At a Glance</a><a href="#chapters">Chapters</a><a href="#standards">Standards</a><a href="#p3">Page 3 · Connect and Prepare</a><a href="#terms">Key Terms</a><a href="#skills">Skills</a><a href="#guide">Anticipation Guide</a>
+</nav>
+<div class="progress"><span id="bar"></span></div>
+<header class="opener upage" id="p1">
+  <div class="opener-photo cropped"><div class="crop" style="aspect-ratio:1180/560"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Farmers%20Market%20Los%20Angeles%20P1000554.jpg?width=1800" alt="Diners seated at tables under green awnings in the open-air Farmers Market food court in Los Angeles, with food stalls in the background." loading="eager" style="position:absolute;max-width:none;height:auto;width:104.5%;left:-4.34%;top:-35.14%"></div></div>
+  <div class="opener-head">
+    <div class="unitnum">2</div>
+    <div>
+      <div class="chapword">UNIT</div>
+      <h1 class="unit-h1">Microeconomics</h1>
+      <p class="tagline">How buyers, sellers, businesses, and workers turn millions of separate choices into prices, jobs, and goods.</p>
+    </div>
+  </div>
+  <div class="opener-caption"><b>Many buyers, many sellers.</b> Diners and food stalls at the Farmers Market in Los Angeles, photographed in May 2016. In a market like this, every stall sets its own price, every diner decides what to buy, and no one gives orders. Unit 2 explains how those separate choices add up to prices, businesses, and wages, in Los Angeles and also in Bakersfield, Shafter, and the rest of the Central Valley.<span class="credit">Photo: NewtonCourt / <a href="https://commons.wikimedia.org/wiki/File:Farmers_Market_Los_Angeles_P1000554.jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></div>
+  <div class="uo-grid" id="overview">
+    <div class="uo-left">
+      <p class="kicker">Unit Overview</p>
+      <h2>How Markets Work</h2>
+      <p class="lead">Every day, millions of people in Kern County make choices that no one coordinates. A farm worker in Shafter decides whether to pick up another shift. A family in Bakersfield decides whether to buy beef or chicken this week. A grower decides whether the price of pistachios is high enough to plant more trees. No central office tells any of them what to do, yet grocery shelves get stocked, jobs get filled, and prices rise and fall on their own. Unit 1 introduced scarcity and the idea that every choice has a cost. <b>Unit 2, Microeconomics,</b> shows how millions of separate choices add up in <i>markets</i>. Microeconomics is the study of the economic choices made by individuals, households, and businesses in particular markets.</p>
+      <p>The unit begins with the two sides of every market. In <b>Chapter 4: Demand</b> you stand in the buyer's shoes. You will learn why buyers purchase less when a price rises, what causes the whole demand curve to shift, and how elasticity measures how strongly buyers respond. In <b>Chapter 5: Supply</b> you move to the seller's side. You will study the costs of production that sit behind every supply curve, what causes supply to change, and why a producer can react quickly in some markets and slowly in others. Kern County is a good laboratory for this chapter: its pistachios were the county's top crop in 2025, worth about $1.39 billion at the farm gate, and a tree crop cannot be expanded or cut back overnight.</p>
+      <p><b>Chapter 6: Demand, Supply, and Prices</b> is the hinge of the unit. It puts the two curves on one graph and shows where they meet. At the equilibrium price, the quantity buyers want equals the quantity sellers offer. Above that price there is a surplus, below it there is a shortage, and a shift in either curve moves the market to a new price. You will also see that prices are more than numbers: they are signals that tell producers what to make and give them an incentive to make it. Then you will ask what happens when a government overrides the signal with a price ceiling or a price floor. The federal minimum wage has been $7.25 an hour since July 24, 2009, while California's rose to $16.90 on January 1, 2026. A minimum wage is a price floor, and it is one of the most debated prices in the country.</p>
+      <p>The last three chapters widen the lens. <b>Chapter 7: Market Structures</b> asks how the number of sellers changes everything. A Kern County farm is a tiny price taker among thousands, while an electric utility or a large grocery chain has much more power over price. <b>Chapter 8: Types of Business Organizations</b> looks inside the seller: whether a business is a sole proprietorship, a partnership, a corporation, or a cooperative decides who owns it, who is responsible for its debts, and who pays which taxes. <b>Chapter 9: The Role of Labor</b> turns to the people who do the work. Wages are the price in the labor market, so the same demand and supply tools explain why an electrician earns more than a cashier and why workers form unions. Read the unit as a widening circle: the buyer (Chapter 4), the seller (Chapter 5), the meeting of the two (Chapter 6), the competition among sellers (Chapter 7), the organization of the seller (Chapter 8), and the workers who make the whole system run (Chapter 9). Each chapter ends with a Case Study, from electric cars to egg prices to the Delano grape strike, that lets you test the tools on a real event.</p>
+    </div>
+    <aside class="uo-right" id="bigideas">
+      <h2>Big Ideas</h2>
+      <div class="bigidea"><b class="n">1</b><div><b>Markets run on two sides.</b> Buyers' willingness and ability to pay (demand) and producers' costs and incentives (supply) together set prices and quantities.</div></div>
+      <div class="bigidea"><b class="n">2</b><div><b>Prices are signals and incentives.</b> A price tells people how scarce something is and rewards those who respond, which is how a market coordinates millions of choices.</div></div>
+      <div class="bigidea"><b class="n">3</b><div><b>Competition limits power.</b> The number of sellers in a market shapes prices, quality, and choice, and government sometimes steps in to protect competition.</div></div>
+      <div class="bigidea"><b class="n">4</b><div><b>People are behind the curves.</b> The form a business takes and the market for labor decide who owns, who bears risk, and who earns what.</div></div>
+      <h3>Essential Questions</h3>
+      <ol class="eq">
+        <li>How do buyers' choices create demand, and what makes demand change or respond strongly to a price change? <i>(Ch. 4)</i></li>
+        <li>How do costs and incentives shape what producers offer for sale? <i>(Ch. 5)</i></li>
+        <li>How do prices bring buyers and sellers into balance, and what happens when government overrides the price? <i>(Ch. 6)</i></li>
+        <li>How does the number of competing sellers affect prices, quality, and choices, and when should government step in? <i>(Ch. 7)</i></li>
+        <li>How do the legal form of a business and the market for labor determine who owns, who decides, who bears risk, and who earns what? <i>(Chs. 8–9)</i></li>
+      </ol>
+      <div class="why"><span class="tag">WHY THIS UNIT MATTERS</span>Picture a Saturday in Bakersfield. At the grocery store you notice that eggs cost more than they did last month. Your cousin has just started a first job at $16.90 an hour, California's minimum wage in 2026, and two of her coworkers argue about whether that wage is too high or too low. Meanwhile you and a friend have an idea for a weekend lawn-care business and wonder whether to share ownership, and who would pay if something went wrong. Each of these is a Unit 2 question about prices, wages, and business choices. By the end of this unit you will be able to explain what is happening in each case with evidence instead of guesses.</div>
+    </aside>
+  </div>
+  <div class="runfoot"><span>UNIT 2 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</header>
+<section class="section upage" id="p2">
+  <div class="sec-banner pagebanner">
+    <div class="num"><small>PAGE</small><b>2</b></div>
+    <h2>Unit 2 at a Glance</h2>
+    <div class="icon"><svg viewBox="0 0 160 120" width="170" aria-hidden="true"><rect x="18" y="20" width="56" height="34" rx="5" fill="#ffc2ad"/><rect x="86" y="20" width="56" height="34" rx="5" fill="#d3dbf3"/><rect x="18" y="66" width="56" height="34" rx="5" fill="#d3dbf3"/><rect x="86" y="66" width="56" height="34" rx="5" fill="#ffc2ad"/></svg></div>
+  </div>
+  <div class="content">
+    <p class="pg-intro">Unit 2 has six chapters. Each card below gives you a preview of the chapter, its sections, its Case Study, and a sample of its key terms. Use the button on a card to open the chapter.</p>
+    <div class="cards" id="chapters">
+<article class="card" id="ch4">
+  <div class="card-h"><div class="cn">4</div><div><small>CHAPTER 4</small><h3>Demand</h3></div></div>
+  <div class="card-b">
+    <p>Why do people buy less when a price rises, and why does the same price jump hit gasoline buyers differently than taco buyers? You will learn the law of demand, what shifts a demand curve (income, tastes, expectations, related goods, and the number of buyers), and how elasticity measures how strongly buyers respond to a price change.</p>
+    <h4>SECTIONS</h4>
+    <ol><li>What Is Demand?</li><li>What Factors Affect Demand?</li><li>What Is Elasticity of Demand?</li></ol>
+    <div class="csline"><b>CASE STUDY</b>Fueling a Change: Demand for Electric Cars in California</div>
+    <h4>KEY TERMS SAMPLE</h4>
+    <div class="chips"><span>demand</span><span>law of demand</span><span>demand curve</span><span>substitution effect</span><span>normal good</span><span>substitute</span><span>complement</span><span>price elasticity of demand</span><span>inelastic demand</span></div>
+  </div>
+  <a class="readbtn" href="Chapter%204%20-%20Demand/Chapter-4-Demand.html">READ CHAPTER 4 →</a>
+</article>
+<article class="card" id="ch5">
+  <div class="card-h"><div class="cn">5</div><div><small>CHAPTER 5</small><h3>Supply</h3></div></div>
+  <div class="card-b">
+    <p>Sellers are the other half of every market. You will learn the law of supply, the fixed, variable, and marginal costs that sit behind a supply curve, what shifts supply, and how quickly producers can respond to a price change. Examples come from Kern County crops, oil, and solar panels.</p>
+    <h4>SECTIONS</h4>
+    <ol><li>What Is Supply?</li><li>What Are the Costs of Production?</li><li>What Factors Affect Supply?</li><li>What Is Elasticity of Supply?</li></ol>
+    <div class="csline"><b>CASE STUDY</b>Mechanizing the Harvest: Technology Increases Supply</div>
+    <h4>KEY TERMS SAMPLE</h4>
+    <div class="chips"><span>supply</span><span>law of supply</span><span>supply curve</span><span>marginal cost</span><span>economies of scale</span><span>input costs</span><span>technology</span><span>elasticity of supply</span></div>
+  </div>
+  <a class="readbtn" href="Chapter%205%20-%20Supply/Chapter-5-Supply.html">READ CHAPTER 5 →</a>
+</article>
+<article class="card" id="ch6">
+  <div class="card-h"><div class="cn">6</div><div><small>CHAPTER 6</small><h3>Demand, Supply, and Prices</h3></div></div>
+  <div class="card-b">
+    <p>Demand and supply finally meet on one graph. You will find an equilibrium price, predict what happens when one or both curves shift, see how prices carry information and incentives, and judge what happens when government sets a maximum or minimum price, as with rent control and the minimum wage.</p>
+    <h4>SECTIONS</h4>
+    <ol><li>Seeking Equilibrium: Demand and Supply</li><li>Prices as Signals and Incentives</li><li>Intervention in the Price System</li></ol>
+    <div class="csline"><b>CASE STUDY</b>Cracking Prices: What Moved the Cost of Eggs?</div>
+    <h4>KEY TERMS SAMPLE</h4>
+    <div class="chips"><span>equilibrium price</span><span>surplus</span><span>shortage</span><span>price signal</span><span>profit motive</span><span>price ceiling</span><span>price floor</span><span>minimum wage</span></div>
+  </div>
+  <a class="readbtn" href="Chapter%206%20-%20Demand%2C%20Supply%2C%20and%20Prices/Chapter-6-Demand-Supply-and-Prices.html">READ CHAPTER 6 →</a>
+</article>
+<article class="card" id="ch7">
+  <div class="card-h"><div class="cn">7</div><div><small>CHAPTER 7</small><h3>Market Structures</h3></div></div>
+  <div class="card-b">
+    <p>How many sellers a market has changes what buyers pay and what they get. You will compare perfect competition, monopoly, monopolistic competition, and oligopoly, measure concentration with the Herfindahl-Hirschman Index, and see how antitrust law, regulation, and deregulation try to keep markets competitive.</p>
+    <h4>SECTIONS</h4>
+    <ol><li>What Is Perfect Competition?</li><li>The Impact of Monopoly</li><li>Other Market Structures</li><li>Regulation and Deregulation Today</li></ol>
+    <div class="csline"><b>CASE STUDY</b>One Grocer or Two? The Kroger–Albertsons Merger</div>
+    <h4>KEY TERMS SAMPLE</h4>
+    <div class="chips"><span>perfect competition</span><span>price taker</span><span>monopoly</span><span>barrier to entry</span><span>monopolistic competition</span><span>oligopoly</span><span>cartel</span><span>antitrust legislation</span><span>merger</span></div>
+  </div>
+  <a class="readbtn" href="Chapter%207%20-%20Market%20Structures/Chapter-7-Market-Structures.html">READ CHAPTER 7 →</a>
+</article>
+<article class="card" id="ch8">
+  <div class="card-h"><div class="cn">8</div><div><small>CHAPTER 8</small><h3>Types of Business Organizations</h3></div></div>
+  <div class="card-b">
+    <p>Every business has to choose a legal form before it sells its first product. You will compare sole proprietorships, partnerships, corporations, LLCs, franchises, nonprofits, and cooperatives on control, risk, taxes, and the ability to raise money, and you will see why no single form is best for every business.</p>
+    <h4>SECTIONS</h4>
+    <ol><li>Sole Proprietorships</li><li>Partnerships</li><li>Corporations</li><li>Other Business Organizations</li></ol>
+    <div class="csline"><b>CASE STUDY</b>Owned by the Growers: The Almond Cooperative</div>
+    <h4>KEY TERMS SAMPLE</h4>
+    <div class="chips"><span>sole proprietorship</span><span>unlimited liability</span><span>partnership</span><span>corporation</span><span>stock</span><span>limited liability</span><span>double taxation</span><span>cooperative</span></div>
+  </div>
+  <a class="readbtn" href="Chapter%208%20-%20Types%20of%20Business%20Organizations/Chapter-8-Types-of-Business-Organizations.html">READ CHAPTER 8 →</a>
+</article>
+<article class="card" id="ch9">
+  <div class="card-h"><div class="cn">9</div><div><small>CHAPTER 9</small><h3>The Role of Labor</h3></div></div>
+  <div class="card-b">
+    <p>Workers sell their time and skills in the labor market, and the price they receive is the wage. You will use demand and supply to explain why wages differ, study how technology, trade, and immigration are changing the labor force, and examine how unions bargain for workers as a group.</p>
+    <h4>SECTIONS</h4>
+    <ol><li>Wages and the Labor Market</li><li>The Changing Labor Force</li><li>Labor Unions</li></ol>
+    <div class="csline"><b>CASE STUDY</b>Delano: The Strike That Became a Union</div>
+    <h4>KEY TERMS SAMPLE</h4>
+    <div class="chips"><span>labor market</span><span>wage</span><span>productivity</span><span>human capital</span><span>automation</span><span>labor union</span><span>collective bargaining</span><span>strike</span></div>
+  </div>
+  <a class="readbtn" href="Chapter%209%20-%20The%20Role%20of%20Labor/Chapter-9-The-Role-of-Labor.html">READ CHAPTER 9 →</a>
+</article>
+    </div>
+    <h3 class="kc" id="standards">California Content Standards</h3>
+    <h3 class="head">What This Unit Teaches</h3>
+    <p class="pg-intro" style="margin-top:0">Principles of Economics, Grade 12, <i>History–Social Science Content Standards for California Public Schools</i>. The wording below was checked against the California Department of Education standards document.</p>
+    <table class="std"><thead><tr><th style="width:110px">Code</th><th>Standard</th><th style="width:250px">Where it is taught</th></tr></thead><tbody>
+<tr class="intro"><td><code>HSS-PoE.12.2</code></td><td colspan="2">Students analyze the elements of America's market economy in a global setting.</td></tr>
+<tr><td><code>12.2.1</code></td><td>Understand the relationship of the concept of incentives to the law of supply and the relationship of the concept of incentives and substitutes to the law of demand.</td><td>Ch. 4: Sections 1, 2, 3, Case Study<br>Ch. 5: Sections 1, 2, 3, Case Study</td></tr>
+<tr><td><code>12.2.2</code></td><td>Discuss the effects of changes in supply and/or demand on the relative scarcity, price, and quantity of particular products.</td><td>Ch. 4: Sections 1, 2, Case Study<br>Ch. 5: Sections 1, 3, 4, Case Study<br>Ch. 6: Sections 1, 2, Case Study</td></tr>
+<tr><td><code>12.2.3</code></td><td>Explain the roles of property rights, competition, and profit in a market economy.</td><td>Ch. 8: Sections 1–3<br><i>Supports:</i> Ch. 4, Sec. 3; Ch. 5, Sec. 2; Ch. 6, Sec. 2; Ch. 7, Secs. 1–3</td></tr>
+<tr><td><code>12.2.4</code></td><td>Explain how prices reflect the relative scarcity of goods and services and perform the allocative function in a market economy.</td><td>Ch. 6: Section 2</td></tr>
+<tr><td><code>12.2.5</code></td><td>Understand the process by which competition among buyers and sellers determines a market price.</td><td>Ch. 6: Section 1<br><i>Reviewed:</i> Ch. 7, Sec. 1</td></tr>
+<tr><td><code>12.2.6</code></td><td>Describe the effect of price controls on buyers and sellers.</td><td>Ch. 6: Section 3</td></tr>
+<tr><td><code>12.2.7</code></td><td>Analyze how domestic and international competition in a market economy affects goods and services produced and the quality, quantity, and price of those products.</td><td>Ch. 7: Sections 1–3, Case Study</td></tr>
+<tr><td><code>12.2.8</code></td><td>Explain the role of profit as the incentive to entrepreneurs in a market economy.</td><td>Ch. 8: Sections 1–4, Case Study<br><i>Supports:</i> Ch. 5, Secs. 1–2; Ch. 6, Sec. 2</td></tr>
+<tr><td><code>12.3.1</code></td><td>Understand how the role of government in a market economy often includes providing for national defense, addressing environmental concerns, defining and enforcing property rights, attempting to make markets more competitive, and protecting consumers' rights.</td><td>Ch. 7: Section 4, Case Study</td></tr>
+<tr class="intro"><td><code>HSS-PoE.12.4</code></td><td colspan="2">Students analyze the elements of the U.S. labor market in a global setting.</td></tr>
+<tr><td><code>12.4.1</code></td><td>Understand the operations of the labor market, including the circumstances surrounding the establishment of principal American labor unions, procedures that unions use to gain benefits for their members, the effects of unionization, the minimum wage, and unemployment insurance.</td><td>Ch. 9: Sections 1 and 3, Case Study</td></tr>
+<tr><td><code>12.4.2</code></td><td>Describe the current economy and labor market, including the types of goods and services produced, the types of skills workers need, the effects of rapid technological change, and the impact of international competition.</td><td>Ch. 9: Section 2</td></tr>
+<tr><td><code>12.4.3</code></td><td>Discuss wage differences among jobs and professions, using the laws of demand and supply and the concept of productivity.</td><td>Ch. 9: Section 1</td></tr>
+<tr><td><code>12.4.4</code></td><td>Explain the effects of international mobility of capital and labor on the U.S. economy.</td><td>Ch. 9: Section 2</td></tr>
+</tbody></table>
+    <h3 class="kc">Also Supports</h3>
+    <table class="std"><thead><tr><th style="width:110px">Code</th><th>Standard</th><th style="width:250px">Where it appears</th></tr></thead><tbody>
+<tr><td><code>12.1.2</code></td><td>Explain opportunity cost and marginal benefit and marginal cost.</td><td>Ch. 5, Section 2 (reviewed from Chapter 1)</td></tr>
+<tr><td><code>12.1.3</code></td><td>Identify the difference between monetary and nonmonetary incentives and how changes in incentives cause changes in behavior.</td><td>Ch. 4, Sections 1, 2, Case Study (reviewed from Chapter 1)</td></tr>
+<tr><td><code>12.2.9</code></td><td>Describe the functions of the financial markets.</td><td>Ch. 8, Section 3 (stock as a source of funds; developed in Chapter 15)</td></tr>
+<tr><td><code>RH.11-12.7</code></td><td>Integrate and evaluate multiple sources of information presented in diverse formats (visual, quantitative, and written) to address a question or solve a problem.</td><td>Figures and Case Studies in every chapter (for example, Figures 4.6, 5.7, 6.19, 7.13, 8.9, 9.13)</td></tr>
+</tbody></table>
+  </div>
+  <div class="runfoot"><span>UNIT 2 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+<section class="section upage" id="p3">
+  <div class="sec-banner pagebanner">
+    <div class="num"><small>PAGE</small><b>3</b></div>
+    <h2>Connect and Prepare</h2>
+    <div class="icon"><svg viewBox="0 0 160 120" width="170" aria-hidden="true"><path d="M20 94 L60 54 L90 78 L140 26" fill="none" stroke="#ffc2ad" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="54" r="8" fill="#d3dbf3"/><circle cx="90" cy="78" r="8" fill="#d3dbf3"/><circle cx="140" cy="26" r="8" fill="#d3dbf3"/></svg></div>
+  </div>
+  <div class="content">
+    <h3 class="kc" id="terms">Key Terms Preview</h3>
+    <h3 class="head">Twenty Words You Will Own by the End of the Unit</h3>
+    <p class="pg-intro" style="margin-top:0">Each definition below comes from the chapter where the term is taught, with the Spanish term the chapter gives. Look for the highlighted terms as you read.</p>
+    <div class="tgrid">
+<div class="tcard"><span class="ch">CH. 4</span><b>demand</b> <span class="sp">(demanda)</span><br>The willingness to buy a good or service and the ability to pay for it.</div>
+<div class="tcard"><span class="ch">CH. 4</span><b>law of demand</b> <span class="sp">(ley de la demanda)</span><br>When a product's price rises, the quantity demanded falls, and when the price falls, it rises, other things equal.</div>
+<div class="tcard"><span class="ch">CH. 4</span><b>substitute</b> <span class="sp">(sustituto)</span><br>A good that can be used in place of another; when one's price rises, demand for the other rises.</div>
+<div class="tcard"><span class="ch">CH. 4</span><b>price elasticity of demand</b> <span class="sp">(elasticidad precio de la demanda)</span><br>The percent change in quantity demanded divided by the percent change in price.</div>
+<div class="tcard"><span class="ch">CH. 5</span><b>supply</b> <span class="sp">(oferta)</span><br>The willingness and ability of producers to offer goods or services for sale at various prices.</div>
+<div class="tcard"><span class="ch">CH. 5</span><b>law of supply</b> <span class="sp">(ley de la oferta)</span><br>When a product's price rises, the quantity supplied rises, and when the price falls, it falls, other things equal.</div>
+<div class="tcard"><span class="ch">CH. 5</span><b>marginal cost</b> <span class="sp">(costo marginal)</span><br>The extra cost of producing one more unit of a good.</div>
+<div class="tcard"><span class="ch">CH. 5</span><b>economies of scale</b> <span class="sp">(economías de escala)</span><br>Lower costs per unit that come from producing a larger quantity in the long run.</div>
+<div class="tcard"><span class="ch">CH. 6</span><b>equilibrium price</b> <span class="sp">(precio de equilibrio)</span><br>The price at which the quantity demanded equals the quantity supplied.</div>
+<div class="tcard"><span class="ch">CH. 6</span><b>shortage</b> <span class="sp">(escasez)</span><br>A situation in which the quantity demanded is greater than the quantity supplied at a given price.</div>
+<div class="tcard"><span class="ch">CH. 6</span><b>surplus</b> <span class="sp">(excedente)</span><br>A situation in which the quantity supplied is greater than the quantity demanded at a given price.</div>
+<div class="tcard"><span class="ch">CH. 6</span><b>price ceiling</b> <span class="sp">(precio máximo)</span><br>A legal maximum price; it creates a shortage if set below the equilibrium price.</div>
+<div class="tcard"><span class="ch">CH. 7</span><b>perfect competition</b> <span class="sp">(competencia perfecta)</span><br>A market structure with many buyers and sellers, a standardized product, good information, free entry and exit, and price-taking sellers.</div>
+<div class="tcard"><span class="ch">CH. 7</span><b>monopoly</b> <span class="sp">(monopolio)</span><br>A market structure in which one seller supplies a good with no close substitutes.</div>
+<div class="tcard"><span class="ch">CH. 7</span><b>oligopoly</b> <span class="sp">(oligopolio)</span><br>A market structure in which a few large firms dominate the market.</div>
+<div class="tcard"><span class="ch">CH. 8</span><b>limited liability</b> <span class="sp">(responsabilidad limitada)</span><br>The protection that limits stockholders' losses to the amount they invested.</div>
+<div class="tcard"><span class="ch">CH. 8</span><b>corporation</b> <span class="sp">(corporación)</span><br>A business organization that the law treats as a separate legal person, owned by stockholders.</div>
+<div class="tcard"><span class="ch">CH. 9</span><b>wage</b> <span class="sp">(salario)</span><br>The payment a worker receives for labor; the price in the labor market.</div>
+<div class="tcard"><span class="ch">CH. 9</span><b>productivity</b> <span class="sp">(productividad)</span><br>The amount of goods or services a worker produces in a given amount of time.</div>
+<div class="tcard"><span class="ch">CH. 9</span><b>labor union</b> <span class="sp">(sindicato)</span><br>An organization of workers who join together to improve wages, benefits, and working conditions.</div>
+    </div>
+    <h3 class="kc" id="skills">Skills You Will Practice</h3>
+    <h3 class="head">Tools You Will Use</h3>
+    <div class="sgrid">
+<div class="scard"><b>Reading a schedule and drawing a curve</b>Turn a table of prices and quantities into a demand or supply curve and read it back. <i>Figures 4.3, 5.1</i></div>
+<div class="scard"><b>Movement along or shift of the curve?</b>Decide whether a change in price moves you along a curve or something else shifts the whole curve. <i>Figures 4.7, 5.13</i></div>
+<div class="scard"><b>Finding equilibrium and predicting change</b>Locate the equilibrium, then trace a shift in demand, in supply, or in both. When both curves move, one result (price or quantity) is uncertain. <i>Figures 6.1, 6.4–6.6</i></div>
+<div class="scard"><b>Elasticity arithmetic</b>Divide the percent change in quantity by the percent change in price, use the midpoint method, and apply the total revenue test. <i>Figures 4.13, 4.18, 5.22</i></div>
+<div class="scard"><b>Reading real-data line charts</b>Read trends in gasoline prices, the federal minimum wage, and solar panel prices, and name the source and the time period. <i>Figures 4.12, 5.16, 6.19</i></div>
+<div class="scard"><b>Cost and profit reasoning</b>Compare marginal cost with price, find the best output, and apply the shutdown rule for a taco truck or a grower. <i>Figures 5.9–5.11, 7.4, 7.5</i></div>
+<div class="scard"><b>Measuring market concentration</b>Square each firm's market share and add the results to find the Herfindahl-Hirschman Index, then place it on the HHI scale. <i>Figures 7.12, 7.13</i></div>
+<div class="scard"><b>Comparing business forms</b>Trace $100 of profit through a corporation and through a pass-through business, and compare who bears the loss when a business fails. <i>Figures 8.8, 8.9</i></div>
+<div class="scard"><b>Using several sources</b>Combine graphs, tables, and written documents to answer one question, as you do in each Case Study. <i>Case Studies in Chapters 4–9</i></div>
+    </div>
+    <h3 class="kc">Connect to the Book</h3>
+    <h3 class="head">Look Back and Look Ahead</h3>
+    <div class="lalb"><div class="back"><h3>LOOK BACK · UNIT 1</h3><p><b>Chapter 1</b> gave you the tools of economic thinking: scarcity, opportunity cost, thinking at the margin, and incentives. Unit 2 uses all four. Demand and supply are incentives at work, marginal cost drives a producer’s choice, and every business owner and worker faces an opportunity cost.</p><p><b>Chapter 2</b> compared economic systems and showed that a market economy lets prices spread information. <b>Chapter 3</b> described the American free enterprise system and its features of private property, the profit motive, and competition. This unit shows those features in action: prices (Chapter 6), competition (Chapter 7), and the profit motive and property rights in the business forms of Chapter 8.</p></div><div class="ahead"><h3>LOOK AHEAD · UNITS 3 AND 4</h3><p><b>Unit 3, Consumer and Personal Finance (Chapters 10–13),</b> turns from markets to your own money. Chapter 10 on budgeting uses the demand ideas of this unit (income, prices, and substitutes) to build a budget and compare your spending with national averages. Chapter 13, <i>Getting Out on Your Own,</i> explains the income, Social Security, and Medicare taxes that workers and the self-employed pay, which builds on Chapters 8 and 9.</p><p><b>Unit 4, Money and the Macroeconomy (Chapters 14–17),</b> zooms out from single markets to the whole economy. Chapter 15, <i>Financial Markets,</i> builds on the stocks and bonds in Chapter 8 and on how expectations move prices. Chapter 17, <i>Facing Economic Challenges,</i> returns to the unemployment and worker programs you meet in Chapter 9. Later units apply the same tools to government policy (Unit 5) and international trade (Unit 6).</p></div></div>
+    <h3 class="kc" id="guide">Anticipation Guide</h3>
+    <h3 class="head">Before You Read, After You Read</h3>
+    <div class="nameline"><span>Name:</span><span>Period:</span><span>Date:</span></div>
+    <div class="agdir"><b>Directions (stay in your seat).</b> Before you read, read each statement and fill in <b>Agree</b> or <b>Disagree</b> in the “Before You Read” column. Work alone for three minutes, then compare answers with a seat partner for two minutes. When you finish the unit, return to this page. Fill in the “After You Read” column and, on the lines, write the chapter and section that changed or confirmed your answer.</div>
+    <table class="ag"><thead><tr><th>#</th><th>Statement</th><th>Before You Read</th><th>After You Read</th></tr></thead><tbody>
+<tr><td class="n">1</td><td>When the price of a good goes up, people stop buying it.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+<tr><td class="n">2</td><td>If more people want a product, its price can rise even when nothing has changed for the sellers.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+<tr><td class="n">3</td><td>A producer will usually offer more of a good for sale when the price it can get goes up.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+<tr><td class="n">4</td><td>When there is a shortage, buyers competing for the limited supply tend to push the price up.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+<tr><td class="n">5</td><td>If the government sets a maximum price below the market price, everyone who wants the product benefits.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+<tr><td class="n">6</td><td>A business with no competitors can charge any price it wants and still sell just as much.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+<tr><td class="n">7</td><td>If a corporation goes out of business, its stockholders can lose their homes and savings to pay the corporation's debts.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+<tr><td class="n">8</td><td>Jobs that require more education and training usually pay more.</td><td class="ab"><span class="bub"></span>Agree<br><span class="bub" style="margin-top:8px"></span>Disagree</td><td class="aa"><span class="bub"></span>Agree <span class="bub"></span>Disagree<div class="ln" style="margin-top:8px"></div><div class="ln"></div></td></tr>
+</tbody></table>
+    <p class="credline"><b>Photo credits:</b> The Unit 2 opener photograph is by NewtonCourt / Wikimedia Commons (CC BY-SA 4.0). It is shown unaltered except for cropping in the page layout. Standards wording is from the California Department of Education, <i>History–Social Science Content Standards</i>, Grade 12, Principles of Economics. Definitions and Spanish terms are from the chapters of Unit 2; chapters adapt <i>Principles of Economics 3e</i> (OpenStax, CC BY 4.0).</p>
+  </div>
+  <div class="runfoot"><span>UNIT 2 · UNIT OPENER</span><span>ECONOMICS</span><span>DANIEL GARZA, M.A.</span></div>
+</section>
+</div>
+<script>
+(function(){var b=document.getElementById('bar');function u(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}window.addEventListener('scroll',u,{passive:true});u();})();
+</script>
+</body>
+</html>
